@@ -6,33 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-    var looper;
-        var degrees = 0;
-        function rotateAnimation(el,speed){
-            var elem = document.getElementById(el);
-            if(navigator.userAgent.match("Chrome")){
-                elem.style.WebkitTransform = "rotate("+degrees+"deg)";
-            } else if(navigator.userAgent.match("Firefox")){
-                elem.style.MozTransform = "rotate("+degrees+"deg)";
-            } else if(navigator.userAgent.match("MSIE")){
-                elem.style.msTransform = "rotate("+degrees+"deg)";
-            } else if(navigator.userAgent.match("Opera")){
-                elem.style.OTransform = "rotate("+degrees+"deg)";
-            } else {
-                elem.style.transform = "rotate("+degrees+"deg)";
-            }
-            looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
-            degrees++;
-            if(degrees > 359){
-                degrees = 1;
-            }
-            document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
-        }</script>
+addEventListener("mousemove", function(evt) {
+    var x = document.getElementsByTagName("earth")[0];
+    var mouse_x = evt.pageX;
+    var mouse_y = evt.pageY;      
+    x.style.transform = 'rotateX(' + -mouse_y + 'deg)' + 'rotateY(' + mouse_x + 'deg)';
+    x.style.msTransform = 'rotateX(' + -mouse_y + 'deg)' + 'rotateY(' + mouse_x + 'deg)';
+    x.style.WebkitTransform = 'rotateX(' + -mouse_y + 'deg)' + 'rotateY(' + mouse_x + 'deg)';
+});</script>
 </head>
 <body>
     <main>
-        <img id="img1" src="cog1.png" alt="cog1">
-<script>rotateAnimation("img1",30);</script>
+        <img id="earth" src="logo.png" alt="cog1">
+<script>ghum("earth",40);</script>
 <h2 style="width:200px;" id="status"></h2>
     </main>
 </body>
