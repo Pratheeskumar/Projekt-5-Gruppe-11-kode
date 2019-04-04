@@ -1,26 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script>
-addEventListener("mousemove", function(evt) {
-    var x = document.getElementsByTagName("earth")[0];
-    var mouse_x = evt.pageX;
-    var mouse_y = evt.pageY;      
-    x.style.transform = 'rotateX(' + -mouse_y + 'deg)' + 'rotateY(' + mouse_x + 'deg)';
-    x.style.msTransform = 'rotateX(' + -mouse_y + 'deg)' + 'rotateY(' + mouse_x + 'deg)';
-    x.style.WebkitTransform = 'rotateX(' + -mouse_y + 'deg)' + 'rotateY(' + mouse_x + 'deg)';
-});</script>
+    <link rel="stylesheet" href="style.css">
+    <title>loading aniation</title>
 </head>
 <body>
-    <main>
-        <img id="earth" src="logo.png" alt="cog1">
-<script>ghum("earth",40);</script>
-<h2 style="width:200px;" id="status"></h2>
-    </main>
+    <div class="box">
+        <img class="image" src="logo.png" alt="">
+        <img class="udentekst" src="udentekst.png" alt="">
+    </div>
 </body>
-
 </html>

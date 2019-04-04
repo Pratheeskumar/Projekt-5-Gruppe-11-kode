@@ -1,1 +1,51 @@
-
+/*loading*/
+.box {margin-left:auto;
+    margin:auto;
+    width:90vh;}
+    
+    .image{
+        width:40vh;
+        margin-top:25vh;
+        position: absolute;
+        -webkit-animation:spin 3s linear ;
+        -moz-animation:spin 3s linear;
+        animation:spin 3s linear ;
+    }
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+    
+    
+    .udentekst {width:90vh;
+        margin-top:26vh;
+        position: absolute;
+        -webkit-animation: fade 5s;
+    animation: fade 4s;
+    -moz-animation: fade 5s;
+    -o-animation: fade 5s;
+    }
+    
+    
+    @-webkit-keyframes fade {
+        0% {opacity: 0} 
+        50% {opacity: 0}
+        100% {opacity:100}
+        }
+        
+        @-moz-keyframes fade{
+            0% {opacity: 0} 
+          50% {opacity: 0}
+          100% {opacity:100}  
+        }
+        
+        @keyframes fade {
+          0% {opacity: 0} 
+          50% {opacity: 0}
+          100%{opacity: 100}
+            }
+        @-o-keyframes fade {
+        0% {opacity: 0} 
+          50% {opacity: 0}
+          100%{opacity: 100}
+        
+        }
