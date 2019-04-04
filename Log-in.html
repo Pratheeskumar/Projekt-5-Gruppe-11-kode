@@ -40,6 +40,7 @@ margin-top:10vh;}
   float: right;
   height: 100vh;
   text-align: center;
+  background-color:#F4F0EC;
 
 }
     
@@ -58,6 +59,20 @@ margin-top:10vh;}
   text-align: left;
 }
 
+.rememberme {float:right;}
+
+.container b {font-family: 'Source Sans Pro';
+color:#43425D;
+font-size: 15px;}
+
+input[type=text], input[type=password]{
+  float:right;
+  background-color:#F4F0EC;
+  border:none;
+  border-bottom: 1px solid#E3B1B4;  
+}
+
+
 </style>
 <body>
         <div class=loginpic>
@@ -75,18 +90,22 @@ margin-top:10vh;}
                   <br>
                       <label for="psw"><b>Kodeord</b></label>
                       <input type="password" placeholder="Indtast Kodeord" name="psw" required>
-                      <br>    
-                      <button type="submit">LOG IN</button>
+                      <br>  
+                      
+                      <div class="rememberme">
                       <label>
                         <input type="checkbox" checked="checked" name="remember"> Husk mig
                       </label>
                     </div>
-                  </div>
-                    <div class="container" style="background-color:#F4F0EC">
-                      <span class="psw">Forgot <a href="#">Glemt kodeord?</a></span>
-                    </div>
+                    <div class="container">
+                      <span class="psw"><a href="#">Glemt kodeord?</a></span>
+                    </div> </div>
+                    <br>
+                    <button type="submit">LOG IN</button>
                   </form>
+                  <div class="politik">
                   <a href="#">Vilkår for anvendelse</a>
-                  <a href="#">Privatspolitik</a>
+                  <a href="#">Privatspolitik</a></div>
+                </div>
 </body>
 </html>
