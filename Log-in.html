@@ -29,44 +29,59 @@
         margin-right: auto;
     }
 
-    .houseofcodelogo{ 
-        float:right;
-        margin-right:12.5%;
-        margin-top:12%;
-         width:25%;
-    }
 
-    .awesome{
-        margin:auto;
-        font-size: 18px;
-    font-family: 'Source Sans Pro';
-    color:#A1A0A4;}
+.container {text-align: left;}
 
 form {display: inline-block;
 margin-top:10vh;}
+
+.right {
+  width: 50%;
+  float: right;
+  height: 100vh;
+  text-align: center;
+
+}
     
+.right p { text-align: center;
+  font-family: 'Source Sans Pro';
+  font-size: 2vw;
+  color: grey;
+}
+
+.right img {
+  width: 50%;
+  margin-top: 20vh;
+}
+
+.right input {
+  text-align: left;
+}
+
 </style>
 <body>
         <div class=loginpic>
                 <img src= "loginpic.jpg" alt="House of code challenge" class="login"></div>
-                
-                      <img src="houseofcodelogo.PNG" alt="logo" class="houseofcodelogo">
-                    <div class=greenbox></div>
-                        <p class="awesome">#BeAwesome</p>
+                <div class=greenbox></div>
+
+                <div class="right">
+                  
+                    <img src="houseofcodelogo.PNG" alt="logo" >  
+                    <p>#BeAwesome</p>
                     <form>
                     <div class="container">
                       <label for="uname"><b>ID nummer</b></label>
-                      <input type="text"  placeholder="Indtast ID nummer" name="uname" required>
-                  
+                      <input type="text"  placeholder="Indtast ID nummer" name="uname" required style="text-align: left;">
+                  <br>
                       <label for="psw"><b>Kodeord</b></label>
                       <input type="password" placeholder="Indtast Kodeord" name="psw" required>
-                          
+                      <br>    
                       <button type="submit">LOG IN</button>
                       <label>
                         <input type="checkbox" checked="checked" name="remember"> Husk mig
                       </label>
                     </div>
-                  
+                  </div>
                     <div class="container" style="background-color:#F4F0EC">
                       <span class="psw">Forgot <a href="#">Glemt kodeord?</a></span>
                     </div>
