@@ -1,80 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>template</title>
-    <link rel="stylesheet" type="text/css" href="structure.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="java.js" defer></script>
-  </head>
-  <body>
-    <div class="logo"></div>
-    <div class="header"></div>
-    <div class="achievement"></div>
-    <div class="main">
-      <div class="main2"></div>
-      <div class="main3"></div>
-      <div class="main4"></div>
-      <div class="main5"></div>
-    </div>
-  </body>
-</html>
-
+<!doctype html>
+<title>CSS Grid Template 1</title>
 <style>
-  * {
-    margin: 0;
-    padding: 0;
+body { 
+  display: grid;
+  grid-template-areas: 
+    "logo header header"
+    "nav article ads"
+    "nav article ads";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }  
+header, footer, article, nav, div {
+  padding: 0.5em;
+  background: #f5f2ee;
   }
-  body {
-    background-color: #f5f2ee;
-  }
-  .logo {
-    background-color: #f5f2ee;
-    width: 20%;
-    height: 20vh;
-    float: left;
-    display: block;
-  }
-  .achievement {
-    background-color: #515e6d;
-    width: 20%;
-    height: 80vh;
-    display: inline-block;
-  }
-  .header {
-    background-color: #515e6d;
-    width: 80%;
-    height: 20vh;
-    float: right;
-    display: block;
-  }
-  .main {
-    background-color: #f5f2ee;
-    width: 80%;
-    height: 80vh;
-    display: inline-block;
-    float: right;
-    padding: 1.2em;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
-    grid-gap: 1em;
+#pageHeader {
+  grid-area: header;
   }
 
-  .main2 {
-    background-color: blue;
-    height: 60vh;
+#mainArticle { 
+  grid-area: article;      
   }
-  .main3 {
-    background-color: rosybrown; height: 20vh;
+#mainNav { 
+  grid-area: nav; 
   }
-  .main4 {
-    background-color: salmon; height: 20vh;
-  }
-  .main5 {
-    background-color: slateblue; height: 20vh;
-  }
+#siteAds { 
+  grid-area: ads; 
+  } 
+    #logo { 
+  grid-area: logo; 
+  } 
+    .score {border: 1px solid black; height: 25%; width: 100%;} 
+    .historik {border: 1px solid black; height: 25%; width: 100%;}  
+    .meeting {border: 1px solid black; height: 25%; width: 100%;}  
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+     "logo"
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
 </style>
+<body>
+  <header id="pageHeader">Header</header>
+  <article id="mainArticle">Article</article>
+  <nav id="mainNav">Nav</nav>
+  <div id="siteAds">Ads
+  <div class="score">score</div>
+  <div class="historik">historik</div>
+<div class="meeting">meeting</div>  
+  
+  </div>
+  <div id="logo">logo</div>
+  
+</body>
