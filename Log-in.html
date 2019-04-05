@@ -28,23 +28,76 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .right { width: 50%;
+    float:right;
+    text-align: center;
+    background-color:#F4F0EC;
+    height: 100vh;}
+
+.mainbox { width: 40%;
+margin-left:auto;
+margin-right: auto;}
+
+.form-control {
+    background-color:#F4F0EC; 
+    margin-bottom: 5vh; 
+    width: 100%;  
+    border: none;
+    border-bottom: 1px solid rgb(205,97,107, 44);}
+
+    .container img {
+        width: 100%;
+        margin-top: 20vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        margin-bottom: 8vh;
+    }
+
+    .form-controlHusk, label {
+        float:left;
+        margin-top: 
+    }
+
+    .husk {
+        width: 40%;
+    }
+
+
 </style>
 <body>  
         <div class=loginpic>
                 <img src= "loginpic.jpg" alt="House of code challenge" class="login"></div>
                 <div class=greenbox></div>
-
+        </div>
                 <div class="right">
-                  <div class="hoclogo">
-                <img src="houseofcodelogo.PNG">
-                <p>#BeAwesome</p>
-              </div>
-              <div class="IDnummer"></div>
-              <div class="Kodeord"></div>
-              <div class="Huskmig"></div>
-              <div class="Glemtpsw"></div>
-              <div class="Login"></div>
-              </div>
+                    <div class="mainbox">
+                        <div class="container">
+<img src="houseofcodelogo.PNG" alt="logoHoc"> 
+                       <p style="opacity: 0.7; color: grey; font-family: 'Source Sans Pro';">#BeAwesome</p>
+                        </div>
+                        <section id="kontaktformular">
+                          <div class="container1">
+                            <div id="kontakt-titel">
+              
+                          </div>
+                          <div class="kontakt-form">
+                            <form id="kontakt-form" method="post" >
+                              <input name="navn" type="text" class="form-control" placeholder="ID Nummer" required><br>
+              
+                              <input name="email" type="password" class="form-control" placeholder="Adgangskode" required><br>              
+                              
+<div class="Husk">
+
+</div>
+                              
+                              <input type="submit" class="form-control2 submit" value="LOG IN">
+
+                            </form> </div> </div>
+                        </div></div>
 
 </body>
 </html>
