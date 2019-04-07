@@ -40,6 +40,14 @@
       .klip {border: 1px solid black; height: 11vh; width: auto; margin: 2%; margin-right: 2%;}
       #profile { background-color:#515f6d; height: 5vh; width:5%; border: 1px solid white; }
       #accessbar { background-color:#a6bb75; height: 0.1%; width: auto; padding-top: 2.1%;}
+
+      #trophynow {background-color: #515f6d;border: 1px solid white;display: inline-block; width: auto;}
+      #trophybefore {background-color: #515f6d;border: 1px solid white; display: inline-block; width: auto;}
+      .ultrophy {background-color: #515f6d; display: inline-block; border: 1px solid white; height: 5vh; width: 5vh; display: grid; grid-template-areas:"ultrophy urtrophy"}
+      .urtrophy {background-color: #515f6d; display: inline-block; border: 1px solid white; height: 5vh; width: 5vh; display: grid;}
+      .dltrophy {background-color: #515f6d; display: inline-block; border: 1px solid white; height: 5vh; width: 5vh; display: grid;}
+      .drtrophy {background-color: #515f6d; display: inline-block; border: 1px solid white; height: 5vh; width: 5vh; display: grid;}
+
   /* Stack the layout on small devices/viewports. */
   @media all and (max-width: 575px) {
     body {
@@ -55,14 +63,28 @@
   }
 </style>
 <body>
-  <header id="pageHeader"> <div id="profile"> profile</div> <div id="accessbar"></div></header>
+  <header id="pageHeader">
+    <div id="profile">profile</div>
+    <div id="accessbar"></div>
+  </header>
   <article id="mainArticle">Article</article>
-  <nav id="mainNav">Nav</nav>
+  <nav id="mainNav">
+    <div id="trophynow">Igangværende</div>
+    <div class="ultrophy">gold</div>
+    <div class="urtrophy">silver</divd>
+    <div class="dltrophy">bronze</div>
+    <div class="drtrophy">hoc trophynow</div>
+    <div id="trophybefore">Fuldførte</div>
+    <div class="ultrophy">gold</div>
+    <div class="urtrophy">silver</div>
+    <div class="dltrophy">bronze</div>
+    <div class="drtrophy">hoc trophybefore</div>
+  </nav>
   <div id="siteAds">
     <div class="score">score</div>
     <div class="historik">historik</div>
     <div class="meeting">meeting</div>
     <div class="klip">klip</div>
   </div>
-  <div  id="logo"><img alt="hoclogo" src="/HoC-logo-long.svg"></div>
+  <div id="logo"><img alt="hoclogo" src="/HoC-logo-long.svg" /></div>
 </body>
