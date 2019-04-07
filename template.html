@@ -26,7 +26,9 @@
     grid-area: article; border: 0.2px solid black; width: 110vh;
     }
   #mainNav {
-    grid-area: nav; background-color: #515f6d; color: white;
+    grid-area: nav; background-color: #515f6d; color: white; display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px; padding: 8px;
     }
   #siteAds {
     grid-area: ads;  border: 0.2px solid black; width: auto;
@@ -43,10 +45,10 @@
 
       #trophynow {background-color: #515f6d;border: 1px solid white;display: inline-block; width: auto;}
       #trophybefore {background-color: #515f6d;border: 1px solid white; display: inline-block; width: auto;}
-      .ultrophy {background-color: #515f6d; display: inline-block; border: 1px solid white; height: 5vh; width: 5vh; display: grid; grid-template-areas:"ultrophy urtrophy"}
-      .urtrophy {background-color: #515f6d; display: inline-block; border: 1px solid white; height: 5vh; width: 5vh; display: grid;}
-      .dltrophy {background-color: #515f6d; display: inline-block; border: 1px solid white; height: 5vh; width: 5vh; display: grid;}
-      .drtrophy {background-color: #515f6d; display: inline-block; border: 1px solid white; height: 5vh; width: 5vh; display: grid;}
+      .ultrophy {background-color: #515f6d; border: 1px solid white; height: 5vh; width: 5vh; }
+      .urtrophy {background-color: #515f6d;  border: 1px solid white; height: 5vh; width: 5vh; }
+      .dltrophy {background-color: #515f6d;  border: 1px solid white; height: 5vh; width: 5vh; }
+      .drtrophy {background-color: #515f6d; border: 1px solid white; height: 5vh; width: 5vh; }
 
   /* Stack the layout on small devices/viewports. */
   @media all and (max-width: 575px) {
