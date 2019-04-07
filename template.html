@@ -8,9 +8,9 @@
       "nav article ads"
       "nav article ads";
     grid-template-rows: 80px 1fr 70px;
-    grid-template-columns: 20% 1fr 15%;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    grid-template-columns: 18% 1fr 21.5%;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
     height: 100vh;
     margin: 0;
     }
@@ -20,26 +20,26 @@
     }
   #pageHeader {
     grid-area: header; background-color: #515f6d; color: white; padding: 0%;
-    }
+    border: 1px solid black;}
 
   #mainArticle {
-    grid-area: article;
+    grid-area: article; border: 0.2px solid black; width: 110vh;
     }
   #mainNav {
     grid-area: nav; background-color: #515f6d; color: white;
     }
   #siteAds {
-    grid-area: ads; padding: 1%;
+    grid-area: ads;  border: 0.2px solid black; width: auto;
     }
       #logo {
     grid-area: logo;
     }
       .score {border: 1px solid black; height: 25vh; width: auto; margin: 2%; margin-right: 2%;}
       .historik {border: 1px solid black; height: 20vh; width:auto; margin: 2%; margin-right: 2%;}
-      .meeting {border: 1px solid black; height: 15vh; width: auto; margin: 2%; margin-right: 2%;}
-      .klip {border: 1px solid black; height: 12vh; width: auto; margin: 2%; margin-right: 2%;}
+      .meeting {border: 1px solid black; height: 16vh; width: auto; margin: 2%; margin-right: 2%;}
+      .klip {border: 1px solid black; height: 11vh; width: auto; margin: 2%; margin-right: 2%;}
       #profile { background-color:#515f6d; height: 5vh; width:5%; border: 1px solid white; }
-      #accessbar { background-color:#a6bb75; height: 0.1%; width: auto; padding-top: 2.3%;}
+      #accessbar { background-color:#a6bb75; height: 0.1%; width: auto; padding-top: 2.1%;}
   /* Stack the layout on small devices/viewports. */
   @media all and (max-width: 575px) {
     body {
@@ -49,7 +49,7 @@
         "ads"
         "nav"
        "logo"
-      grid-template-rows: 80px 1fr 70px 1fr 70px;
+      grid-template-rows: 80px 1fr 50px 1fr 70px;
       grid-template-columns: 1fr;
    }
   }
@@ -64,5 +64,5 @@
     <div class="meeting">meeting</div>
     <div class="klip">klip</div>
   </div>
-  <div  id="logo"><img alt="hoclogo"</div>
+  <div  id="logo"><img alt="hoclogo" src="/HoC-logo-long.svg"></div>
 </body>
