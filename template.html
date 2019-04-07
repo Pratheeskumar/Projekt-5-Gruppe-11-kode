@@ -1,66 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <title>CSS Grid Template 1</title>
 <style>
-body { 
-  display: grid;
-  grid-template-areas: 
-    "logo header header"
-    "nav article ads"
-    "nav article ads";
-  grid-template-rows: 80px 1fr 70px;  
-  grid-template-columns: 20% 1fr 15%;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  height: 100vh;
-  margin: 0;
-  }  
-header, footer, article, nav, div {
-  padding: 0.5em;
-  background: #f5f2ee;
-  }
-#pageHeader {
-  grid-area: header;
-  }
+  body {
+    display: grid;
+    grid-template-areas:
+      "logo header header"
+      "nav article ads"
+      "nav article ads";
+    grid-template-rows: 80px 1fr 70px;
+    grid-template-columns: 20% 1fr 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    }
+  header, footer, article, nav, div {
+    padding: 0.5em;
+    background: #f5f2ee;
+    }
+  #pageHeader {
+    grid-area: header; background-color: #515f6d; color: white; padding: 0%;
+    }
 
-#mainArticle { 
-  grid-area: article;      
+  #mainArticle {
+    grid-area: article;
+    }
+  #mainNav {
+    grid-area: nav; background-color: #515f6d; color: white;
+    }
+  #siteAds {
+    grid-area: ads; padding: 1%;
+    }
+      #logo {
+    grid-area: logo;
+    }
+      .score {border: 1px solid black; height: 25vh; width: auto; margin: 2%; margin-right: 2%;}
+      .historik {border: 1px solid black; height: 20vh; width:auto; margin: 2%; margin-right: 2%;}
+      .meeting {border: 1px solid black; height: 15vh; width: auto; margin: 2%; margin-right: 2%;}
+      .klip {border: 1px solid black; height: 12vh; width: auto; margin: 2%; margin-right: 2%;}
+      #profile { background-color:#515f6d; height: 5vh; width:5%; border: 1px solid white; }
+      #accessbar { background-color:#a6bb75; height: 0.1%; width: auto; padding-top: 2.3%;}
+  /* Stack the layout on small devices/viewports. */
+  @media all and (max-width: 575px) {
+    body {
+      grid-template-areas:
+        "header"
+        "article"
+        "ads"
+        "nav"
+       "logo"
+      grid-template-rows: 80px 1fr 70px 1fr 70px;
+      grid-template-columns: 1fr;
+   }
   }
-#mainNav { 
-  grid-area: nav; 
-  }
-#siteAds { 
-  grid-area: ads; 
-  } 
-    #logo { 
-  grid-area: logo; 
-  } 
-    .score {border: 1px solid black; height: 25%; width: 100%;} 
-    .historik {border: 1px solid black; height: 25%; width: 100%;}  
-    .meeting {border: 1px solid black; height: 25%; width: 100%;}  
-/* Stack the layout on small devices/viewports. */
-@media all and (max-width: 575px) {
-  body { 
-    grid-template-areas: 
-      "header"
-      "article"
-      "ads"
-      "nav"
-     "logo"
-    grid-template-rows: 80px 1fr 70px 1fr 70px;  
-    grid-template-columns: 1fr;
- }
-}
 </style>
 <body>
-  <header id="pageHeader">Header</header>
+  <header id="pageHeader"> <div id="profile"> profile</div> <div id="accessbar"></div></header>
   <article id="mainArticle">Article</article>
   <nav id="mainNav">Nav</nav>
-  <div id="siteAds">Ads
-  <div class="score">score</div>
-  <div class="historik">historik</div>
-<div class="meeting">meeting</div>  
-  
+  <div id="siteAds">
+    <div class="score">score</div>
+    <div class="historik">historik</div>
+    <div class="meeting">meeting</div>
+    <div class="klip">klip</div>
   </div>
-  <div id="logo">logo</div>
-  
+  <div  id="logo"><img alt="hoclogo"</div>
 </body>
