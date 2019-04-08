@@ -7,16 +7,16 @@
       "logo header header"
       "nav article ads"
       "nav article ads";
-    grid-template-rows: 80px 1fr 70px;
-    grid-template-columns: 18% 1fr 21.5%;
+    grid-template-rows: 15vh 43vh 43vh;
+    grid-template-columns: 20% 1fr 20%;
     grid-row-gap: 0px;
     grid-column-gap: 0px;
     height: 100vh;
     margin: 0;
     }
   header, footer, article, nav, div {
-    padding: 0.5em;
-    background: #f5f2ee;
+    padding: 1em;
+    background: #FFF;
     }
   #pageHeader {
     grid-area: header; background-color: #515f6d; color: white; padding: 0%;
@@ -36,21 +36,21 @@
       #logo {
     grid-area: logo;
     }
-      .score {border: 1px solid black; height: 25vh; width: auto; margin: 2%; margin-right: 2%;}
-      .historik {border: 1px solid black; height: 20vh; width:auto; margin: 2%; margin-right: 2%;}
-      .meeting {border: 1px solid black; height: 16vh; width: auto; margin: 2%; margin-right: 2%;}
-      .klip {border: 1px solid black; height: 11vh; width: auto; margin: 2%; margin-right: 2%;}
-      #profile { background-color:#515f6d; height: 5vh; width:5%; border: 1px solid white; }
-      #accessbar { background-color:#a6bb75; height: 0.1%; width: auto; padding-top: 2.1%;}
+      .score {border: 1px solid black; height: 5vh; width: auto; margin: 2%; margin-right: 2%;}
+      .historik {border: 1px solid black; height: 5vh; width:auto; margin: 2%; margin-right: 2%;}
+      .meeting {border: 1px solid black; height: 5vh; width: auto; margin: 2%; margin-right: 2%;}
+      .klip {border: 1px solid black; height: 5vh; width: auto; margin: 2%; margin-right: 2%;}
+      #profile { background-color:#626b75; height: 5vh; width:5%; border: 1px solid white; }
+      #accessbar { background-color:#a6bb75; height: 0.5px; width: auto; padding-top: 0.5px;}
 
-      #trophynow {background-color: #515f6d;border: 1px solid white;display: inline-block; width: auto;}
-      #trophybefore {background-color: #515f6d;border: 1px solid white; display: inline-block; width: auto;}
+      #trophynow {background-color: #515f6d;border: 1px solid white;display: block; width: auto;}
+      #trophybefore {background-color: #515f6d;border: 1px solid white; display:  block; width: auto;}
       .ultrophy {background-color: #515f6d; border: 1px solid white; height: 5vh; width: 5vh; }
       .urtrophy {background-color: #515f6d;  border: 1px solid white; height: 5vh; width: 5vh; }
       .dltrophy {background-color: #515f6d;  border: 1px solid white; height: 5vh; width: 5vh; }
       .drtrophy {background-color: #515f6d; border: 1px solid white; height: 5vh; width: 5vh; }
 
-  /* Stack the layout on small devices/viewports. */
+  /* Stack the layout on small devices/viewports.  */
   @media all and (max-width: 575px) {
     body {
       grid-template-areas:
@@ -58,7 +58,7 @@
         "article"
         "ads"
         "nav"
-       "logo"
+       "logo";
       grid-template-rows: 80px 1fr 50px 1fr 70px;
       grid-template-columns: 1fr;
    }
@@ -71,16 +71,16 @@
   </header>
   <article id="mainArticle">Article</article>
   <nav id="mainNav">
-    <div id="trophynow">Igangværende</div>
+    <div id="trophynow">Igangværende
     <div class="ultrophy">gold</div>
     <div class="urtrophy">silver</divd>
     <div class="dltrophy">bronze</div>
-    <div class="drtrophy">hoc trophynow</div>
-    <div id="trophybefore">Fuldførte</div>
+    <div class="drtrophy">hoc trophynow</div></div>
+    <div id="trophybefore">Fuldførte
     <div class="ultrophy">gold</div>
     <div class="urtrophy">silver</div>
     <div class="dltrophy">bronze</div>
-    <div class="drtrophy">hoc trophybefore</div>
+    <div class="drtrophy">hoc trophybefore</div></div>
   </nav>
   <div id="siteAds">
     <div class="score">score</div>
