@@ -8,27 +8,30 @@
       "nav article ads"
       "nav article ads";
     grid-template-rows: 15vh 43vh 43vh;
-    grid-template-columns: 20% 1fr 20%;
+    grid-template-columns: 20% 60% 20%;
     grid-row-gap: 0px;
     grid-column-gap: 0px;
     height: 100vh;
     margin: 0;
     }
-  header, footer, article, nav, div {
+  header, article, nav {
     padding: 1em;
     background: #FFF;
     }
   #pageHeader {
     grid-area: header; background-color: #515f6d; color: white; padding: 0%;
-    border: 1px solid black;}
+  }
 
   #mainArticle {
     grid-area: article; border: 0.2px solid black; width: 110vh;
     }
   #mainNav {
     grid-area: nav; background-color: #515f6d; color: white; display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80vh;
+  grid-template-columns: 100%;
   grid-gap: 5px; padding: 8px;
+  text-align: center;
+  display: block;
     }
   #siteAds {
     grid-area: ads;  border: 0.2px solid black; width: auto;
@@ -40,15 +43,32 @@
       .historik {border: 1px solid black; height: 5vh; width:auto; margin: 2%; margin-right: 2%;}
       .meeting {border: 1px solid black; height: 5vh; width: auto; margin: 2%; margin-right: 2%;}
       .klip {border: 1px solid black; height: 5vh; width: auto; margin: 2%; margin-right: 2%;}
-      #profile { background-color:#626b75; height: 5vh; width:5%; border: 1px solid white; }
-      #accessbar { background-color:#a6bb75; height: 0.5px; width: auto; padding-top: 0.5px;}
+      #profile { background-color:#626b75; height: 100%; width:80%; border: 1px solid white; }
+      #accessbar { background-color:#a6bb75; height: 8px; width: auto; padding-top: 0.5px; position:absolute;}
 
-      #trophynow {background-color: #515f6d;border: 1px solid white;display: block; width: auto;}
-      #trophybefore {background-color: #515f6d;border: 1px solid white; display:  block; width: auto;}
-      .ultrophy {background-color: #515f6d; border: 1px solid white; height: 5vh; width: 5vh; }
-      .urtrophy {background-color: #515f6d;  border: 1px solid white; height: 5vh; width: 5vh; }
-      .dltrophy {background-color: #515f6d;  border: 1px solid white; height: 5vh; width: 5vh; }
-      .drtrophy {background-color: #515f6d; border: 1px solid white; height: 5vh; width: 5vh; }
+      #trophynow {background-color: #515f6d;border: 1px solid white;display: inline-block; width: 100%;height: 40vh;}
+      #trophybefore {background-color: #515f6d;border: 1px solid white; display:  inline-block; width: 100%;height: 40vh;}
+      .ultrophy {background-color: #515f6d; height: auto; width: 50%; display: block;float:left; background-color: aqua;}
+      .urtrophy {background-color: #515f6d; height: auto; width: 50%; display: block; float:right;background-color: aqua;}
+      .dltrophy {background-color: #515f6d; height: auto; width: 50%; display: block;float:left; background-color: aqua;}
+      .drtrophy {background-color: #515f6d; height: auto; width: 50%; display: block; float:right;background-color: aqua;}
+
+.ultrophy img {
+  width: 50%;
+  height: auto;
+}
+.dltrophy img {
+  width: 50%;
+  height: auto;
+}
+.urtrophy img {
+  width: 50%;
+  height: auto;
+}
+.drtrophy img {
+  width: 50%;
+  height: auto;
+}
 
   /* Stack the layout on small devices/viewports.  */
   @media all and (max-width: 575px) {
@@ -71,16 +91,16 @@
   </header>
   <article id="mainArticle">Article</article>
   <nav id="mainNav">
-    <div id="trophynow">Igangværende
-    <div class="ultrophy">gold</div>
-    <div class="urtrophy">silver</divd>
-    <div class="dltrophy">bronze</div>
-    <div class="drtrophy">hoc trophynow</div></div>
-    <div id="trophybefore">Fuldførte
-    <div class="ultrophy">gold</div>
-    <div class="urtrophy">silver</div>
-    <div class="dltrophy">bronze</div>
-    <div class="drtrophy">hoc trophybefore</div></div>
+    <div id="trophynow"><h1>Igangværende</h1><br>
+    <div class="ultrophy"><img src="Løb.png"></div>
+    <div class="urtrophy"><img src="Løb.png"></div>
+      <div class="dltrophy"><img src="Løb.png"></div>
+      <div class="drtrophy"><img src="Løb.png"></div></div>
+    <div id="trophybefore"><h1>Fuldførte</h1><br>
+    <div class="ultrophy"><img src="Løb.png"></div>
+    <div class="urtrophy"><img src="Løb.png"></div>
+    <div class="dltrophy"><img src="Løb.png"></div>
+    <div class="drtrophy"><img src="Løb.png"></div></div>
   </nav>
   <div id="siteAds">
     <div class="score">score</div>
