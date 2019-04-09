@@ -7,23 +7,24 @@
       "logo header header"
       "nav article ads"
       "nav article ads";
-    grid-template-rows: 15vh 43vh 43vh;
+    grid-template-rows: 14vh 43vh 43vh;
     grid-template-columns: 20% 60% 20%;
     grid-row-gap: 0px;
     grid-column-gap: 0px;
     height: 100vh;
     margin: 0;
+    background-color: #F1EEEB;
     }
   header, article, nav {
     padding: 1em;
-    background: #FFF;
+    background: #F1EEEB;
     }
   #pageHeader {
     grid-area: header; background-color: #515f6d; color: white; padding: 0%;
   }
 
   #mainArticle {
-    grid-area: article; border: 0.2px solid black; width: 110vh;
+    grid-area: article; background-color: #F1EEEB; width: 100vh;
     }
   #mainNav {
     grid-area: nav; background-color: #515f6d; color: white; display: grid;
@@ -34,24 +35,22 @@
   display: block;
     }
   #siteAds {
-    grid-area: ads;  border: 0.2px solid black; width: auto;
+    grid-area: ads; width: auto;
     }
       #logo {
     grid-area: logo;
+    background-color: #F1EEEB;
+    
     }
-      .score {border: 1px solid black; height: 5vh; width: auto; margin: 2%; margin-right: 2%;}
-      .historik {border: 1px solid black; height: 5vh; width:auto; margin: 2%; margin-right: 2%;}
-      .meeting {border: 1px solid black; height: 5vh; width: auto; margin: 2%; margin-right: 2%;}
-      .klip {border: 1px solid black; height: 5vh; width: auto; margin: 2%; margin-right: 2%;}
-      #profile { background-color:#626b75; height: 100%; width:80%; border: 1px solid white; }
-      #accessbar { background-color:#a6bb75; height: 8px; width: auto; padding-top: 0.5px; position:absolute;}
+      #profile { background-color:#515E6D; height: 95%; width:100%; }
+      #accessbar { background-color:#a6bb75; height: 5%; width: 100%; position:block; }
 
-      #trophynow {background-color: #515f6d;border: 1px solid white;display: inline-block; width: 100%;height: 40vh;}
-      #trophybefore {background-color: #515f6d;border: 1px solid white; display:  inline-block; width: 100%;height: 40vh;}
-      .ultrophy {background-color: #515f6d; height: auto; width: 50%; display: block;float:left; background-color: aqua;}
-      .urtrophy {background-color: #515f6d; height: auto; width: 50%; display: block; float:right;background-color: aqua;}
-      .dltrophy {background-color: #515f6d; height: auto; width: 50%; display: block;float:left; background-color: aqua;}
-      .drtrophy {background-color: #515f6d; height: auto; width: 50%; display: block; float:right;background-color: aqua;}
+      #trophynow {background-color: #515f6d;display: inline-block; width: 100%;height: 40vh;}
+      #trophybefore {background-color: #515f6d; display:  inline-block; width: 100%;height: 40vh;}
+      .ultrophy {background-color: #515f6d; height: auto; width: 50%; display: block;float:left; background-color: ;}
+      .urtrophy {background-color: #515f6d; height: auto; width: 50%; display: block; float:right;background-color: ;}
+      .dltrophy {background-color: #515f6d; height: auto; width: 50%; display: block;float:left; background-color: ;}
+      .drtrophy {background-color: #515f6d; height: auto; width: 50%; display: block; float:right;background-color: ;}
 
 .ultrophy img {
   width: 50%;
@@ -70,6 +69,47 @@
   height: auto;
 }
 
+#ikoner img {
+  width: 65%;
+  height: auto;
+  margin-left: 1vw;
+  margin-right: 1vw%;
+  margin-top: 1.5vh;
+  float:left;
+}
+
+#ikoner {
+  width: 10%;
+  float:left;
+}
+
+#navn {
+  float: left;
+  width: 20%;
+}
+
+#hikoner {
+  float:right;
+  margin-top: 3%;
+  margin-right: 2%;
+}
+
+.content {
+  width: 57vw;
+  height: 80vh;
+  background-color: white;
+  text-align: center;
+  margin-left: 2.1vh;
+}
+
+.content h1 {
+  padding-top: 5vh;
+  background-image: url("header.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 25%;
+}
+
   /* Stack the layout on small devices/viewports.  */
   @media all and (max-width: 575px) {
     body {
@@ -86,10 +126,18 @@
 </style>
 <body>
   <header id="pageHeader">
-    <div id="profile">profile</div>
-    <div id="accessbar"></div>
+    <div id="profile">
+    <div id="ikoner"><img src="profil.png">
+    </div><div id="navn"><h1>Christian <br><span style="font-size: 20px; font-weight: normal;">- Udvikler</span></h1></div>
+<div id="hikoner">Menu indsættes</div></div>
+   
+  <div id="accessbar"></div>
   </header>
-  <article id="mainArticle">Article</article>
+
+  
+  <article id="mainArticle">
+    <div class="content"><h1>VELKOMMEN</h1></div>
+  </article>
   <nav id="mainNav">
     <div id="trophynow"><h1>Igangværende</h1><br>
     <div class="ultrophy"><img src="Løb.png"></div>
@@ -103,10 +151,47 @@
     <div class="drtrophy"><img src="Løb.png"></div></div>
   </nav>
   <div id="siteAds">
-    <div class="score">score</div>
-    <div class="historik">historik</div>
-    <div class="meeting">meeting</div>
-    <div class="klip">klip</div>
+    <div class="score"><h2>Forrige Score</h2></div>
+    <style>
+    .score {height: 25vh; width: auto; margin: 2%; margin-top: 4.5vh;
+    background-color: white; background-image: url("forrige.png"); background-size: cover;
+    text-align: center;
+    }
+
+    .score h2 {
+      padding-top: 1.5vh;
+    }
+    
+    .historik {height: 17.5vh; width: auto; margin: 2%;
+   background-image: url("historik.png"); background-size: cover; background-position: center;
+    text-align: center;
+    }
+
+    .historik h2 {
+      padding-top: 1.5vh;
+    }
+    
+
+    .meeting {height: 15vh; width: auto; margin: 2%; 
+    background-image: url("meeting.png"); background-size: cover; background-position: center;
+    text-align: center;    }
+
+    .meeting h2 {
+      padding-top: 1vh;
+    }
+
+    .klip {height: 15vh; width: auto; margin: 2%; 
+      background-image: url("klips.png"); background-size: cover; background-position: center;
+    text-align: center;  
+    }
+    .klip h2 {
+      padding-top: 1vh;
+    }
+
+    </style>
+    <div class="historik"><h2>Historik</h2></div>
+    <div class="meeting"><h2>meeting</h2></div>
+    <div class="klip"><h2>klip</h2></div>
   </div>
   <div id="logo"><img alt="hoclogo" src="/HoC-logo-long.svg" /></div>
 </body>
