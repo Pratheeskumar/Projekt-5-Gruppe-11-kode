@@ -47,6 +47,9 @@
     }
     #totalscore img {width: 25%;
       height: auto;}
+
+      #sliderImage {width: 25%;
+      height: auto;}
     #mainNav {
       grid-area: nav;
       background-color: #515f6d;
@@ -196,6 +199,9 @@
       }
     }
   </style>
+
+
+
   <body>
     <header id="pageHeader">
       <div id="profile">
@@ -215,11 +221,48 @@
 
     <article id="mainArticle">
       <div class="content">
-        <h1>VELKOMMEN</h1>
-        <div id="totalscore"> 
-          <button id="btnPrev">Prev</button>
-      <span id="sliderInfo">x of x</span>
-      <button id="btnNext">Next</button>
+        <h1>Total Score</h1>
+        <div></div>
+
+
+
+
+         <!-- Layout til score resultat -->
+       <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="green_score.png" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="purple_score.png" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="red_score.png" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="blue_score.png" style="width:100%">
+    <div class="text"></div>
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+
         </div>
       </div>
     </article>

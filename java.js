@@ -1,33 +1,28 @@
-let sliderList = [];
-sliderList[0] = "";
-sliderList[1] = "cat-pics/cat2.jpg";
-sliderList[2] = "cat-pics/cat3.jpg";
-sliderList[3] = "cat-pics/cat4.jpg";
+var slideIndex = 1;
+showSlides(slideIndex);
 
-let counter = 0;
-document.getElementById("sliderInfo").innerText = (counter +1) + " of " + sliderList.length;
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-// Event Listener ? Handler
-document.getElementById("btnNext").addEventListener("click", function() {
-  counter++;
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-  // Reset counter
-  if (counter >= sliderList.length) {
-    counter = 0;
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
   }
-
-  document.getElementById("sliderImage").src = sliderList[counter];
-  document.getElementById("sliderInfo").innerText = (counter +1) + " of " + sliderList.length;
-});
-
-document.getElementById("btnPrev").addEventListener("click", function() {
-  counter--;
-
-  // Reset counter
-  if (counter <0) {
-    counter = sliderList.length -1;
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
   }
-
-  document.getElementById("sliderImage").src = sliderList[counter];
-  document.getElementById("sliderInfo").innerText = (counter +1) + " of " + sliderList.length;
-});
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
