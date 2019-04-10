@@ -45,6 +45,8 @@
       border: 1px solid black;
       display: inline-block;
     }
+    #totalscore img {width: 25%;
+      height: auto;}
     #mainNav {
       grid-area: nav;
       background-color: #515f6d;
@@ -214,12 +216,10 @@
     <article id="mainArticle">
       <div class="content">
         <h1>VELKOMMEN</h1>
-        <div id="totalscore">
-          total score 
-          <img data-slidr="green" src="" alt="drive" />
-          <img data-slidr="purple" src="" alt="team" />
-          <img data-slidr="red" src="" alt="karma" />
-          <img data-slidr="blue" src="" alt="fun" />
+        <div id="totalscore"> 
+          <button id="btnPrev">Prev</button>
+      <span id="sliderInfo">x of x</span>
+      <button id="btnNext">Next</button>
         </div>
       </div>
     </article>
