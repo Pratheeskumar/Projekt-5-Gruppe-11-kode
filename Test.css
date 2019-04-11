@@ -1,10 +1,12 @@
 /*Toppen af siden (header) */ 
 
 #pageHeader {
-    height: 18vh;
+    height: 9.5vw;
     width:100vw;
     background-color: #515f6d;
     display: block;
+    border-bottom: 1vh solid #ACBF7F;
+
 }
 
 #logo {
@@ -52,7 +54,7 @@ border-bottom: 1vh solid #515f6d;
 /* Ikoner*/
 
 #hikoner {
-    width: 23vw;
+    width: auto;
     background-color: #515f6d;
     height: 9.5vw;
     display: block;
