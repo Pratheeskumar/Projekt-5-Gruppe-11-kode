@@ -1,0 +1,272 @@
+/*Toppen af siden (header) */ 
+
+#pageHeader {
+    height: 18vh;
+    width:100vw;
+    background-color: #515f6d;
+    display: block;
+}
+
+#logo {
+display: block;
+float: left;
+width: 20vw;
+height: 9.5vw;
+background-color: #f1eeeb;
+border-bottom: 1vh solid #515f6d;
+}
+
+#logo img {
+    max-height: 20vh;
+    width: auto;
+    margin: 1em 0;
+}
+
+#profile {
+    width: 55vw;
+    background-color: #515f6d;
+    height: 9.5vw;
+    display: block;
+    float: left;
+    padding-left: 2vw;
+    border-bottom: 1vh solid #ACBF7F;
+    overflow: hidden;
+}
+
+#profile img {
+    width: 6vw;
+    height: auto;
+    float:left;
+    padding-right: 1.5vw;
+    padding-top: 1.5em;
+    overflow: hidden;
+
+}
+
+#profile h1 {
+    padding-top: 1em;
+    font-size: 2vw;
+    color: #FFF;
+}
+
+/* Ikoner*/
+
+#hikoner {
+    width: 23vw;
+    background-color: #515f6d;
+    height: 9.5vw;
+    display: block;
+    float: right;
+    text-align: center;
+    border-bottom: 1vh solid #ACBF7F;
+    overflow: hidden;
+    bottom: 0;
+}
+ul {
+    margin-top: 2em;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  ul img {
+      width: 2.5vw; 
+      height: auto;
+  }
+
+  li {
+      display: inline;
+      margin: 0.5vh;
+  }
+
+/* Sidebar venstre*/ 
+
+#mainNav {
+    float:left;
+    width: 20vw;
+    background-color: #515f6d;
+    text-align: center;
+    color: #FFF;
+    overflow: hidden;
+    display: block;
+}
+
+#mainNav h1 {
+    font-size: 2vw;
+}
+
+#trophynow {
+    background-color: #515f6d;
+    display: inline-block;
+    width: 100%;
+    height: 40vh;
+    overflow: auto;
+  }
+  #trophybefore {
+    background-color: #515f6d;
+    display: inline-block;
+    width: 100%;
+    height: 40vh;
+  }
+  .ultrophy {
+    background-color: #515f6d;
+    height: auto;
+    width: 50%;
+    display: block;
+    float: left;
+    background-color: ;
+  }
+  .urtrophy {
+    background-color: #515f6d;
+    height: auto;
+    width: 50%;
+    display: block;
+    float: right;
+    background-color: ;
+  }
+  .dltrophy {
+    background-color: #515f6d;
+    height: auto;
+    width: 50%;
+    display: block;
+    float: left;
+    background-color: ;
+  }
+  .drtrophy {
+    background-color: #515f6d;
+    height: auto;
+    width: 50%;
+    display: block;
+    float: right;
+    background-color: ;
+  }
+  
+  .ultrophy img {
+    width: 50%;
+    height: auto;
+  }
+  .dltrophy img {
+    width: 50%;
+    height: auto;
+  }
+  .urtrophy img {
+    width: 50%;
+    height: auto;
+  }
+  .drtrophy img {
+    width: 50%;
+    height: auto;
+  }
+
+  /* Content */
+
+#mainArticle {
+    width: 50vw;
+    height: 75.5vh;
+    float: left;
+    display: block;
+    background-color: #FFF;
+    margin-top: 3.5vh;
+    margin-left: 3.5vh;
+}   
+
+/* Sidebar right */
+
+#siteAds {
+    margin-top: 3.5vh;
+    margin-left: 3.5vh;
+    width: 25vw;
+    height: 75.5vh;
+    float: left;
+    display: block;
+}
+
+#siteAds h2 {
+    font-size: 1vw;
+}
+
+.score {
+    height: 32.5%;
+    width: 25vw;
+    background-color: white;
+    background-image: url("forrige.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .score h2 {
+    margin-top: 2.5%;
+ }
+  
+  .historik {
+    height: 22%;
+    width: 25vw;
+    display: block; 
+ background-image: url("historik.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    background-color: white;
+    
+
+  }
+  
+  .historik h2 {
+    margin-top: 2.5%;
+    padding: 0.2vh;
+
+  }
+  
+  .meeting {
+    height: 20.5%;
+    width: 25vw;
+    display: block;    
+    background-image: url("meeting.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    background-color: white;
+
+  }
+  
+  .meeting h2 {
+    margin-top: 2.5%;
+    padding: 0.2vh;
+
+  }
+  
+  .klip {
+    height: 20%;
+    width: 25vw;
+    display: block;
+    background-image: url("klips.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    background-color: white;
+
+  }
+  .klip h2 {
+    margin-top: 2.5%;
+    padding: 0.2vh;
+
+  }
+
+
+/*Faste variabler*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;    
+}
+
+body {
+    background-color: #f1eeeb;
+}
