@@ -1,10 +1,14 @@
 /*loading*/
+*{font-family: 'Poppins', sans-serif;}
+
 .box {
   margin-left: auto;
   margin: auto;
   width: 90vh;
 }
 
+
+font
 .image {
   width: 40vh;
   margin-top: 25vh;
@@ -95,7 +99,7 @@
   margin: auto;
 }
 
-/* Hide the images by default */
+/* Gemme billeder */
 .mySlides {
   display: none;
 }
@@ -117,20 +121,21 @@
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* Positionering af "next" knappen til højre */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+/* Positionering af "prev" knappen til venstre */
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* På hover kommer der en sort baggrund bag pilene  */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Caption text */
@@ -144,30 +149,13 @@
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+/* Number indikator (1/4 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
 }
 
 /* Fading animation */
@@ -193,5 +181,202 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+
+/*hoved styling for skabelon*/
+
+
+body {
+  display: grid;
+  grid-template-areas:
+    "logo header header"
+    "nav article ads"
+    "nav article ads";
+  grid-template-rows: 14vh 43vh 43vh;
+  grid-template-columns: 20% 60% 20%;
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+  height: 100vh;
+  margin: 0;
+  background-color: #f1eeeb;
+}
+header,
+article,
+nav {
+  padding: 1em;
+  background: #f1eeeb;
+}
+#pageHeader {
+  grid-area: header;
+  background-color: #515f6d;
+  color: white;
+  padding: 0%;
+}
+
+#mainArticle {
+  grid-area: article;
+  background-color: #f1eeeb;
+  width: 100vh;
+}
+#totalscore {
+  border: 1px solid black;
+  display: inline-block;
+}
+#totalscore img {width: 25%;
+  height: auto;}
+
+.totalscorewheel img {width: 20%;
+  height: auto; }
+
+  #sliderImage {width: 25%;
+  height: auto;}
+#mainNav {
+  grid-area: nav;
+  background-color: #515f6d;
+  color: white;
+  display: grid;
+  grid-template-rows: 80vh;
+  grid-template-columns: 100%;
+  grid-gap: 5px;
+  padding: 8px;
+  text-align: center;
+  display: block;
+}
+#siteAds {
+  grid-area: ads;
+  width: auto;
+}
+#logo {
+  grid-area: logo;
+  background-color: #f1eeeb;
+}
+#profile {
+  background-color: #515e6d;
+  height: 95%;
+  width: 100%;
+}
+#accessbar {
+  background-color: #a6bb75;
+  height: 5%;
+  width: 100%;
+  position: block;
+}
+
+#trophynow {
+  background-color: #515f6d;
+  display: inline-block;
+  width: 100%;
+  height: 40vh;
+}
+#trophybefore {
+  background-color: #515f6d;
+  display: inline-block;
+  width: 100%;
+  height: 40vh;
+}
+.ultrophy {
+  background-color: #515f6d;
+  height: auto;
+  width: 50%;
+  display: block;
+  float: left;
+  background-color: ;
+}
+.urtrophy {
+  background-color: #515f6d;
+  height: auto;
+  width: 50%;
+  display: block;
+  float: right;
+  background-color: ;
+}
+.dltrophy {
+  background-color: #515f6d;
+  height: auto;
+  width: 50%;
+  display: block;
+  float: left;
+  background-color: ;
+}
+.drtrophy {
+  background-color: #515f6d;
+  height: auto;
+  width: 50%;
+  display: block;
+  float: right;
+  background-color: ;
+}
+
+.ultrophy img {
+  width: 50%;
+  height: auto;
+}
+.dltrophy img {
+  width: 50%;
+  height: auto;
+}
+.urtrophy img {
+  width: 50%;
+  height: auto;
+}
+.drtrophy img {
+  width: 50%;
+  height: auto;
+}
+
+#ikoner img {
+  width: 65%;
+  height: auto;
+  margin-left: 1vw;
+  margin-right: 1vw%;
+  margin-top: 1.5vh;
+  float: left;
+}
+
+#ikoner {
+  width: 10%;
+  float: left;
+}
+
+#navn {
+  float: left;
+  width: 20%;
+}
+
+#hikoner {
+  float: right;
+  margin-top: 3%;
+  margin-right: 2%;
+}
+
+.content {
+  width: 57vw;
+  height: 80vh;
+  background-color: white;
+  text-align: center;
+  margin-left: 2.1vh;
+}
+
+.content h1 {
+  padding-top: 5vh;
+  background-image: url("header.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 25%;
+}
+
+/* Stack the layout on small devices/viewports.  */
+@media all and (max-width: 575px) {
+  body {
+    grid-template-areas:
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "logo";
+    grid-template-rows: 80px 1fr 50px 1fr 70px;
+    grid-template-columns: 1fr;
   }
 }
