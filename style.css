@@ -185,6 +185,7 @@ font
 }
 
 
+
 /*hoved styling for skabelon*/
 
 
@@ -438,3 +439,9 @@ nav {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
+/* style guide layout  */
+.mainimage {border: 1px solid black; background-image: url("/background\ style\ guide.png");}
