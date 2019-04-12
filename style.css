@@ -444,7 +444,12 @@ nav {
 
 
 /* style guide layout  */
-.mainimage {border: 1px solid black; background-image: url("/background_style_guide.png");height: 20vh; width: 100%; display: inline-block;}
-nav {border: 1px solid black; background-image: url("/background_style_guide.png");height: 20vh; width: 100%; display: inline-block;}
-.div1 {border: 1px solid black;}
+
+nav {border: 1px solid black; background-image: url("/background_style_guide.png");height: 100vh; width: 100%; }
+.div1 {border: 1px solid black; height: 100vh; width: 100%; }
 .farveskema {border: 1px solid black; height: 20vh; width: auto;}
+.div2{border: 1px solid black;height: 100vh; width: 100%;}
+.div3{border: 1px solid black;}
+.div4{border: 1px solid black;}
+.div5{border: 1px solid black;}
+.div6{border: 1px solid black;}
