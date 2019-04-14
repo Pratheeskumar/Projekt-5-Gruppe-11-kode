@@ -2,15 +2,12 @@
 *{font-family: 'Poppins', sans-serif;}
 
 .box {
-  margin-left: auto;
-  margin: auto;
-  width: 90vh;
 }
 
 
 font
 .image {
-  width: 40vh;
+  width: ;
   margin-top: 25vh;
   position: absolute;
   -webkit-animation: spin 3s linear;
@@ -186,41 +183,6 @@ font
 
 
 
-/*hoved styling for skabelon*/
-
-
-body {
-  display: grid;
-  grid-template-areas:
-    "logo header header"
-    "nav article ads"
-    "nav article ads";
-  grid-template-rows: 14vh 43vh 43vh;
-  grid-template-columns: 20% 60% 20%;
-  grid-row-gap: 0px;
-  grid-column-gap: 0px;
-  height: 100vh;
-  margin: 0;
-  background-color: #f1eeeb;
-}
-header,
-article,
-nav {
-  padding: 1em;
-  background: #f1eeeb;
-}
-#pageHeader {
-  grid-area: header;
-  background-color: #515f6d;
-  color: white;
-  padding: 0%;
-}
-
-#mainArticle {
-  grid-area: article;
-  background-color: #f1eeeb;
-  width: 100vh;
-}
 /*bookmark*/
 .bookmark img {width: 8%;
   height: auto; float:right;}
@@ -237,212 +199,9 @@ nav {
 
   #sliderImage {width: 25%;
   height: auto;}
-#mainNav {
-  grid-area: nav;
-  background-color: #515f6d;
-  color: white;
-  display: grid;
-  grid-template-rows: 80vh;
-  grid-template-columns: 100%;
-  grid-gap: 5px;
-  padding: 8px;
-  text-align: center;
-  display: block;
-}
-#siteAds {
-  grid-area: ads;
-  width: auto;
-}
-#logo {
-  grid-area: logo;
-  background-color: #f1eeeb;
-}
-#profile {
-  background-color: #515e6d;
-  height: 95%;
-  width: 100%;
-}
-#accessbar {
-  background-color: #a6bb75;
-  height: 5%;
-  width: 100%;
-  position: block;
-}
-
-#trophynow {
-  background-color: #515f6d;
-  display: inline-block;
-  width: 100%;
-  height: 40vh;
-}
-#trophybefore {
-  background-color: #515f6d;
-  display: inline-block;
-  width: 100%;
-  height: 40vh;
-}
-.ultrophy {
-  background-color: #515f6d;
-  height: auto;
-  width: 50%;
-  display: block;
-  float: left;
-  background-color: ;
-}
-.urtrophy {
-  background-color: #515f6d;
-  height: auto;
-  width: 50%;
-  display: block;
-  float: right;
-  background-color: ;
-}
-.dltrophy {
-  background-color: #515f6d;
-  height: auto;
-  width: 50%;
-  display: block;
-  float: left;
-  background-color: ;
-}
-.drtrophy {
-  background-color: #515f6d;
-  height: auto;
-  width: 50%;
-  display: block;
-  float: right;
-  background-color: ;
-}
-
-.ultrophy img {
-  width: 50%;
-  height: auto;
-}
-.dltrophy img {
-  width: 50%;
-  height: auto;
-}
-.urtrophy img {
-  width: 50%;
-  height: auto;
-}
-.drtrophy img {
-  width: 50%;
-  height: auto;
-}
-
-#ikoner img {
-  width: 65%;
-  height: auto;
-  margin-left: 1vw;
-  margin-right: 1vw%;
-  margin-top: 1.5vh;
-  float: left;
-}
-
-#ikoner {
-  width: 10%;
-  float: left;
-}
-
-#navn {
-  float: left;
-  width: 20%;
-}
-
-#hikoner {
-  float: right;
-  margin-top: 3%;
-  margin-right: 2%;
-}
-
-.content {
-  width: 57vw;
-  height: 80vh;
-  background-color: white;
-  text-align: center;
-  margin-left: 2.1vh;
-}
-
-.content h1 {
-  padding-top: 5vh;
-  background-image: url("header.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 25%;
-}
-.score {
-  height: 25vh;
-  width: auto;
-  margin: 2%;
-  margin-top: 4.5vh;
-  background-color: white;
-  background-image: url("forrige.png");
-  background-size: cover;
-  text-align: center;
-}
-
-.score h2 {
-  padding-top: 1.5vh;
-}
-
-.historik {
-  height: 17.5vh;
-  width: auto;
-  margin: 2%;
-  background-image: url("historik.png");
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-}
-
-.historik h2 {
-  padding-top: 1.5vh;
-}
-
-.meeting {
-  height: 15vh;
-  width: auto;
-  margin: 2%;
-  background-image: url("meeting.png");
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-}
-
-.meeting h2 {
-  padding-top: 1vh;
-}
-
-.klip {
-  height: 15vh;
-  width: auto;
-  margin: 2%;
-  background-image: url("klips.png");
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-}
-.klip h2 {
-  padding-top: 1vh;
-}
-/* Stack the layout on small devices/viewports.  */
-@media all and (max-width: 575px) {
-  body {
-    grid-template-areas:
-      "header"
-      "article"
-      "ads"
-      "nav"
-      "logo";
-    grid-template-rows: 80px 1fr 50px 1fr 70px;
-    grid-template-columns: 1fr;
-  }
-}
-
 
 /*style for challenge siden*/
-h4{
+.sas h4{
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 25%;
@@ -466,7 +225,7 @@ display: inline-block;
   margin-right: 5%; 
 }
 
-h5{
+.sas h5{
   background-position: bottom;
   background-repeat: no-repeat;
   text-align: left; 
@@ -521,15 +280,3 @@ position: absolute;
   box-sizing: border-box;
   display: none; 
 }
-
-
-/* style guide layout  */
-
-nav {border: 1px solid black; background-image: url("/background_style_guide.png");height: 100vh; width: 100%; }
-.div1 {border: 1px solid black; height: 100vh; width: 100%; }
-.farveskema {border: 1px solid black; height: 20vh; width: auto;}
-.div2{border: 1px solid black;height: 100vh; width: 100%;}
-.div3{border: 1px solid black;}
-.div4{border: 1px solid black;}
-.div5{border: 1px solid black;}
-.div6{border: 1px solid black;}
