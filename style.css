@@ -189,7 +189,7 @@ font
   /*totalscore*/
 #totalscore {
   border: 1px solid black;
-  display: inline-block;
+  display: block;
 }
 #totalscore img {width: 25%;
   height: auto;}
@@ -215,7 +215,7 @@ width: 100%;
 height: 15vh;
 padding: auto;
 background-color: #515E6D; 
-display: inline-block;
+display: block;
 }
 
 .bg_challenge {
