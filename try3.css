@@ -260,3 +260,110 @@ body {
     column-count: 2;
   }
 }
+
+/* Total score css styling*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Gemme billeder */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Positionering af "next" knappen til højre */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Positionering af "prev" knappen til venstre */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* På hover kommer der en sort baggrund bag pilene  */
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number indikator (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+ /*totalscore*/
+ #totalscore {
+  border: 1px solid black;
+  display: block;
+}
+#totalscore img {width: 25%;
+  height: auto;}
+
+.totalscorewheel img {width: 20%;
+  height: auto; }
+
+  #sliderImage {width: 25%;
+  height: auto;}
