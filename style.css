@@ -46,7 +46,7 @@
       @-o-keyframes fade {
       0% {opacity: 0} 
         50% {opacity: 0}
-        100%{opacity: 100}
+        100%{opacity: 100}  }
 /* Total score css styling*/
 /* Slideshow container */
 .slideshow-container {
