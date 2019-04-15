@@ -202,7 +202,7 @@ body {
 /* højder på cards*/
 
 .card:first-child {
-  height: 570px;
+  height: 700px;
 }
 
 .card:nth-child(2) {
@@ -210,14 +210,14 @@ body {
 }
 
 .card:nth-child(3) {
-  height: 140px;
+  height: 160px;
 }
 
 .card:nth-child(4) {
-  height: 120px;
+  height: 160px;
 }
 .card:nth-child(5) {
-  height: 90px;
+  height: 160px;
 }
 
 .footer {
