@@ -1,94 +1,196 @@
-
-*{background-color: #F1EEEB; font-family: 'Poppins', sans-serif; color: #484848;}
-nav {list-style: none; text-decoration: none;}
+* {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: #484848;
+}
+.wrapper{list-style: none;
+  text-decoration: none;}
 
 .wrapper > * {
-    grid-column: col-start / span 12;
-  }
+  grid-column: col-start / span 12;
+}
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, [col-start] 1fr);
-    grid-gap: 20px;
-  }
-  .item1 {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 20px;
+}
+.item1 {
+  grid-column: col-start / span 3;
+}
+.item2 {
+  grid-column: col-start 6 / span 4;
+  grid-row: 1 / 3;
+}
+.item3 {
+  grid-column: col-start 2 / span 2;
+  grid-row: 2;
+}
+.item4 {
+  grid-column: col-start 3 / -1;
+  grid-row: 3;
+}
+
+@media (min-width: 500px) {
+  .side {
     grid-column: col-start / span 3;
-  }
-  .item2 {
-    grid-column: col-start 6 / span 4 ;
-    grid-row: 1 / 3;
-  }
-  .item3 {
-    grid-column: col-start 2 / span 2;
-    grid-row: 2;
-  }
-  .item4 {
-    grid-column: col-start 3 / -1;
     grid-row: 3;
   }
-
-
-
-  @media (min-width: 500px) {
-
-    .side {
-      grid-column: col-start / span 3;
-      grid-row: 3;
-    }
-    .ad {
-      grid-column: col-start / span 3;
-      grid-row: 4;
-    }
-    .content, .main-footer {
-      grid-column: col-start 4 / span 9;
-    }
-    nav ul {
-      display: flex;
-      justify-content: space-between;
-    }
+  .ad {
+    grid-column: col-start / span 3;
+    grid-row: 4;
   }
-
-  @media (min-width: 700px) {
-    .main-nav {
-      grid-column: col-start / span 2;
-      grid-row: 2 / 4;
-    }
-    .content {
-      grid-column: col-start 3 / span 8;
-      grid-row: 2 / 4;
-    }
-    .side {
-      grid-column: col-start 11 / span 2;
-      grid-row: 2;
-    }
-    .ad {
-      grid-column: col-start 11 / span 2;
-      grid-row: 3;
-    }
-    .main-footer {
-      grid-column: col-start / span 12;
-    }
-    nav ul {
-      flex-direction: column;
-    }
+  .content,
+  .main-footer {
+    grid-column: col-start 4 / span 9;
   }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
-  .div1 {border: 1px solid #484848; height: 100vh; width: 100%; margin-bottom: 2px; padding: 10px; display: inline-block;}
-  .div2 {border: 1px solid #484848; height: 100vh; width: 100%; margin: 2px; padding: 10px; display: inline-block;}
-  .div3 {border: 1px solid #484848; height: 100vh; width: 100%; margin: 2px; padding: 10px; display: inline-block;}
-  .div4 {border: 1px solid #484848; height: 100vh; width: 100%; margin: 2px; padding: 10px; display: inline-block;}
-  .div5 {border: 1px solid #484848; height: 100vh; width: 100%; margin: 2px; padding: 10px; display: inline-block;}
-  .div6 {border: 1px solid #484848; height: 100vh; width: 100%; margin: 2px; padding: 10px; display: inline-block;}
-  footer {border: 1px solid #484848; height: 50vh; width: 100%; margin: 0px; padding: 10px; display: inline-block;}
+@media (min-width: 700px) {
+  .main-nav {
+    grid-column: col-start / span 2;
+    grid-row: 2 / 4;
+  }
+  .content {
+    grid-column: col-start 3 / span 8;
+    grid-row: 2 / 4;
+  }
+  .side {
+    grid-column: col-start 11 / span 2;
+    grid-row: 2;
+  }
+  .ad {
+    grid-column: col-start 11 / span 2;
+    grid-row: 3;
+  }
+  .main-footer {
+    grid-column: col-start / span 12;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
 
-  .colors {width: 300px;
-    border: 2px solid #484848;
-    padding: 10px;
-    margin:1px; display: grid; }
-  #white {background-color: #FDFDFD;}
-  #beige {background-color: #F1EEEB;}
-  #red {background-color: #C93E49;}
-  #dark {background-color: #515f6d;}
-  #blue {background-color: #6696ac;}
-  #text {background-color: #484848}
-  #green {background-color: #a6bb75;}
-  #yellow {background-color: #d8a55b;}
+
+#styleguide {font-style: italic; font-style: oblique; font-size:40px;}
+.div1 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #484848;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+.div2 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #484848;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+.div3 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #484848;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+.div4 {
+  
+  border-bottom: 2px solid #484848;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  
+}
+.div5 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #484848;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+.div6 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #484848;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+footer {
+  border: 1px solid #484848;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  color: white; background-color: #515f6d; text-align: center;
+}
+
+.colors {
+  width: 100%;
+  border: 2px solid #484848;
+  padding: 20px;
+  margin: 1px;
+  display: inline-block;
+}
+#white {
+  background-color: #fdfdfd;
+}
+#beige {
+  background-color: #f1eeeb;
+}
+#red {
+  background-color: #c93e49;
+}
+#dark {
+  background-color: #515f6d;
+}
+#blue {
+  background-color: #6696ac;
+}
+#text {
+  background-color: #484848;
+}
+#green {
+  background-color: #a6bb75;
+}
+#yellow {
+  background-color: #d8a55b;
+}
+#purple {
+  background-color: #aa81ac;
+}
+
+.logo {
+  width: 100%;
+  border: 2px solid #484848;
+  padding: 20px;
+  margin: 1px;
+  display: inline-block;
+}
+#hoclong {border: 1px solid #515f6d; height: 50px; width: 100px; }
+
+.typography {
+  width: 100%;
+  border: 2px solid #484848;
+  padding: 20px;
+  margin: 1px;
+  display: inline-block;
+}
+
+.poppins{font-size: 50px;}
+.obvia {font-size: 55px; font-family: obvia;}
+#obv{font-family: Obvia; font-size: 20px;}
+#obv2 {font-family: Obvia;}
+#popp {font-size: 20px;}
+
+#sprog {width: 100%;
+
+
+margin: 1px;
+
+}
+
+#formelt {border: 1px solid #484848; text-align: center; background-color: #515f6d; color: white;}
+#kortfattet {border: 1px solid #484848; text-align: center; background-color: #515f6d; color: white;}
