@@ -55,7 +55,7 @@ body {
 
 .header__search img {
   float: left;
-  width: 50%;
+  width: 40px;
   min-width: 50px;
   min-height: 40px;
   height: auto;
@@ -72,26 +72,26 @@ body {
   display: flex;
   height: 65px;
   width: auto;
-  font-size: 1.2vw;
+  font-size: 18px;
   line-height: 0.5;
 }
 
-.header ul li a img {
-  width: 2%;
-  height: auto;
+.header img {
+  width: 20px;
+  float: right; 
+  margin-left: 10px;
 }
+
 .header ul {
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    float:right;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 120px;
+} 
 
-  .header ul li a img{
-    float: right;
-    margin-left: 10px;
-  }
-
+.header li a {
+  display: block;
+}
 .sidenav {
   grid-area: sidenav;
   display: flex;
