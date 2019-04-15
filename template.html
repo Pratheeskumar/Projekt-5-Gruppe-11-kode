@@ -1,80 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>template</title>
-    <link rel="stylesheet" type="text/css" href="structure.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="java.js" defer></script>
-  </head>
-  <body>
-    <div class="logo"></div>
-    <div class="header"></div>
-    <div class="achievement"></div>
-    <div class="main">
-      <div class="main2"></div>
-      <div class="main3"></div>
-      <div class="main4"></div>
-      <div class="main5"></div>
-    </div>
-  </body>
-</html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="test1.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <title>oki</title>
+  <script src="java.js" defer></script>
+</head>
+<body>
 
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    background-color: #f5f2ee;
-  }
-  .logo {
-    background-color: #f5f2ee;
-    width: 20%;
-    height: 20vh;
-    float: left;
-    display: block;
-  }
-  .achievement {
-    background-color: #515e6d;
-    width: 20%;
-    height: 80vh;
-    display: inline-block;
-  }
-  .header {
-    background-color: #515e6d;
-    width: 80%;
-    height: 20vh;
-    float: right;
-    display: block;
-  }
-  .main {
-    background-color: #f5f2ee;
-    width: 80%;
-    height: 80vh;
-    display: inline-block;
-    float: right;
-    padding: 1.2em;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
-    grid-gap: 1em;
-  }
+        <div class="main">
+            <header>                  <img src="profil.png" class="profilbilled" alt="Bear" style="float:left;">
+              <h2>Christian </h2>
+              <p>- Udvikler</p>
+              <ul>
+                      <li><a href="default.asp"><img src="challenge icon.png"></a></li>
+                      <li><a href="news.asp"><img src="bell ikon.png"></a></li>
+      
+                      <li><a href="news.asp"><img src="install ikon.png"></a></li>
+                      <li><a href="contact.asp"><img src="logud.png"></a></li>
+                    </ul>                
+          </div>
+        </header>
+                <aside class="asite">
+                    <div class="logo1"><img src="houseofcodelogo.PNG" ></div>
 
-  .main2 {
-    background-color: blue;
-    height: 60vh;
-  }
-  .main3 {
-    background-color: rosybrown; height: 20vh;
-  }
-  .main4 {
-    background-color: salmon; height: 20vh;
-  }
-  .main5 {
-    background-color: slateblue; height: 20vh;
-  }
-</style>
+                        <div class="ongoing"></div>
+                        <div class="complete"></div>
+                        <div id="trophynow"><h2>Igangværende</h2>
+                            <div class="ultrophy"><img src="Løb.png"></div>
+                            <div class="urtrophy"><img src="Løb.png"></div>
+                              <div class="dltrophy"><img src="Løb.png"></div>
+                              <div class="drtrophy"><img src="Løb.png"></div></div>
+                              <div id="trophybefore"><h2>Fuldførte</h2>
+                                <div class="ultrophy"><img src="Løb.png"></div>
+                                <div class="urtrophy"><img src="Løb.png"></div>
+                                  <div class="dltrophy"><img src="Løb.png"></div>
+                                  <div class="drtrophy"><img src="Løb.png"></div></div>
+
+                </aside>
+
+
+            
+                <!-- Portfolio Gallery Grid -->
+                <div class="wrapper">
+                <div class="row">
+                  <div class="column1" style="width: auto; height:auto; min-height: 500px; min-width: 280px; text-align: center;">
+                    <div class="content2" style="padding: 0px;">
+                        <div class="wrapper" style="height: 78vh; min-width: 100%; background-color: #FFF;max-width: 200px; display: block;">
+                      <img src="mountains.jpg" alt="Mountains" style="width:100%">
+                      <h3>My Work</h3>
+                      <p>Lorem ipsum..</p>
+                    </div>
+                  </div></div>
+                  <div class="column">
+                    <div class="content" style="text-align: center; ">
+                            <h3>Forrige score </h3>
+                      <img src="forrige.png" alt="score forrige" style="width: 70%;">
+                    </div>
+                  </div>
+                  <div class="column"style="text-align: center;">
+                    <div class="content">
+                            <h3>Historik</h3>
+                      <img src="historik.png" alt="Historik" style="width: 70%;">
+                    </div>
+                  </div>
+                  <div class="column">
+                        <div class="content" style="text-align: center;">
+                                <h3>Næste møde</h3>
+                                <img src="meeting.png" alt="Møde" style="width: 70%;">
+                        </div>
+                      </div>
+                      
+                  <div class="column">
+                    <div class="content" style="text-align: center;">
+                            <h3>Resterende klips</h3>
+                      <img src="klips.png" alt="Lights" style="width: 70%;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+                <!-- END MAIN -->
+                </div>
+</body>

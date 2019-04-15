@@ -1,51 +1,281 @@
 /*loading*/
-.box {margin-left:auto;
-    margin:auto;
-    width:90vh;}
-    
-    .image{
-        width:40vh;
-        margin-top:25vh;
-        position: absolute;
-        -webkit-animation:spin 3s linear ;
-        -moz-animation:spin 3s linear;
-        animation:spin 3s linear ;
-    }
-    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-    
-    
-    .udentekst {width:90vh;
-        margin-top:26vh;
-        position: absolute;
-        -webkit-animation: fade 5s;
-    animation: fade 4s;
-    -moz-animation: fade 5s;
-    -o-animation: fade 5s;
-    }
-    
-    
-    @-webkit-keyframes fade {
-        0% {opacity: 0} 
-        50% {opacity: 0}
-        100% {opacity:100}
-        }
-        
-        @-moz-keyframes fade{
-            0% {opacity: 0} 
-          50% {opacity: 0}
-          100% {opacity:100}  
-        }
-        
-        @keyframes fade {
-          0% {opacity: 0} 
-          50% {opacity: 0}
-          100%{opacity: 100}
-            }
-        @-o-keyframes fade {
-        0% {opacity: 0} 
-          50% {opacity: 0}
-          100%{opacity: 100}
-        
-        }
+*{font-family: 'Poppins', sans-serif;}
+
+
+
+
+font
+.image {
+  
+  margin-top: 25vh;
+  position: absolute;
+  -webkit-animation: spin 3s linear;
+  -moz-animation: spin 3s linear;
+  animation: spin 3s linear;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.udentekst {
+  width: 90vh;
+  margin-top: 26vh;
+  position: absolute;
+  -webkit-animation: fade 5s;
+  animation: fade 4s;
+  -moz-animation: fade 5s;
+  -o-animation: fade 5s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@-moz-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@-o-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+/* Total score css styling*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Gemme billeder */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Positionering af "next" knappen til højre */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Positionering af "prev" knappen til venstre */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* På hover kommer der en sort baggrund bag pilene  */
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number indikator (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/*bookmark*/
+.bookmark img {width: 8%;
+  height: auto; float:right;}
+  /*totalscore*/
+#totalscore {
+  border: 1px solid black;
+  display: block;
+}
+#totalscore img {width: 25%;
+  height: auto;}
+
+.totalscorewheel img {width: 20%;
+  height: auto; }
+
+  #sliderImage {width: 25%;
+  height: auto;}
+
+/*style for challenge siden*/
+.sas h4{
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  text-align: center; 
+  color: white; 
+  font-size: 50px;
+}
+
+.baggrundsfarve {
+width: 100%;
+height: 15vh;
+padding: auto;
+background-color: #515E6D; 
+display: block;
+}
+
+.bg_challenge {
+  height: 10vh;
+  background-color: #6696AC; 
+  margin-left: 5%;
+  margin-right: 5%; 
+}
+
+.sas h5{
+  background-position: bottom;
+  background-repeat: no-repeat;
+  text-align: left; 
+  color: black; 
+  font-size: 35px;
+  margin:5%;
+
+}
+
+.baggrundsfarve img{
+left: 25%;    
+bottom: 68%;
+width: 4%;
+height: auto;
+position: absolute;
+}
+
+
+.valgboks{
+ width: 100%;
+ height: 350px;
+}
+
+.valgboks .klikbokser{
+  height: 15%;
+  text-align: left;
+  padding: 5%;
+}
+
+.valgboks .klikbokser button{
+  width: 25%;
+  height: 100%;
+  float: left;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.valgboks .klikbokser button:hover{
+  background-color: #d7d4d4 ; 
+}
+
+
+.valgboks .panel {
+  height: 85%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding-top: 105px;
+  box-sizing: border-box;
+  display: none; 
+}

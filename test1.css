@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 0px 0px;
+    max-height: 80vh;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column, .column1 {
+    padding: 3px;
+
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 30%;
+  }
+
+  .column1 {
+    float: left;
+    width: 40%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    
+    background-color: white;
+width: 100%;
+float:right;
+    height: auto;
+    display: inline;
+  }
+
+  .content2 {
+    width: 55vw;
+    background-color: white;
+    height: auto;
+  }
+
+/*aside kode*/
+aside {
+  max-height: 100vh;
+}
+  .asite {
+      width: 20%;
+      background-color: #515f6d;
+      min-height: 100vh;
+      max-height: 100vh;
+      float: left;
+      text-align: center;
+      display: inline-block;
+
+  }
+
+  .logo1 {
+      background-color: #f1f1f1;
+      min-height: 100px;
+      max-height: 20vh;
+      overflow: hidden;
+  }
+
+  aside img {
+      width: 80%;
+      min-width: 50px;
+      height: auto;
+      padding: 1.25em 0;
+  }
+
+/*profil*/
+  .profilbilled {
+width: auto;
+height: auto;
+margin-left: 10px;
+margin-right: 10px; 
+margin-top: 10px;
+max-height: 80px;
+
+  }
+
+/* Ikoner */
+ul {
+    margin-top: -3em;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    float:right;
+  }
+
+  ul img {
+      width: 2.5vw; 
+      height: auto;
+  }
+
+  li {
+      display: inline;
+      margin: 1.5vh;
+  }
+
+  header {
+    width: 80%;
+    display: block;
+    background-color: #515f6d;
+    height: auto;
+    float: right;
+    min-height: 100px;
+    max-height: 20vh;
+    overflow: auto;
+    color: #FFF;
+  }
+
+  .wrapper {
+    width: 80%;
+    max-height: 80vh;
+    float: right;
+  }
+
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+and (max-width: 900px) {
+    .column {
+      width: 25%;
+    }
+
+  .logo1 {
+    background-color: #f1f1f1;
+    min-height: 70px;
+    max-height: 20vh;
+    overflow: hidden;
+}
+.content {
+    background-color: white;
+    padding: 10px;
+    min-height: 70px;
+    max-height: 20vh;
+    height: auto;
+  }
+
+  .profilbilled {
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    max-height: 40px;
+    display: block;
+      }
+    
+  }
+
+  /*trofæer i aside*/
+#trophynow, #trophybefore h2 {
+    margin-top: 10px;
+    font-size: 1.vw;
+    color: #FFF;    
+}
+
+  #trophynow {
+    background-color: #515f6d;
+    width: 100%;
+    overflow: auto;
+  }
+  #trophybefore {
+    background-color: #515f6d;
+    width: 100%;
+    overflow: auto;
+  }
+  .ultrophy {
+    background-color: #515f6d;
+    height: auto;
+    width: 40%;
+    float: left;
+    background-color: ;
+  }
+  .urtrophy {
+    background-color: #515f6d;
+    height: auto;
+    width: 40%;
+    float: right;
+    background-color: ;
+  }
+  .dltrophy {
+    background-color: #515f6d;
+    height: auto;
+    width: 40%;
+    float: left;
+    background-color: ;
+  }
+  .drtrophy {
+    background-color: #515f6d;
+    height: auto;
+    width: 40%;
+    float: right;
+    background-color: ;
+  }
+  
+  .ultrophy img {
+    width: 5vw;
+    height: auto;
+  }
+  .dltrophy img {
+    width: 5vw;
+    height: auto;
+  }
+  .urtrophy img {
+    width: 5vw;
+    height: auto;
+  }
+  .drtrophy img {
+    width: 5vw;
+    height: auto;
+  }
+
+  
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 20%;
+    }
+    .urtrophy  {
+display: none;
+    }
+    
+    .asite { display: none; }
+
+    .ultrophy {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .dltrophy {
+     display:  none;
+    }
+    .drtrophy  {
+      display: none;
+
+    }
+.content {
+  font-size: 1.5vw;
+}
+
+aside {
+  min-height: 860px;
+}
+  
+  }
