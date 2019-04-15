@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
+  background-color: #f1f1f1;
   font-family: 'Open Sans', Helvetica, sans-serif;
   box-sizing: border-box;
 }
@@ -15,7 +16,6 @@ body {
     'header'
     'main'
     'footer';
-  height: 100vh;
 }
 
 .menu-icon {
@@ -40,12 +40,13 @@ body {
   justify-content: space-between;
   padding: 0 16px;
   background-color: #515f6d;
+  border-bottom: 3px solid #B9C794;
 }
 
 /* Make room for the menu icon on mobile */
 .header__search {
   margin-left: 42px;
-  line-height: 0.7;
+  line-height: 1;
 }
 
 .header__search p {
@@ -54,12 +55,25 @@ body {
 
 .header__search img {
   float: left;
-  width: 60%;
-  min-width: 44px;
+  width: 50%;
+  min-width: 50px;
   min-height: 40px;
   height: auto;
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
+}
+
+.tekst p, h1 {
+  font-weight: lighter;
+
+}
+
+.tekst {
+  display: flex;
+  height: 65px;
+  width: auto;
+  font-size: 1.2vw;
+  line-height: 0.5;
 }
 
 .header ul li a img {
@@ -132,8 +146,7 @@ body {
 
 .main {
   grid-area: main;
-  background-color: #8fd4d9;
-  max-height: 620px;
+  background-color: #f1f1f1;
 }
 
 .main-header {
@@ -222,6 +235,7 @@ body {
     grid-template-columns: 240px 1fr;
     grid-template-areas:
       "sidenav header"
+      "sidenav main"
       "sidenav main"
   }
 
