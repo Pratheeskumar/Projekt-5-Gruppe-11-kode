@@ -1,5 +1,5 @@
 * {
-  background-color: white;
+  background-color: lightslategray;
   font-family: "Poppins", sans-serif;
   color: #484848;
 }
@@ -194,3 +194,11 @@ margin: 1px;
 
 #formelt {border: 1px solid #484848; text-align: center; background-color: #515f6d; color: white;}
 #kortfattet {border: 1px solid #484848; text-align: center; background-color: #515f6d; color: white;}
+
+#grafelem {  width: 100%;
+  border: 2px solid #484848;
+  padding: 20px;
+  margin: 1px;
+  display: inline-block;}
+
+.bill {height: 50px; width: 50px;}
