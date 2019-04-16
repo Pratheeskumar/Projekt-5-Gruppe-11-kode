@@ -16,25 +16,51 @@
     <title>House of Code|Style Guide</title>
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
     <link rel="shortcut icon" href="billeder/favicon.png" type="image/png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1200, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
   </head>
   <body>
     <div class="wrapper">
-      <header class="main-head"><img src="/HoC-logo-long.svg" alt="" /></header>
+      <header class="main-head"><a name="home"></a><img src="/HoC-logo-long.svg" alt="" /></header>
       <nav class="main-nav">
         <ul>
-          <li><a href="">01 farver</a></li>
-          <li><a href="">02 logo</a></li>
-          <li><a href="">03 typografi</a></li>
-          <li><a href="">04 sprog</a></li>
-          <li><a href="">05 billeder</a></li>
-          <li><a href="">06 resurser</a></li>
+          <li><a href="#farver">01 farver</a></li>
+          <li><a href="#logo">02 logo</a></li>
+          <li><a href="#typografi">03 typografi</a></li>
+          <li><a href="#sprog">04 sprog</a></li>
+          <li><a href="#grafiskeelementer">05 grafiske elementer</a></li>
         </ul>
       </nav>
       <main class="content">
         <h1>The House of Code</h1>
-        <p id="styleguide">style guide</p>
-        <div class="div1">
-          <p id="parahead">Farver</p>
+        <p id="styleguide">Style guide</p>
+        <div class="div1"><a name=farver></a><a href=#home>
+          <p id="parahead">Farver</p></a>
           <div class="colors" id="white"></div>
           <p>white #fdfdfd</p>
           <div class="colors" id="beige"></div>
@@ -55,13 +81,14 @@
           <p>purple #aa81ac</p>
         </div>
 
-        <div class="div2" id="logo">
-            <p id="parahead"> Logo</p>
+        <div class="div2" id="logo"><a name=logo></a><a href=#home>
+            <p id="parahead"> Logo</p></a>
           <div id="hoclong"><img src="/HoC-logo-long.svg" alt="hoc" /></div>
-          <div id="eiislogo"> <img src="/Eiislogo.svg" alt="eiis"></div>
+          <div id="eiislogo"> <img src="/Eiislogo.svg" alt="eiis"> <br> <br></div>
         </div>
+  
 
-        <div class="div3" id="typography">
+        <div class="div3" id="typography"><a name=typografi></a>
             <p id="parahead"> Typografi</p>
           <div class="poppins">#BeAwesome</div>
           <p id="popp">Poppins</p>
@@ -72,7 +99,7 @@
           <p id="obv2">Obvia bruges til skema og under trofæ-sektionen</p>
         </div>
 
-        <div class="div4" id="sprog">
+        <div class="div4" id="sprog"><a name=sprog></a>
             <p id="parahead"> Sprog</p>
           <div id="formelt">formelt</div>
           <p>
@@ -88,22 +115,34 @@
             hjælp.
           </p>
         </div>
-        <div class="div5" id="grafelem">
+        <div class="div5" id="grafelem"><a name=grafiskeelementer></a>
          
-          <p id="parahead"> Billeder</p>
-          <br />
+          <p id="parahead"> Grafiske elementer</p>
+          <p>I denne sektion vises der grafiske elementer som der passer til platformen</p>
         
           
           <br /><br />
-          <div class="bill"><img src="/navbar.png" /></div>
-          <p>Nav bar</p>
+          <div class="bill"><img src="/logout.svg" /></div>
+          <p class="parapic">Log Out</p>
           <br />
           <br /><br />
-          <div class="bill"><img src="/progwheel.png" /></div>
-          <p>Progression Wheel</p>
+          <div class="bill"><img src="/progbarfull.svg" /></div>
+          <p class="parapic">Progression Wheel</p>
           <br />
           <br /><br />
-          <div class="bill"><img /></div>
+          <div class="bill"><img src="/cogwheel.svg"> </div>
+          <p class="parapic">Settings</p>
+          <br />
+          <br /><br />
+          <div class="bill"><img src="/bellicon.svg"> </div>
+          <p class="parapic">Notifications</p>
+          <br />
+          <br /><br />
+          <div class="bill"><img src="/challenge.svg"> </div>
+          <p class="parapic">#MonthlyChallenge</p>
+          <br />
+          <br /><br />
+
         </div>
       </main>
 
