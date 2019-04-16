@@ -5,10 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
-  <link rel="stylesheet" href="try3.css">
+  <link rel="stylesheet" href="skabelon.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <title>CSS Grid Template 1</title>
   <script src="java.js" defer></script>
+  <style>
+      .startknap{
+    background-color:white;
+    border: 3px solid #515e6d;
+      color: #515e6d;
+      border-radius: 1px;
+    font-size: 15px;
+    font-family:'Source Sans Pro';
+    padding: 7px;
+    padding-left:20px;
+    padding-right:20px;}
+    
+    .Udviklingssamtale{
+        margin-right:5%;
+        margin-left:5%;
+        font-family: Obvia;
+        color:#515E6D;
+        text-align: center;
+    }
+
+    .Udviklingssamtale h1{font-size:25px;}
+
+    .Udviklingssamtale p{
+        font-size:15px;
+    }
+
+    .Udviklingssamtale h2{font-size:20px;
+    display: inline-block;}
+
+    hr{border:0px;
+    height:2px;
+width:80%;
+background-color:#515E6D;}
+
+
+    </style>
 </head>
  <body>
   <div class="grid-container">
@@ -39,12 +75,26 @@
   </aside>
 
   <main class="main">
-
-
-
-
     <div class="main-cards">
-      <div class="card">Card</div>
+      <div class="card">
+          <div class=Udviklingssamtale>
+        <h1>Udviklingssamtale</h1>
+        <hr>
+        <p>Formålet med dette skema er at dokumentere, hvad du skal fokusere på i det kommende år for at bidrage til dit og House of Code’s behov. </p>
+
+         <p> Vi vil igennem det næste år genbesøge dette dokument i vores samtaler, for at se hvordan det går. </p>
+          <hr>
+          <h2 style=color:#A6BB75>Højt drive</h2> <h2 style=color:#AA81AC>Et stærkt team</h2> <h2 style=color:#D36D75>God Karma</h2> 
+          <h2 style=color:#6696AC >Ha' det sjovt</h2>
+          <p>Det er vigtig for House of Code at vi sammen arbejder med vores værdier.
+              Derfor bedes du vurdere dig selv i forhold til vores værdier på de næste sider.
+              
+              Udover at du vurderer dig selv i forhold til vores værdier,
+              vil din leder samt en kollega også vurdere dig. </p>
+              <p>#BeAwesome</p>
+              <button type="button" class="startknap">START</button>
+            </div>
+      </div>
       <div class="card" style="background-image: url(forrige-01.png); background-size: contain; background-repeat: no-repeat;">
       </div>
       <div class="card">Historik</div>
