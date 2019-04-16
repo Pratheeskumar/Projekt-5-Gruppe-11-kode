@@ -22,7 +22,7 @@
     padding: 7px;
     padding-left:20px;
     padding-right:20px;
-    margin-top:15%;}
+    margin-top:10%;}
 
     .next{float:right;}
 
@@ -44,9 +44,10 @@
         background-color:#EBECEE;
         color:#838C97;
         border:1.5px solid #A6BB75;
-        width:90%;
-        height:6%;
+        width:85%;
+        height:4vh;
         padding-left:5px;
+        margin-left:10%;
     }
 
 .skemaspg{
@@ -59,9 +60,81 @@
 
 .skemaspg p{
     margin-top:4%;
-    margin-left:5%;
+    margin-left:10%;
     font-weight: bold;
 }
+
+/* The container */
+.checkboxcontainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxcontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+border: 1.5px solid #A6BB75;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:4.3vh;
+  width:4.3vh;
+  background-color: #EBECEE;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxcontainer:hover input ~ .checkmark {
+  background-color: #A6BB75;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxcontainer input:checked ~ .checkmark {
+  background-color: #A6BB75;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxcontainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxcontainer .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
     </style>
 </head>
  <body>
@@ -102,28 +175,38 @@
             der brænder for at levere awesome løsninger.</p></div>
             <div class="skemaspg">
                 <p>Jeg arbejder med mit eget fagområde uden for arbejdstiden.</p>
-                <label class="checkbox" for="Option"></label><input id="Option" type="checkbox">
-                    <span class="checkmark"></span>
+                <label class="checkboxcontainer">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
                 <input type="text" name="question" value="Indtast kommentar her"><br>
                 <p>Jeg opsøger ny viden inden for mit eget og andres fagområder i og uden for arbejdstiden.</p>
 
-                <input id="Option" type="checkbox">
-                <label class="checkbox" for="Option"></label>
+                <label class="checkboxcontainer">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
                 <input type="text" name="question" value="Indtast kommentar her"><br>
                 <p>Jeg deler min nye tilegnet viden med kolleger og dokumenterer dette.</p>
 
-                <input id="Option" type="checkbox">
-                <label class="checkbox" for="Option"></label>
+                <label class="checkboxcontainer">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
                 <input type="text" name="question" value="Indtast kommentar her"><br>
                 <p>Jeg holder mig opdateret omkring apps, design og arbejdsmetoder.</p>
 
-                <input id="Option" type="checkbox">
-                <label class="checkbox" for="Option"></label>
+                <label class="checkboxcontainer">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
                 <input type="text" name="question" value="Indtast kommentar her"><br>
                 <p>Jeg opsøger selv nye opgaver der skaber værdi for House of Code eller giver input til eksisterende opgaver der skaber værdi for House of Code eller vores samarbejdspartnere.</p>
 
-                <input id="Option" type="checkbox">
-                <label class="checkbox" for="Option"></label>
+                <label class="checkboxcontainer">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
                 <input type="text" name="question" value="Indtast kommentar her"><br>
                 <button onclick="goBack()" class="back">Tilbage</button> 
                 <button type="button" class="next">Næste</button>
