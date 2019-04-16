@@ -169,8 +169,8 @@ footer {
   margin: 1px;
   display: inline-block;
 }
-#hoclong { height: 100%; width: 100%; border: 1px solid black;}
-#eiislogo {height: 100%; width: 100%;  border: 1px solid black;}
+#hoclong { height: 100%; width: 100%; }
+#eiislogo {height: 100%; width: 100%;}
 
 
 .typography {
