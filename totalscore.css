@@ -104,8 +104,8 @@
 #totalscore img {width: 25%;
   height: auto;}
 
-.totalscorewheel img {width: 20%;
+.totalscorewheel img {width: 150px;
   height: auto; }
 
-  #sliderImage {width: 25%;
+  #sliderImage {width: 200px;
   height: auto;}
