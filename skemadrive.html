@@ -15,8 +15,8 @@
 .next, .back{
     background-color:white;
     border: 3px solid #515e6d;
-      color: #515e6d;
-      border-radius: 1px;
+    color: #515e6d;
+    border-radius: 1px;
     font-size: 15px;
     font-family:'Source Sans Pro';
     padding: 7px;
@@ -24,10 +24,44 @@
     padding-right:20px;
     margin-top:15%;}
 
+    .next{float:right;}
+
     .drivegreen{
         background-color:#A6BB75;
         color:white;
+        padding-top:3%;
+        padding-bottom:3%;
+
     }
+
+    .drivegreen p, h2{
+        margin-left:3vh;
+        line-height:0px;}
+
+    .drivegreen p{font-size:12px;}
+
+    input[type=text]{
+        background-color:#EBECEE;
+        color:#838C97;
+        border:1.5px solid #A6BB75;
+        width:90%;
+        height:6%;
+        padding-left:5px;
+    }
+
+.skemaspg{
+    margin-top:3%;
+    font-size:13px;
+    color:#515E6D;
+    margin-left:3vh;
+    margin-right:3vh;
+}
+
+.skemaspg p{
+    margin-top:4%;
+    margin-left:5%;
+    font-weight: bold;
+}
     </style>
 </head>
  <body>
@@ -66,27 +100,32 @@
     <div class="main-cards">
       <div class="card"><div class=drivegreen><h2>Højt drive</h2><p>Vi er passionerede appudviklere
             der brænder for at levere awesome løsninger.</p></div>
-            <div class=skemaspg>
+            <div class="skemaspg">
                 <p>Jeg arbejder med mit eget fagområde uden for arbejdstiden.</p>
-                <input type="checkbox">
+                <label class="checkbox" for="Option"></label><input id="Option" type="checkbox">
+                    <span class="checkmark"></span>
                 <input type="text" name="question" value="Indtast kommentar her"><br>
                 <p>Jeg opsøger ny viden inden for mit eget og andres fagområder i og uden for arbejdstiden.</p>
 
-                <input type="checkbox">
+                <input id="Option" type="checkbox">
+                <label class="checkbox" for="Option"></label>
                 <input type="text" name="question" value="Indtast kommentar her"><br>
                 <p>Jeg deler min nye tilegnet viden med kolleger og dokumenterer dette.</p>
 
-                <input type="checkbox">
+                <input id="Option" type="checkbox">
+                <label class="checkbox" for="Option"></label>
                 <input type="text" name="question" value="Indtast kommentar her"><br>
                 <p>Jeg holder mig opdateret omkring apps, design og arbejdsmetoder.</p>
 
-                <input type="checkbox">
+                <input id="Option" type="checkbox">
+                <label class="checkbox" for="Option"></label>
                 <input type="text" name="question" value="Indtast kommentar her"><br>
                 <p>Jeg opsøger selv nye opgaver der skaber værdi for House of Code eller giver input til eksisterende opgaver der skaber værdi for House of Code eller vores samarbejdspartnere.</p>
 
-                <input type="checkbox">
+                <input id="Option" type="checkbox">
+                <label class="checkbox" for="Option"></label>
                 <input type="text" name="question" value="Indtast kommentar her"><br>
-                <button onclick="goBack()" class="back">Go Back</button> 
+                <button onclick="goBack()" class="back">Tilbage</button> 
                 <button type="button" class="next">Næste</button>
             </div>
         </div>
