@@ -53,3 +53,8 @@ function showPanel (panelIndex,colorCode) {
 
 //canvas til pie chart
 
+  
+//skema
+function goBack() {
+  window.history.back();
+}
