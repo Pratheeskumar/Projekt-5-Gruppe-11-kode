@@ -192,6 +192,8 @@ body {
   -webkit-column-break-inside: avoid;
   box-sizing: border-box;
 }
+@media (min-width: 1200px)
+{.left{width:80%} .right{width:20%;}}
 
 .card:nth-child(2) img{
   width: 300px;
