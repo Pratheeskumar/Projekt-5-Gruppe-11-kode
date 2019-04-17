@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="skabelon.css">
   <link rel="stylesheet" href="totalscore.css">
- 
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <title>CSS Grid Template 1</title>
   <script src="totalscoresldr.js" defer></script>
-
 </head>
  <body>
   <div class="grid-container">
@@ -42,28 +42,57 @@
   <main class="main">
 
 
-    <div class="main-cards">
-      <div class="card"> 
-          <div class="slideshow-container"></div>
-          <div class="w3-content w3-display-container"> 
-              <img class="mySlides" src="/green_score.png" style="width:100%">
-              <img class="mySlides" src="/purple_score.png" style="width:100%">
-              <img class="mySlides" src="/red_score.png" style="width:100%">
-              <img class="mySlides" src="/blue_score.png" style="width:100%">
-            </div>
-          
-          
-                  </div>
-                </div></div></div>
 
+
+    <div class="main-cards">
+      <div class="card">Card
+       <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="img1.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="img2.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="img3.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="img3.jpg" style="width:100%">
+        <div class="text">Caption Four</div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+      </div>
       <div class="card" style="background-image: url(forrige-01.png); background-size: contain; background-repeat: no-repeat;">
       </div>
-      <div> <div id="historik" class="card">Historik</div>
-      <div id="nextmeet"class="card">Næste møde</div>
-      <div id="clips" class="card">Resterende Klips</div></div>
-     
+      <div class="card">Historik</div>
+      <div class="card">Næste møde</div>
+      <div class="card">Resterende Klips</div>
 
-    
+    </div>
   </main>
 
 </div>
