@@ -77,16 +77,16 @@ body {
 }
 
 .header img {
-  width: 20px;
+  width: 25px;
   float: right; 
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 120px;
+  width: 160px;
 } 
 
 .header li a {
