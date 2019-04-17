@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <link rel="stylesheet" href="skabelon.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <title>CSS Grid Template 1</title>
-  <script src="java.js" defer></script>
-</head>
- <body>
-  <div class="grid-container">
-   
-  <header class="header">
-    <div class="header__search"><div class="tekst"><img src="profil.png"><h1>Charlie<br> <span style="font-size: 15px;"> - Udvikler</span></h1></div></div>
-    <div class="header__avatar">  
-                  <ul>
-                      <li><a href="contact.asp"><img src="logud.png"></a></li>
-                      <li><a href="news.asp"><img src="install ikon.png"></a></li>
-        <li><a href="news.asp"><img src="bell ikon.png"></a></li>
-        <li><a href="default.asp"><img src="challenge icon.png"></a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      ,
+      maximum-scale="1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <link rel="stylesheet" href="skabelon.css" />
+    <link rel="stylesheet" href="settings.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <title>CSS Grid Template 1</title>
+    <script src="java.js" defer></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <div class="header__search">
+          <div class="tekst">
+            <img src="profil.png" />
+            <h1>
+              Charlie<br />
+              <span style="font-size: 15px;"> - Udvikler</span>
+            </h1>
+          </div>
+        </div>
+        <div class="header__avatar">
+          <ul>
+            <li>
+              <a href="contact.asp"><img src="logud.png"/></a>
+            </li>
+            <li>
+              <a href="news.asp"><img src="install ikon.png"/></a>
+            </li>
+            <li>
+              <a href="news.asp"><img src="bell ikon.png"/></a>
+            </li>
+            <li>
+              <a href="default.asp"><img src="challenge icon.png"/></a>
+            </li>
+          </ul>
+        </div>
+      </header>
 
-      </ul>     </div>
-  </header>
+      <aside class="sidenav">
+        <ul class="sidenav__list" style="text-align: center;">
+          <li
+            class="sidenav__list-item"
+            style="background-image: url(houseofcodelogo.PNG); height: 70px; background-size: contain; background-repeat: no-repeat; background-position: center; background-color:#f1f1f1; "
+          ></li>
+          <li class="sidenav__list-item">Igangværende</li>
+          <li class="sidenav__list-item">
+            <img src="Løb.png" /> <img src="Løb.png" />
+          </li>
+          <li class="sidenav__list-item">
+            <img src="Løb.png" /> <img src="Løb.png" />
+          </li>
+          <li class="sidenav__list-item">Fuldførte</li>
+          <li class="sidenav__list-item">
+            <img src="Løb.png" /> <img src="Løb.png" />
+          </li>
+          <li class="sidenav__list-item">
+            <img src="Løb.png" /> <img src="Løb.png" />
+          </li>
+        </ul>
+      </aside>
 
-  <aside class="sidenav">
-    <ul class="sidenav__list" style="text-align: center;">
-      <li class="sidenav__list-item" style="background-image: url(houseofcodelogo.PNG); height: 70px; background-size: contain; background-repeat: no-repeat; background-position: center; background-color:#f1f1f1; "></li>
-      <li class="sidenav__list-item">Igangværende</li>
-      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
-      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
-      <li class="sidenav__list-item">Fuldførte</li>
-      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
-      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
-    </ul>
-  </aside>
-
-  <main class="main">
-
-
-
-
-    <div class="main-cards">
-      <div class="card">Card</div>
-      <div class="card" style="background-image: url(forrige-01.png); background-size: contain; background-repeat: no-repeat;">
-      </div>
-      <div class="card">Historik</div>
-      <div class="card">Næste møde</div>
-      <div class="card">Resterende Klips</div>
-
+      <main class="main">
+        <div class="main-cards">
+          <div class="card" id="paraind">
+            Indstillinger
+           <div><img src="" ></div>
+          </div>
+          <div
+            class="card"
+            style="background-image: url(forrige-01.png); background-size: contain; background-repeat: no-repeat;"
+          ></div>
+          <div class="card">Historik</div>
+          <div class="card">Næste møde</div>
+          <div class="card">Resterende Klips</div>
+        </div>
+      </main>
     </div>
-  </main>
-
-</div>
-    </body>
+  </body>
+</html>
