@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="skabelon.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <title>CSS Grid Template 1</title>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
+<style>
+.next, .back{
+  text-decoration: none;
+    background-color:white;
+    border: 3px solid #515e6d;
+    color: #515e6d;
+    border-radius: 1px;
+    font-size: 15px;
+    font-family:'Source Sans Pro';
+    padding: 7px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top:8%;}
+
+    .next{float:right;
+    padding-left:25px;
+    padding-right:25px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+    .drivegoals{
+        background-color:#515E6D;
+        color:white;
+        padding-top:3%;
+        padding-bottom:3%;
+
+    }
+
+    .drivegoals p, h2{
+        margin-left:3vh;
+        line-height:0px;}
+
+    .drivegoals p{font-size:12px;
+    line-height:12px;}
+
+    .drivegoals img { 
+    float:right;
+    margin-right:3vh;
+    width:8vh;
+    height:8vh;
+    }
+
+    .goals{margin-left:10%;
+    }
+   .goalstext{
+       margin-bottom:5%;
+         background-color:#EBECEE;
+        color:#838C97;
+        border:1.5px solid #515E6D;
+        width:70%;
+        height:9vh;
+        padding-left:5px;
+        margin-left:5%;
+
+    }
+
+.skemaoverskrift{
+    margin-right:5%;
+    margin-left:5%;
+    font-size:12px;
+    color:#515E6D;
+    line-height: 10px;
+
+}
+
+    </style>
+</head>
+ <body>
+  <div class="grid-container">
+   
+  <header class="header">
+    <div class="header__search"><div class="tekst"><img src="profil.png"><h1>Kristian<br> <span style="font-size: 15px;"> - Udvikler</span></h1></div></div>
+    <div class="header__avatar">  
+                  <ul>
+                      <li><a href="contact.asp"><img src="logud.png"></a></li>
+                      <li><a href="news.asp"><img src="install ikon.png"></a></li>
+        <li><a href="news.asp"><img src="bell ikon.png"></a></li>
+        <li><a href="default.asp"><img src="challenge icon.png"></a></li>
+
+
+      </ul>     </div>
+  </header>
+
+  <aside class="sidenav">
+    <ul class="sidenav__list" style="text-align: center;">
+      <li class="sidenav__list-item" style="background-image: url(houseofcodelogo.PNG); height: 70px; background-size: contain; background-repeat: no-repeat; background-position: center; background-color:#f1f1f1; "></li>
+      <li class="sidenav__list-item">Igangværende</li>
+      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
+      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
+      <li class="sidenav__list-item">Fuldførte</li>
+      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
+      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
+    </ul>
+  </aside>
+
+  <main class="main">
+
+
+
+
+    <div class="main-cards">
+      <div class="card"><div class=drivegoals><img src="progbarfull.svg">
+        <h2>Skema sendt</h2>
+        <p>Dit skema er nu afsendt og afventer vurdering fra en af dine kollegaer og din leder! Du får en notifikation når du er blevet vurderet, du kan indtil da se din score og forrige score.</p>
+     </div>
+            <div class="skemaoverskrift">
+                <img src="righticon1.png">
+                        <h3>#BeAwesome</h3>
+                    
+
+                  </div>
+            
+        </div>
+      <div class="card" style="background-image: url(forrige-01.png); background-size: contain; background-repeat: no-repeat;">
+      </div>
+      <div class="card">Historik</div>
+      <div class="card">Næste møde</div>
+      <div class="card">Resterende Klips</div>
+
+    </div>
+  </main>
+
+</div>
