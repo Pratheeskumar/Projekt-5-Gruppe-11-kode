@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="skabelon.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <title>CSS Grid Template 1</title>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+    </script>
+<style>
+.next, .back{
+    background-color:white;
+    border: 3px solid #515e6d;
+    color: #515e6d;
+    border-radius: 1px;
+    font-size: 15px;
+    font-family:'Source Sans Pro';
+    padding: 7px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top:10%;}
+
+    .next{float:right;
+    padding-left:25px;
+    padding-right:25px;}
+
+    .drivegoals{
+        background-color:#515E6D;
+        color:white;
+        padding-top:3%;
+        padding-bottom:3%;
+
+    }
+
+    .drivegoals p, h2{
+        margin-left:3vh;
+        line-height:0px;}
+
+    .drivegoals p{font-size:12px;
+    line-height:12px;}
+
+    .drivegoals img { 
+    float:right;
+    margin-right:3vh;
+    width:8vh;
+    height:8vh;
+    }
+
+    .goals{margin-left:10%;
+    }
+   .goalstext{
+       margin-bottom:5%;
+         background-color:#EBECEE;
+        color:#838C97;
+        border:1.5px solid #515E6D;
+        width:70%;
+        height:9vh;
+        padding-left:5px;
+        margin-left:5%;
+
+    }
+
+.skemaoverskrift{
+    margin-right:5%;
+    margin-left:5%;
+    font-size:12px;
+    color:#515E6D;
+    line-height: 10px;
+
+}
+
+    </style>
+</head>
+ <body>
+  <div class="grid-container">
+   
+  <header class="header">
+    <div class="header__search"><div class="tekst"><img src="profil.png"><h1>Kristian<br> <span style="font-size: 15px;"> - Udvikler</span></h1></div></div>
+    <div class="header__avatar">  
+                  <ul>
+                      <li><a href="contact.asp"><img src="logud.png"></a></li>
+                      <li><a href="news.asp"><img src="install ikon.png"></a></li>
+        <li><a href="news.asp"><img src="bell ikon.png"></a></li>
+        <li><a href="default.asp"><img src="challenge icon.png"></a></li>
+
+
+      </ul>     </div>
+  </header>
+
+  <aside class="sidenav">
+    <ul class="sidenav__list" style="text-align: center;">
+      <li class="sidenav__list-item" style="background-image: url(houseofcodelogo.PNG); height: 70px; background-size: contain; background-repeat: no-repeat; background-position: center; background-color:#f1f1f1; "></li>
+      <li class="sidenav__list-item">Igangværende</li>
+      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
+      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
+      <li class="sidenav__list-item">Fuldførte</li>
+      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
+      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
+    </ul>
+  </aside>
+
+  <main class="main">
+
+
+
+
+    <div class="main-cards">
+      <div class="card"><div class=drivegoals><img src="progbarfull.svg"><h2>Dine mål</h2><p>Det anbefales at fastsætte 2 - 3 mål, du skal arbejde med i det kommende år.</p> </div>
+            <div class="skemaoverskrift">
+                <p>Skriv dine mål i henhold til SMART-kriterierne.
+                        Du kan stille dig selv følgende spørgsmål for hvert enkelt mål:</p>
+
+                        <p><b>Specifikt</b> Angiver målet, hvad skal der opnås? </p>
+                        <p><b>Målbart</b> Kan jeg måle fremgang, og om det er lykkedes mig at nå målet? </p>
+                        <p><b>Aftalt</b> Forstår alle de involverede målet, og er de enige om det? </p>
+                        <p><b>Realistisk</b> Er målet udfordrende, men stadigvæk muligt at nå? </p>
+                        <p><b>Tidsfastsat</b> Fremgår det, hvornår målet skal være nået? </p>
+                        <br>
+                        <br>
+                        <p>Dine mål kan være både faglige og personlige</p>
+                    
+
+                    <label class="goals">1
+                <input type="text" class="goalstext" name="question" value="Indtast kommentar her"><br></label>
+                <label class="goals">2
+
+                <input type="text" class="goalstext" name="question" value="Indtast kommentar her"><br></label>
+                
+               <label class="goals">3
+                <input type="text" class="goalstext" name="question" value="Indtast kommentar her"><br></label>
+                <button onclick="goBack()" class="back">Tilbage</button> 
+                <button type="button" class="next">Næste</button></div>
+            
+        </div>
+      <div class="card" style="background-image: url(forrige-01.png); background-size: contain; background-repeat: no-repeat;">
+      </div>
+      <div class="card">Historik</div>
+      <div class="card">Næste møde</div>
+      <div class="card">Resterende Klips</div>
+
+    </div>
+  </main>
+
+</div>
