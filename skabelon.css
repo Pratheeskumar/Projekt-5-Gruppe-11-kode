@@ -176,9 +176,10 @@ body {
 }
 
 
-/* Kode fra Sven */
+/*To content boxe*/
 
 .card-columns {
+  text-align: center;
 	display: inline-block;
 	width: 100%; 
 }
