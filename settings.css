@@ -1,4 +1,59 @@
-#profilind {border: 1px solid black; height:100%; width: auto; display: inline-block; font-family: obvia; margin:0; font-size: medium;}
-#forbundet {border: 1px solid black;height:100%; width: auto; font-family: obvia; margin: 0;font-size: medium;}
-#paraind {text-align: center; text-align: center;
-    font-size: x-large;}
+.profilindleft {
+  border: 1px solid black;
+  font-family: obvia;
+
+}
+.profilindright {
+  border: 1px solid black;
+   font-family: obvia;
+
+   
+ 
+}
+
+#forbundet {
+  border: 1px solid black;
+  height: 100%;
+  width: auto;
+  font-family: obvia;
+  margin: 0;
+  font-size: medium;
+}
+#paraind {
+  text-align: center;
+  text-align: center;
+  font-size: x-large;
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  
+  margin: auto;
+
+}
+
+#profilbillede #fuldenavn #kodeord #forbundetaccounts #tidszone #sprog
+
+.columns {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .rows:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .rows {
+    display: flex;
+  }
+  
+  .columns {
+    flex: 50%;
+  }
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
