@@ -103,62 +103,21 @@
     -ms-user-select: none;
     user-select: none;
   }
-  
-  /* Hide the browser's default checkbox */
-  .checkboxcontainerpurple input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+
+.billedmedarbejder {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+  .billedmedarbejder img {
+    width: 30%;
+    float: left;
   }
-  
-  /* Create a custom checkbox */
-  .checkmarkpurple {
-  border: 1.5px solid #AA81AC;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height:4.3vh;
-    width:4.3vh;
-    background-color: #EBECEE;
+
+  .valgboks {
+    width: 100%;
   }
-  
-  /* On mouse-over, add a grey background color */
-  .checkboxcontainerpurple:hover input ~ .checkmarkpurple {
-    background-color: #AA81AC;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .checkboxcontainerpurple input:checked ~ .checkmarkpurple {
-    background-color: #AA81AC;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmarkpurple:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .checkboxcontainerpurple input:checked ~ .checkmarkpurple:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .checkboxcontainerpurple .checkmarkpurple:after {
-    left: 14px;
-    top: 9px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  
   
       </style>
 
@@ -221,7 +180,11 @@
 		  
 		  <div class="card-left">
 			<div class="card"><div class="medarbejderfarve"><h2>Vælg kollegaer til feedback</h2><p>Vælg to kollegaer til at give dig feedback på dit skema, der vil blive tilsendt en notifikation når de har givet dig feedback.</p> </div>
-            
+            <div class="valgboks">
+              <div class="billedmedarbejder"><img src="billed.png"></div>
+              <div class="billedmedarbejder"><img src="billed.png"></div>
+              <div class="billedmedarbejder"><img src="billed.png"></div>
+            </div>
                 <button onclick="goBack()" class="back">Tilbage</button> 
                 <a href="skemakarma.html" class="next">Næste</a>
             </div>
