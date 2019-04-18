@@ -1,4 +1,187 @@
-#profilind {border: 1px solid black; height:100%; width: auto; display: inline-block; font-family: obvia; margin:0; font-size: medium;}
-#forbundet {border: 1px solid black;height:100%; width: auto; font-family: obvia; margin: 0;font-size: medium;}
-#paraind {text-align: center; text-align: center;
-    font-size: x-large;}
+.profilindleft {
+  border: 1px solid black;
+  font-family: obvia;
+
+}
+.profilindright {
+  border: 1px solid black;
+   font-family: obvia;
+
+   
+ 
+}
+
+#forbundet {
+  border: 1px solid black;
+  height: 100%;
+  width: auto;
+  font-family: obvia;
+  margin: 0;
+  font-size: medium;
+}
+#paraind {
+  text-align: center;
+  text-align: center;
+  font-size: x-large;
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  
+  margin: auto;
+
+}
+
+#profilbillede #fuldenavn #kodeord #forbundetaccounts #tidszone #sprog
+
+.columns {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .rows:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .rows {
+    display: flex;
+  }
+  
+  .columns {
+    flex: 50%;
+  }
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+  }
+  /* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 100%;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+  .button {
+    
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: #515f6d; 
+    border: 2px solid #515f6d;
+  }
+  
+  .button:hover {
+    background-color: #515f6d;
+    color: white;
+  }
+
+  input[type=submit]{margin-top:10vh;
+    background-color:#F4F0EC;
+    border: 3px solid #515e6d;
+      color: #515e6d;
+      border-radius: 1px;
+    font-size: 15px;
+    font-family: 'Source Sans Pro';
+      margin-bottom: 20px;
+    padding: 7px;
+    padding-left:20px;
+    padding-right:20px;
+  }
+  label {font-size: 15px; display: inline;}
+  
+  
