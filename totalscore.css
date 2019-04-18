@@ -120,4 +120,5 @@
   font-size: x-large;
 }
 
-#bookmark {height: 10%; width: 10%; float:right;}
+#bookmark {height: 7%; width: 7%;}
+@media only screen and (min-width:300px;){#bookmark {height: 50%; width: 50%;}}
