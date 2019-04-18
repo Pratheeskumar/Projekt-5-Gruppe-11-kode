@@ -50,7 +50,7 @@
 
 
 /*style for challenge siden*/
-.cltitel{
+.cl-titel{
   background-position: bottom;
   background-repeat: no-repeat;
   text-align: center; 
@@ -68,9 +68,20 @@ display: block;
 margin-top: -3%;
 }
 
+.baggrundsfarve2 {
+  width: 90%;
+height: 15vh;
+padding: auto;
+background-color: #6696AC; 
+display: block;
+margin-top: -3%;
+}
+
 .bg_challenge {
   height: 10vh;
-  background-color: #6696AC; 
+  color: #FFF;
+  padding-bottom: 100px;
+  background-color:; 
   margin-left: 5%;
   margin-right: 5%; 
   margin-top: -65%;
@@ -101,9 +112,10 @@ float: left;
 }
 
 .valgboks .klikbokser{
-  height: 15%;
+  height: 12%;
   text-align: left;
   padding: 5%;
+  margin-top: -2%;
 }
 
 .valgboks .klikbokser button{
@@ -126,7 +138,7 @@ float: left;
   margin-left: 5%;
   margin-top: -5%;
   height: 85%;
-  width: 85%;
+  width: 90%;
   background-color: gray;
   color: white;
   text-align: center;
@@ -135,6 +147,20 @@ float: left;
   display: none;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: green;
 }
 
 
