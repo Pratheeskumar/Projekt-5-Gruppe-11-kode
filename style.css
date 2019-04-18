@@ -50,21 +50,22 @@
 
 
 /*style for challenge siden*/
-.sas h4{
+.cltitel{
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 25%;
   text-align: center; 
   color: white; 
-  font-size: 50px;
+  font-size: 45px;
+  margin-top: 3%;
 }
 
 .baggrundsfarve {
-width: 100%;
+width: 106%;
 height: 15vh;
 padding: auto;
 background-color: #515E6D; 
 display: block;
+margin-top: -3%;
 }
 
 .bg_challenge {
@@ -72,6 +73,7 @@ display: block;
   background-color: #6696AC; 
   margin-left: 5%;
   margin-right: 5%; 
+  margin-top: -65%;
 }
 
 .sas h5{
@@ -84,12 +86,12 @@ display: block;
 
 }
 
-.baggrundsfarve img{
-left: 25%;    
+.baggrundsfarve img{   
 bottom: 68%;
 width: 4%;
 height: auto;
 position: absolute;
+float: left;
 }
 
 
@@ -121,13 +123,18 @@ position: absolute;
 
 
 .valgboks .panel {
+  margin-left: 5%;
+  margin-top: -5%;
   height: 85%;
+  width: 85%;
   background-color: gray;
   color: white;
   text-align: center;
   padding-top: 105px;
   box-sizing: border-box;
-  display: none; 
+  display: none;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 
