@@ -17,6 +17,168 @@
     />
     <title>CSS Grid Template 1</title>
     <script src="java.js" defer></script>
+    <style>
+            /* Popup container - can be anything you want */
+            .previewdrive {	
+                background-color:#A6BB75;
+                width:30%;
+                padding-top:1vh;
+              position: relative;
+              display: inline-block;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              
+              
+            }
+            
+            
+            i {
+            
+              border: solid black;
+              border-width: 0 3px 3px 0;
+              display: inline-block;
+              padding: 3px;
+             }
+            
+            .down {	
+              transform: rotate(45deg);
+              -webkit-transform: rotate(45deg);
+             
+            }
+            
+            .popupdrive h2 {display:inline-block;
+            float:left;
+            margin-left:2vh;
+            border:2px solid #A6BB75;
+            font-size:12px;
+            padding:2vh;
+            margin-top:1vh;
+            }
+            
+            
+            .popupdrive h3 {
+            margin-left:10vh;
+            text-align:left;
+            font-size:12px;
+            }
+            
+            
+            
+            .popupdrive p {font-size:12px;
+            text-align:left;
+            margin-left:10vh;}
+            
+            
+            
+            /* The actual popup */
+            .previewdrive .popupdrive {
+                visibility: hidden;
+              width: 50vh;
+              border: 10px solid #A6BB75;
+              background-color: #FFFFFF;
+              color: #515E6D;
+              text-align: center;
+              padding: 8px 0;
+              position: absolute;
+              z-index: 1;
+              bottom: -300%;
+              left: 38%;
+              margin-left: -80px;
+            
+            }
+            
+            
+            
+            /* Toggle this class - hide and show the popup */
+            .previewdrive .show1 {
+              visibility: visible;
+              -webkit-animation: fadeIn 1s;
+              animation: fadeIn 1s;
+            }
+            
+            
+            
+            /* Add animation (fade in the popup) */
+            @-webkit-keyframes fadeIn {
+              from {opacity: 0;} 
+              to {opacity: 1;}
+            }
+            
+            @keyframes fadeIn {
+              from {opacity: 0;}
+              to {opacity:1 ;}
+            }
+            
+            .previewteam{background-color:#AA81AC;
+                width:30%;
+                padding-top:1vh;
+              position: relative;
+              display: inline-block;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              }
+              
+              .popupteam h2 {display:inline-block;
+            float:left;
+            margin-left:2vh;
+            border:2px solid #AA81AC;
+            font-size:12px;
+            padding:2vh;
+            margin-top:1vh;
+            }
+            
+            .popupteam p{font-size:12px;
+            text-align:left;
+            margin-left:10vh;}
+            
+            .popupteam h3{
+            margin-left:10vh;
+            text-align:left;
+            font-size:12px;
+            }
+            
+            .previewteam .popupteam{
+                visibility: hidden;
+              width: 50vh;
+              border: 10px solid #AA81AC;
+              background-color: #FFFFFF;
+              color: #515E6D;
+              text-align: center;
+              padding: 8px 0;
+              position: absolute;
+              z-index: 1;
+              bottom: -300%;
+              left: 38%;
+              margin-left: -80px;
+            
+            }
+            
+            .previewteam .show2{
+              visibility: visible;
+              -webkit-animation: fadeIn 1s;
+              animation: fadeIn 1s;
+            }
+            
+            .close {
+              color: #aaaaaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            </style>
   </head>
   <body>
     <div class="grid-container">
@@ -25,7 +187,7 @@
           <div class="tekst">
             <img src="profil-01.svg" />
             <h1>
-              Kristian<br />
+              Charlie<br />
               <span style="font-size: 15px;"> - Udvikler</span>
             </h1>
           </div>
@@ -77,13 +239,63 @@
 		  
 		  <div class="card-left">
 			<div class="card">
-                <div class="previewdrive"></div>
-                <div class="previewteam"></div>
-                <div class="previewkarma"></div>
-                <div class="previewsjov"></div>
-                <div class=previewudvikling></div>
-                <div class="previewgoals"></div>
-                <div class="previewkommende"></div>
+                    <div class="previewdrive" onclick="myFunction()"><h2>Højt drive <br><i class="down"></i></h2>
+                        <span class="popupdrive" id="myPopupdrive"><h2>15</h2>
+                       <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                  <p>Det går skide godt</p>
+                                                  <h2>15</h2>
+                       <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                  <p>Det går skide godt</p>
+                                                  
+                                                  <h2>15</h2>
+                       <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                  <p>Det går skide godt</p>
+                                                  
+                                                  <h2>15</h2>
+                       <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                  <p>Det går skide godt</p>
+                                                  <h2>15</h2>
+                       <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                  <p>Det går skide godt</p>
+                                                  </span>
+                      </div>
+                      
+                      <div class="previewteam" onclick="teamFunction()"><h2>Et stærkt team <br><i class="down"></i></h2>
+                      <span class="popupteam" id="myPopupteam"><h2>15</h2> <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                  <p>Det går skide godt</p>
+                                                  <h2>15</h2>
+                       <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                  <p>Det går skide godt</p>
+                                                  
+                                                  <h2>15</h2>
+                       <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                  <p>Det går skide godt</p>
+                                                  
+                                                  <h2>15</h2>
+                       <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                  <p>Det går skide godt</p>
+                                                  <h2>15</h2>
+                       <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                  <p>Det går skide godt</p>
+                                                  </span>
+                                                  
+                                                  <script>
+                                                        // When the user clicks on div, open the popup
+                                                        function myFunction() {
+                                                          var popup = document.getElementById("myPopupdrive");
+                                                          popup.classList.toggle("show1");
+                                                         
+                                                        }
+                                                        
+                                                        function teamFunction() {
+                                                          var popup = document.getElementById("myPopupteam");
+                                                          popup.classList.toggle("show2");
+                                                        }
+                                                        
+                                                        
+                                                        
+                                                        </script>                          
+                      </div>
             </div>
 		  </div>
 		  
