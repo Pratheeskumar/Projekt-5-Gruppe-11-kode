@@ -162,12 +162,28 @@ margin-top: -3%;
   padding-right: 5%;
 }
 
+.panelkasser {
+  width: 100%;
+  height: 112%;
+  background-color: white;
+  position: center;
+  margin-top: -10%;
+  text-align: left;
+}
+
+
+
+.valgboks .panel img {
+  width: 100%; 
+  height: 100%;
+  padding: 5%; 
+}
+
 .deltagknap {
   background-color: #A6BB75;
   border: none;
   color: white;
   padding: 15px 25px;
-  text-align: center;
   font-size: 16px;
   cursor: pointer;
   float: left;
@@ -178,6 +194,19 @@ margin-top: -3%;
 
 .deltagknap:hover {
   background-color: rgb(106, 185, 106);
+}
+
+.cl-brodtekst{
+  font-family: poppins;
+  font-size: 20px;
+}
+.reglertekst{
+  font-family: poppins;
+  font-size: 20px; 
+  color: black; 
+  text-align: left;
+  padding-top: 6%;
+  
 }
 
 
