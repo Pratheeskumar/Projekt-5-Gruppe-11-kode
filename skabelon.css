@@ -253,7 +253,7 @@ body {
 /* højder på cards*/
 
 .card:first-child {
-  height: 700px;
+  height: auto;
 }
 
 .card:nth-child(2) {
