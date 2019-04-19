@@ -57,7 +57,7 @@
   color: white; 
   font-size: 45px;
   margin-top: 3%;
-  font-family: obvia;
+  font-family: poppins;
 }
 
 .cl-overskrift2{
@@ -65,7 +65,7 @@
   font-size: 25px;
   margin-left: 3%;
   color: black;
-  font-family: obvia; 
+  font-family: poppins; 
   
 }
 
@@ -180,33 +180,39 @@ margin-top: -3%;
 }
 
 .deltagknap {
-  background-color: #A6BB75;
+  float: left;
   border: none;
   color: white;
-  padding: 15px 25px;
+  padding: 8px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 16px;
+  margin: 50px 64px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
   cursor: pointer;
-  float: left;
-  padding: 2%;
-  margin-left: 7.5%;
-  margin-top: 8%;
+  background-color: white; 
+  color: #515f6d; 
+  border: 2px solid #515f6d;
+ 
 }
 
 .deltagknap:hover {
-  background-color: rgb(106, 185, 106);
+  background-color: #B9C794;
 }
 
 .cl-brodtekst{
   font-family: poppins;
   font-size: 20px;
+  font-weight: bolder; 
 }
 .reglertekst{
   font-family: poppins;
   font-size: 20px; 
   color: black; 
   text-align: left;
-  padding-top: 6%;
-  
+  padding-top: 6%; 
 }
 
 
