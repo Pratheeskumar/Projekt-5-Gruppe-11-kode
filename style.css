@@ -62,10 +62,11 @@
 
 .cl-overskrift2{
   text-align: left;
-  font-size: 25px;
-  margin-left: 3%;
+  font-size: 35px;
   color: black;
-  font-family: poppins; 
+  font-family: poppins;
+  margin: 2px -6px;
+  padding: 8px 18px;
   
 }
 
@@ -77,10 +78,7 @@ background-color: #515E6D;
 display: block;
 margin-top: -3%;
 }
-.baggrundsfarve img {
-  bottom: 55%;
-  height: 100%;
-}
+
 .baggrundsfarve2 {
 width: 90%;
 height: 10vh;
@@ -103,12 +101,13 @@ margin-top: -3%;
 }
 
 .baggrundsfarve img{   
-  bottom: 76%;
-  width: 5%;
+  width: 6%;
   height: auto;
   position: absolute;
   float: left;
-  margin-left: -10%;
+  margin: -21px -190px;
+  padding: 8px 16px;
+  
 }
 
 
