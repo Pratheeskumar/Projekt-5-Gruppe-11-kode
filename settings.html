@@ -17,12 +17,13 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
-    <title>CSS Grid Template 1</title>
+    <title>Settings</title>
     <script></script>
   </head>
   <body>
     <div class="grid-container">
       <header class="header">
+        
         <div class="header__search">
           <div class="tekst">
             <img src="profil-01.svg" />
@@ -32,24 +33,39 @@
             </h1>
           </div>
         </div>
+        <div role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+            
+              <span></span>
+              <span></span>
+              <span></span>
+            
+              <ul id="menu">
+                <a href="#"><li>Igangværende delmål</li></a>
+                <a href="#"><li>Fuldførte delmål</li></a>
+    
+              </ul>
+            </div>
+          </div>
         <div class="header__avatar">
           <ul>
             <li>
               <a href="index.html"><img src="logud-01.svg"/></a>
             </li>
             <li>
-              <a href="news.asp"><img src="settings.svg"/></a>
+              <a href="news.asp"><img src="/cogwheel.svg"/></a>
             </li>
             <li>
               <a href="news.asp"><img src="bell.svg"/></a>
             </li>
             <li>
-              <a href="challenge.html"><img src="challenge icon.svg"/></a>
+              <a href="challenge.html"><img src="challengeicon.svg"/></a>
             </li>
           </ul>
         </div>
       </header>
-
+      
       <aside class="sidenav">
         <ul class="sidenav__list" style="text-align: center;">
           <li
@@ -58,66 +74,27 @@
           ></li>
           <li class="sidenav__list-item">Igangværende</li>
           <li class="sidenav__list-item">
-            <img src="lob.svg" /> <img src="lob.svg" />
+            <img src="lob.svg" /> <img src="fremmode.svg" />
           </li>
           <li class="sidenav__list-item">
-            <img src="lob.svg" /> <img src="lob.svg" />
-          </li>
+              <img src="skridt.sv.svg" /> <img src="mus.svg" />
+            </li>
           <li class="sidenav__list-item">Fuldførte</li>
           <li class="sidenav__list-item">
-            <img src="lob.svg" /> <img src="lob.svg" />
-          </li>
+              <img src="delmaal1.svg" /> <img src="delmaal2.svg" />
+            </li>
           <li class="sidenav__list-item">
-            <img src="lob.svg" /> <img src="lob.svg" />
-          </li>
+              <img src="delmaal3.svg" /> <img src="delmaal4.svg" />
+            </li>
         </ul>
       </aside>
-
       <main class="main">
+	  
         <div class="card-columns">
-          <div class="card-left">
-            <div class="card" id="paraind">
-              Indstillinger
-              <div class="rows">
-                <div class="columns">
-                  <div class="profilindleft" id="profilbillede">
-                    Profilbillede<br /><!-- Trigger the Modal -->
-                    <img id="myImg" src="/profil-01.svg" alt="Snow" style="width:100%;max-width:300px">
-                    <button class="button">Skift billede</button>
-                    
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-                    
-                      <!-- The Close Button -->
-                      <span class="close">&times;</span>
-                    
-                      <!-- Modal Content (The Image) -->
-                      <img class="modal-content" id="img01">
-                    
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                    </div>
-                        <i class="fa fa-user"></i>
-                      </a>
-                    </div>
-                    
-                  </div>
-                  <div class="profilindleft" id="fuldenavn">Fulde Navn <br><input type="text" name="question" value="Charlie Efternavn"></div>
-                  <div class="profilindleft" id="kodeord">Ændre kodeord<br>
-                      <label class="checkbox" for="Option"> Nuværende kodeord </label><input id="changepass" > <br>
-                      <label class="checkbox" for="Option"> Ny kodeord </label><input id="changepass" ><br><button class="button">Skift kodeord</button>
-                    </div>
-                </div>
-                <div class="columns">
-                  <div class="profilindright" id="forbundetaccounts">
-                    Forbundet Accounts <img src="/forbundet.svg" alt="forbindelse" id="forbindimg">
-                  </div>
-                  <div class="profilindright" id="tidszone">Tidszone</div>
-                  <div class="profilindright" id="sprog">Sprog</div>
-                </div>
-              </div>
-            </div>
-          </div>
+        
+        <div class="card-left">
+        <div class="card"> <img src="/settings.svg" alt="indstillinger"></div>
+        </div>
 
           <div class="card-right">
             <div class="cardsmall">
