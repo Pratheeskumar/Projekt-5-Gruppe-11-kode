@@ -19,12 +19,41 @@
     <script src="java.js" defer></script>
     <style>
 
+.next, .back{   
+        width:13vh;
+        padding-top:5px;
+        padding-bottom:5px;
+        text-align: center;
+          text-decoration: none;
+         
+            background-color:white;
+            border: 3px solid #515e6d;
+            color: #515e6d;
+            border-radius: 1px;
+            font-size: 15px;
+            font-family:'Source Sans Pro';
+            margin-top:3vh;}
+        
+            .next{float:right;
+           }
+              
+              .back{float:left;}
+
+        .overskriftpreview{
+            margin-top:5%;
+            color:#515E6D;
+            line-height:0;
+        }
+
+        .overskriftpreview p{font-size:12px;}
+        .first{margin-top:3%;}
 
             /* Popup container - can be anything you want */
-            .previewdrive {	
+            .previewdrive {	margin-right:3vh;
                 background-color:#A6BB75;
-                width:30%;
-                padding-top:1vh;
+                color:White;
+                width:40vh;
+                padding-top:2vh;
               position: relative;
                 display:inline-block;
               cursor: pointer;
@@ -36,9 +65,10 @@
             }
             
             .previewteam{
+                color:White;
                 background-color:#AA81AC;
-                width:30%;
-                padding-top:1vh;
+                width:40vh;
+                padding-top:2vh;
               position: relative;
               display:inline-block;
               cursor: pointer;
@@ -49,11 +79,12 @@
               }
             
             i {
-            
-              border: solid black;
+            margin-top:6%;
+              border: solid #263841;
               border-width: 0 3px 3px 0;
               display: inline-block;
-              padding: 3px;
+              padding: 5px;
+            
              }
             
             .down {	
@@ -62,8 +93,8 @@
              
             }
             
-            .popupdrive h2 {
-            float:left;
+            .popupdrive h2 {float:left;
+    
             margin-left:2vh;
             border:2px solid #A6BB75;
             font-size:12px;
@@ -127,8 +158,8 @@
             
             
               
-              .popupteam h2 {
-            float:left;
+              .popupteam h2 {float:left;
+    
             margin-left:2vh;
             border:2px solid #AA81AC;
             font-size:12px;
@@ -163,6 +194,319 @@
             }
             
             .previewteam .show2{
+              visibility: visible;
+              -webkit-animation: fadeIn 1s;
+              animation: fadeIn 1s;
+            }
+
+            .previewkarma {	
+                color:White;
+                margin-right:3vh;
+                background-color:#D36D75;
+                width:40vh;
+                padding-top:2vh;
+              position: relative;
+                display:inline-block;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none; 
+              }
+              
+
+              .secondpreview{margin-top:3%;}
+            .popupkarma h2 {float:left;
+    
+            margin-left:2vh;
+            border:2px solid #D36D75;
+            font-size:12px;
+            padding:2vh;
+            margin-top:1vh;
+            }
+            
+            
+            .popupkarma h3 {
+            margin-left:10vh;
+            text-align:left;
+            font-size:12px;
+            }
+            
+            
+            .previewkarma .popupkarma{
+                visibility: hidden;
+              width: 50vh;
+              border: 10px solid #D36D75;
+              background-color: #FFFFFF;
+              color: #515E6D;
+              text-align: center;
+              padding: 8px 0;
+              position: absolute;
+              z-index: 1;
+              bottom: -300%;
+              left: 38%;
+              margin-left: -80px;
+            
+            }
+            .popupkarma p {font-size:12px;
+            text-align:left;
+            margin-left:10vh;}
+            
+    
+
+            
+                .previewkarma .show3 {
+              visibility: visible;
+              -webkit-animation: fadeIn 1s;
+              animation: fadeIn 1s;
+            }
+
+            
+            .previewfun {	
+                color:White;
+                background-color:#6696AC;
+                width:40vh;
+                padding-top:2vh;
+              position: relative;
+                display:inline-block;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none; 
+              }
+              
+
+              
+            .popupfun h2 {float:left;
+    
+            margin-left:2vh;
+            border:2px solid #6696AC;
+            font-size:12px;
+            padding:2vh;
+            margin-top:1vh;
+            }
+            
+            
+            .popupfun h3 {
+            margin-left:10vh;
+            text-align:left;
+            font-size:12px;
+            }
+            
+            
+            .previewfun .popupfun{
+                visibility: hidden;
+              width: 50vh;
+              border: 10px solid #6696AC;
+              background-color: #FFFFFF;
+              color: #515E6D;
+              text-align: center;
+              padding: 8px 0;
+              position: absolute;
+              z-index: 1;
+              bottom: -300%;
+              left: 38%;
+              margin-left: -80px;
+            
+            }
+            .popupfun p {font-size:12px;
+            text-align:left;
+            margin-left:10vh;}
+            
+    
+
+            
+                .previewfun .show3 {
+              visibility: visible;
+              -webkit-animation: fadeIn 1s;
+              animation: fadeIn 1s;
+            }
+
+            .thirdpreview {
+            margin-top:3%;
+            margin-bottom:5%;
+            
+            }
+            .previewplan {	
+                margin-right:3vh;
+                color:White;
+                background-color:#515E6D;
+                width:30%;
+                padding-top:1vh;
+              position: relative;
+                display:inline-block;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none; 
+              }
+              
+
+              
+            .popupplan h2 {float:left;
+    
+            margin-left:2vh;
+            border:2px solid #515E6D;
+            font-size:12px;
+            padding:2vh;
+            margin-top:1vh;
+            }
+            
+            
+            .popupplan h3 {
+            margin-left:10vh;
+            text-align:left;
+            font-size:12px;
+            }
+            
+            
+            .previewplan .popupplan{
+                visibility: hidden;
+              width: 50vh;
+              border: 10px solid #515E6D;
+              background-color: #FFFFFF;
+              color: #515E6D;
+              text-align: center;
+              padding: 8px 0;
+              position: absolute;
+              z-index: 1;
+              bottom: -300%;
+              left: 38%;
+              margin-left: -80px;
+            
+            }
+            .popupplan p {font-size:12px;
+            text-align:left;
+            margin-left:10vh;}
+            
+    
+
+            
+                .previewplan .show3 {
+              visibility: visible;
+              -webkit-animation: fadeIn 1s;
+              animation: fadeIn 1s;
+            }
+            .previewgoals {	
+                margin-right:3vh;
+                color:White;
+                background-color:#515E6D;
+                width:30%;
+                padding-top:1vh;
+              position: relative;
+                display:inline-block;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none; 
+              }
+              
+
+              
+            .popupgoals h2 {float:left;
+    
+            margin-left:2vh;
+            border:2px solid #515E6D;
+            font-size:12px;
+            padding:2vh;
+            margin-top:1vh;
+            }
+            
+            
+            .popupgoals h3 {
+            margin-left:10vh;
+            text-align:left;
+            font-size:12px;
+            }
+            
+            
+            .previewgoals .popupgoals{
+                visibility: hidden;
+              width: 50vh;
+              border: 10px solid #515E6D;
+              background-color: #FFFFFF;
+              color: #515E6D;
+              text-align: center;
+              padding: 8px 0;
+              position: absolute;
+              z-index: 1;
+              bottom: -300%;
+              left: 38%;
+              margin-left: -80px;
+            
+            }
+            .popupgoals p {font-size:12px;
+            text-align:left;
+            margin-left:10vh;}
+            
+    
+
+            
+            .previewgoals .show3 {
+              visibility: visible;
+              -webkit-animation: fadeIn 1s;
+              animation: fadeIn 1s;
+            }
+            
+            .previewkom {	
+                color:White;
+                background-color:#515E6D;
+                width:30%;
+                padding-top:1vh;
+              position: relative;
+                display:inline-block;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none; 
+              }
+              
+
+              
+            .popupkom h2 {float:left;
+    
+            margin-left:2vh;
+            border:2px solid #515E6D;
+            font-size:12px;
+            padding:2vh;
+            margin-top:1vh;
+            }
+            
+            
+            .popupkom h3 {
+            margin-left:10vh;
+            text-align:left;
+            font-size:12px;
+            }
+            
+            
+            .previewkom .popupkom{
+                visibility: hidden;
+              width: 50vh;
+              border: 10px solid #515E6D;
+              background-color: #FFFFFF;
+              color: #515E6D;
+              text-align: center;
+              padding: 8px 0;
+              position: absolute;
+              z-index: 1;
+              bottom: -300%;
+              left: 38%;
+              margin-left: -80px;
+            
+            }
+            .popupkom p {font-size:12px;
+            text-align:left;
+            margin-left:10vh;}
+            
+    
+
+            
+            .previewkom .show3 {
               visibility: visible;
               -webkit-animation: fadeIn 1s;
               animation: fadeIn 1s;
@@ -242,7 +586,12 @@
 		  
 		  <div class="card-left">
 			<div class="card">
-                <div class="first">
+                
+                
+                    <div class="overskriftpreview">
+                        <h2>PREVIEW</h2>
+                        <p>Passer dine svar?</p></div>
+                        <div class="first">
                     <div class="previewdrive" onclick="myFunction()"><h2>Højt drive <br><i class="down"></i></h2>
                         <span class="popupdrive" id="myPopupdrive"><h2>15</h2>
                        <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
@@ -283,53 +632,127 @@
                                                   <p>Det går skide godt</p>
                                                   </span>
                                                 </div>
-                                                                
+
+                                                <div class="secondpreview">
+                                                        <div class="previewkarma" onclick="karmaFunction()"><h2>God Karma<br><i class="down"></i></h2>
+                                                                              <span class="popupkarma" id="myPopupkarma"><h2>15</h2> <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                                                          <p>Det går skide godt</p>
+                                                                                                          <h2>15</h2>
+                                                                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                                                          <p>Det går skide godt</p>
+                                                                                                          
+                                                                                                          <h2>15</h2>
+                                                                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                                                          <p>Det går skide godt</p>
+                                                                                                          
+                                                                                                          <h2>15</h2>
+                                                                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                                                          <p>Det går skide godt</p>
+                                                                                                          <h2>15</h2>
+                                                                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                                                          <p>Det går skide godt</p>
+                                                                                                          </span>
+                                                                                                        </div>
+                                                                                                        <div class="previewfun" onclick="funFunction()"><h2>Ha' det sjovt<br><i class="down"></i></h2>
+                                                                                                            <span class="popupfun" id="myPopupfun"><h2>15</h2> <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                                                                                        <p>Det går skide godt</p>
+                                                                                                                                        <h2>15</h2>
+                                                                                                             <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                                                                                        <p>Det går skide godt</p>
+                                                                                                                                        
+                                                                                                                                        <h2>15</h2>
+                                                                                                             <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                                                                                        <p>Det går skide godt</p>
+                                                                                                                                        
+                                                                                                                                        <h2>15</h2>
+                                                                                                             <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                                                                                        <p>Det går skide godt</p>
+                                                                                                                                        <h2>15</h2>
+                                                                                                             <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                                                                                        <p>Det går skide godt</p>
+                                                                                                                                        </span>
+                                                                                                                                      </div>
+                                                        
+                                                                                                
+                                                                                                        </div>
+                                <div class="thirdpreview">
+                                        <div class="previewplan" onclick="planFunction()"><h2>Højt drive <br><i class="down"></i></h2>
+                                            <span class="popupplan" id="myPopupplan"><h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      <h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      
+                                                                      <h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      
+                                                                      <h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      <h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      </span>
+                                          </div>
+
+                                          <div class="previewgoals" onclick="goalsFunction()"><h2>Højt drive <br><i class="down"></i></h2>
+                                            <span class="popupgoals" id="myPopupgoals"><h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      <h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      
+                                                                      <h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      
+                                                                      <h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      <h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      </span>
+                                          </div>
+
+                                          <div class="previewkom" onclick="komFunction()"><h2>Højt drive <br><i class="down"></i></h2>
+                                            <span class="popupkom" id="myPopupkom"><h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      <h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      
+                                                                      <h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      
+                                                                      <h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      <h2>15</h2>
+                                           <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                                      <p>Det går skide godt</p>
+                                                                      </span>
+                                          </div>
+                                </div>
+
+                                                
+                                <button onclick="goBack()" class="back">Tilbage</button> 
+                                <a href="skemateam.html" class="next">Ok</a>                                 
                       </div>
-                    <div class="second">
-                            <div class="previewkarma" onclick="myFunction()"><h2>Højt drive <br><i class="down"></i></h2>
-                                <span class="popupkarma" id="myPopupkarma"><h2>15</h2>
-                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
-                                                          <p>Det går skide godt</p>
-                                                          <h2>15</h2>
-                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
-                                                          <p>Det går skide godt</p>
-                                                          
-                                                          <h2>15</h2>
-                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
-                                                          <p>Det går skide godt</p>
-                                                          
-                                                          <h2>15</h2>
-                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
-                                                          <p>Det går skide godt</p>
-                                                          <h2>15</h2>
-                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
-                                                          <p>Det går skide godt</p>
-                                                          </span>
-                              </div>
-                              
-                              <div class="previewsjovt" onclick="teamFunction()"><h2>Et stærkt team <br><i class="down"></i></h2>
-                              <span class="popupsjovt" id="myPopupsjovt"><h2>15</h2> <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
-                                                          <p>Det går skide godt</p>
-                                                          <h2>15</h2>
-                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
-                                                          <p>Det går skide godt</p>
-                                                          
-                                                          <h2>15</h2>
-                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
-                                                          <p>Det går skide godt</p>
-                                                          
-                                                          <h2>15</h2>
-                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
-                                                          <p>Det går skide godt</p>
-                                                          <h2>15</h2>
-                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
-                                                          <p>Det går skide godt</p>
-                                                          </span>
-                                                        </div>
-                    </div>
+                      
+    
             </div>
 		  </div>
           <script>
+
+        function goBack() {
+                        window.history.back();
+                      }
                 // When the user clicks on div, open the popup
                 function myFunction() {
                   var popup = document.getElementById("myPopupdrive");
@@ -342,7 +765,32 @@
                   popup.classList.toggle("show2");
                 }
                 
-                
+                // When the user clicks on div, open the popup
+        function karmaFunction() {
+        var popup = document.getElementById("myPopupkarma");
+        popup.classList.toggle("show3");
+
+}
+
+function funFunction() {
+        var popup = document.getElementById("myPopupfun");
+        popup.classList.toggle("show3");
+        }
+
+        function planFunction() {
+        var popup = document.getElementById("myPopupplan");
+        popup.classList.toggle("show3");
+        }
+
+        function goalsFunction() {
+        var popup = document.getElementById("myPopupgoals");
+        popup.classList.toggle("show3");
+        }
+
+        function komFunction() {
+        var popup = document.getElementById("myPopupkom");
+        popup.classList.toggle("show3");
+        }
                 
                 </script>     
 		  <div class="card-right">
