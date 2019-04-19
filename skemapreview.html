@@ -18,22 +18,35 @@
     <title>CSS Grid Template 1</title>
     <script src="java.js" defer></script>
     <style>
+
+
             /* Popup container - can be anything you want */
             .previewdrive {	
                 background-color:#A6BB75;
                 width:30%;
                 padding-top:1vh;
               position: relative;
-              display: inline-block;
+                display:inline-block;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none; 
+              
+            }
+            
+            .previewteam{
+                background-color:#AA81AC;
+                width:30%;
+                padding-top:1vh;
+              position: relative;
+              display:inline-block;
               cursor: pointer;
               -webkit-user-select: none;
               -moz-user-select: none;
               -ms-user-select: none;
               user-select: none;
-              
-              
-            }
-            
+              }
             
             i {
             
@@ -49,7 +62,7 @@
              
             }
             
-            .popupdrive h2 {display:inline-block;
+            .popupdrive h2 {
             float:left;
             margin-left:2vh;
             border:2px solid #A6BB75;
@@ -112,19 +125,9 @@
               to {opacity:1 ;}
             }
             
-            .previewteam{background-color:#AA81AC;
-                width:30%;
-                padding-top:1vh;
-              position: relative;
-              display: inline-block;
-              cursor: pointer;
-              -webkit-user-select: none;
-              -moz-user-select: none;
-              -ms-user-select: none;
-              user-select: none;
-              }
+            
               
-              .popupteam h2 {display:inline-block;
+              .popupteam h2 {
             float:left;
             margin-left:2vh;
             border:2px solid #AA81AC;
@@ -239,6 +242,7 @@
 		  
 		  <div class="card-left">
 			<div class="card">
+                <div class="first">
                     <div class="previewdrive" onclick="myFunction()"><h2>Højt drive <br><i class="down"></i></h2>
                         <span class="popupdrive" id="myPopupdrive"><h2>15</h2>
                        <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
@@ -278,27 +282,69 @@
                        <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
                                                   <p>Det går skide godt</p>
                                                   </span>
-                                                  
-                                                  <script>
-                                                        // When the user clicks on div, open the popup
-                                                        function myFunction() {
-                                                          var popup = document.getElementById("myPopupdrive");
-                                                          popup.classList.toggle("show1");
-                                                         
-                                                        }
-                                                        
-                                                        function teamFunction() {
-                                                          var popup = document.getElementById("myPopupteam");
-                                                          popup.classList.toggle("show2");
-                                                        }
-                                                        
-                                                        
-                                                        
-                                                        </script>                          
+                                                </div>
+                                                                
                       </div>
+                    <div class="second">
+                            <div class="previewkarma" onclick="myFunction()"><h2>Højt drive <br><i class="down"></i></h2>
+                                <span class="popupkarma" id="myPopupkarma"><h2>15</h2>
+                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                          <p>Det går skide godt</p>
+                                                          <h2>15</h2>
+                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                          <p>Det går skide godt</p>
+                                                          
+                                                          <h2>15</h2>
+                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                          <p>Det går skide godt</p>
+                                                          
+                                                          <h2>15</h2>
+                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                          <p>Det går skide godt</p>
+                                                          <h2>15</h2>
+                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                          <p>Det går skide godt</p>
+                                                          </span>
+                              </div>
+                              
+                              <div class="previewsjovt" onclick="teamFunction()"><h2>Et stærkt team <br><i class="down"></i></h2>
+                              <span class="popupsjovt" id="myPopupsjovt"><h2>15</h2> <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                          <p>Det går skide godt</p>
+                                                          <h2>15</h2>
+                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                          <p>Det går skide godt</p>
+                                                          
+                                                          <h2>15</h2>
+                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                          <p>Det går skide godt</p>
+                                                          
+                                                          <h2>15</h2>
+                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                          <p>Det går skide godt</p>
+                                                          <h2>15</h2>
+                               <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                          <p>Det går skide godt</p>
+                                                          </span>
+                                                        </div>
+                    </div>
             </div>
 		  </div>
-		  
+          <script>
+                // When the user clicks on div, open the popup
+                function myFunction() {
+                  var popup = document.getElementById("myPopupdrive");
+                  popup.classList.toggle("show1");
+                 
+                }
+                
+                function teamFunction() {
+                  var popup = document.getElementById("myPopupteam");
+                  popup.classList.toggle("show2");
+                }
+                
+                
+                
+                </script>     
 		  <div class="card-right">
           <div class="cardsmall"><img class="cardimg" src="forrige-01.svg" alt="Forrige resultat" /></div>
 			<div class="cardsmall"><img class="cardimg" src="historik-01.svg" alt="Forrige resultat" /></div>
