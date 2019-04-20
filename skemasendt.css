@@ -1,0 +1,74 @@
+.next, .back{
+    text-decoration: none;
+      background-color:white;
+      border: 3px solid #515e6d;
+      color: #515e6d;
+      border-radius: 1px;
+      font-size: 15px;
+      font-family:'Source Sans Pro';
+      padding: 7px;
+      padding-left:20px;
+      padding-right:20px;
+      margin-top:8%;}
+  
+      .next{float:right;
+      padding-left:25px;
+      padding-right:25px;
+      padding-top:10px;
+      padding-bottom:10px;
+  }
+      .drivegoals{
+          background-color:#515E6D;
+          color:white;
+          padding-top:3%;
+          padding-bottom:3%;
+  
+      }
+  
+      .drivegoals p, h2{
+          margin-left:3vh;
+          line-height:0px;}
+  
+      .drivegoals p{font-size:12px;
+      line-height:12px;}
+  
+      .drivegoals img { 
+      float:right;
+      margin-right:3vh;
+      width:8vh;
+      height:8vh;
+      }
+  
+      .goals{margin-left:10%;
+      }
+     .goalstext{
+         margin-bottom:5%;
+           background-color:#EBECEE;
+          color:#838C97;
+          border:1.5px solid #515E6D;
+          width:70%;
+          height:9vh;
+          padding-left:5px;
+          margin-left:5%;
+  
+      }
+  
+  .skemasendt{
+      margin-right:5%;
+      margin-left:5%;
+      font-size:12px;
+      color:#515E6D;
+      line-height: 10px;
+  
+  }
+  
+  .skemasendt img {
+      width:50%;
+      margin-top:25%;
+      margin-left:25%;}
+  
+      .skemasendt h3{text-align: center;
+          margin-top:10%;
+          font-size: 35px;
+      }
+  
