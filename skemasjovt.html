@@ -30,116 +30,133 @@
 
   </head>
   <body>
-    <div class="grid-container">
-      <header class="header">
-        <div class="header__search">
-          <div class="tekst">
-            <img src="profil-01.svg" />
-            <h1>
-              Kristian<br />
-              <span style="font-size: 15px;"> - Udvikler</span>
-            </h1>
+      <div class="grid-container">
+        <header class="header">
+          
+          <div class="header__search">
+            <div class="tekst">
+              <img src="profil-01.svg" />
+              <h1>
+                Charlie<br />
+                <span style="font-size: 15px;"> - Udvikler</span>
+              </h1>
+            </div>
           </div>
-        </div>
-        <div class="header__avatar">
-          <ul>
-            <li>
-              <a href="index.html"><img src="logud-01.svg"/></a>
+          <div role="navigation">
+              <div id="menuToggle">
+                <input type="checkbox" />
+              
+                <span></span>
+                <span></span>
+                <span></span>
+              
+                <ul id="menu">
+                  <a href="#"><li>Igangværende delmål</li></a>
+                  <a href="#"><li>Fuldførte delmål</li></a>
+      
+                </ul>
+              </div>
+            </div>
+          <div class="header__avatar">
+            <ul>
+              <li>
+                <a href="index.html"><img src="logud-01.svg"/></a>
+              </li>
+              <li>
+                <a href="news.asp"><img src="cogwheel.svg"/></a>
+              </li>
+              <li>
+                <a href="news.asp"><img src="bell.svg"/></a>
+              </li>
+              <li>
+                <a href="challenge.html"><img src="challengeicon.svg"/></a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        
+        <aside class="sidenav">
+          <ul class="sidenav__list" style="text-align: center;">
+            <li
+              class="sidenav__list-item"
+              style="background-image: url(houseofcodelogo.svg); height: 70px; background-size: contain; background-repeat: no-repeat; background-position: center; background-color:#f1f1f1; "
+            ></li>
+            <li class="sidenav__list-item">Igangværende</li>
+            <li class="sidenav__list-item">
+              <img src="lob.svg" /> <img src="fremmode.svg" />
             </li>
-            <li>
-              <a href="news.asp"><img src="settings.svg"/></a>
-            </li>
-            <li>
-              <a href="news.asp"><img src="bell.svg"/></a>
-            </li>
-            <li>
-              <a href="challenge.html"><img src="challenge icon.svg"/></a>
-            </li>
+            <li class="sidenav__list-item">
+                <img src="skridt.sv.svg" /> <img src="mus.svg" />
+              </li>
+            <li class="sidenav__list-item">Fuldførte</li>
+            <li class="sidenav__list-item">
+                <img src="delmaal1.svg" /> <img src="delmaal2.svg" />
+              </li>
+            <li class="sidenav__list-item">
+                <img src="delmaal3.svg" /> <img src="delmaal4.svg" />
+              </li>
           </ul>
+        </aside>
+  
+      
+        <main class="main">
+      
+        <div class="card-columns">
+        
+        <div class="card-left">
+        <div class="card">  <div class=drivesjovt><img src="progbarfull.svg"><h2>Ha' det sjovt</h2><p>Vi har det sjovt, men arbejder hårdt og når vores mål.</p> </div>
+        <div class="skemaspgsjovt">
+            <p>Jeg gør noget godt for andre uden for House of Code.</p>
+            <label class="checkboxcontainersjovt">
+                    <input type="checkbox">
+                    <span class="checkmarksjovt"></span>
+                  </label>
+            <input type="text" name="question" value="Indtast kommentar her" class="textsjovt"><br>
+            <p>Jeg møder mine kolleger individuelt for at opnå bedst muligt fællesskab.</p>
+
+            <label class="checkboxcontainersjovt">
+                    <input type="checkbox">
+                    <span class="checkmarksjovt"></span>
+                  </label>
+            <input type="text" name="question" value="Indtast kommentar her" class="textsjovt"><br>
+            <p>Jeg skaber nye muligheder for at vi kan have det sjovt sammen.</p>
+
+            <label class="checkboxcontainersjovt">
+                    <input type="checkbox">
+                    <span class="checkmarksjovt"></span>
+                  </label>
+            <input type="text" name="question" value="Indtast kommentar her" class="textsjovt"><br>
+            <p>Jeg når altid mine opgaver for ugen.</p>
+
+            <label class="checkboxcontainersjovt">
+                    <input type="checkbox">
+                    <span class="checkmarksjovt"></span>
+                  </label>
+            <input type="text" name="question" value="Indtast kommentar her" class="textsjovt"><br>
+            <p>Jeg bliver på arbejde til mine opgaver for dagen er udført.</p>
+
+            <label class="checkboxcontainersjovt">
+                    <input type="checkbox">
+                    <span class="checkmarksjovt"></span>
+                  </label>
+            <input type="text" name="question" value="Indtast kommentar her" class="textsjovt"><br>
+                  <div class="knapperne">
+                      <button onclick="goBack()" class="back">Tilbage</button> 
+                      <a href="skemakommende.html" class="next">Næste</a>
+                  </div>
+</div>  
+  </div></div>      
+        <div class="card-right">
+            <div class="cardsmall"><img class="cardimg" src="forrige-01.svg" alt="Forrige resultat" /></div>
+        <div class="cardsmall"><img class="cardimg" src="historik-01.svg" alt="Forrige resultat" /></div>
+              <div class="cardsmall"><img class="cardimg" src="mode.svg" alt="Forrige resultat" /></div>
+              <div class="cardsmall"><img class="cardimg" src="klips.svg" alt="Forrige resultat" /></div>
         </div>
-      </header>
-
-      <aside class="sidenav">
-        <ul class="sidenav__list" style="text-align: center;">
-          <li
-            class="sidenav__list-item"
-            style="background-image: url(houseofcodelogo.svg); height: 70px; background-size: contain; background-repeat: no-repeat; background-position: center; background-color:#f1f1f1; "
-          ></li>
-          <li class="sidenav__list-item">Igangværende</li>
-          <li class="sidenav__list-item">
-            <img src="lob.svg" /> <img src="lob.svg" />
-          </li>
-          <li class="sidenav__list-item">
-              <img src="lob.svg" /> <img src="lob.svg" />
-            </li>
-          <li class="sidenav__list-item">Fuldførte</li>
-          <li class="sidenav__list-item">
-              <img src="lob.svg" /> <img src="lob.svg" />
-            </li>
-          <li class="sidenav__list-item">
-              <img src="lob.svg" /> <img src="lob.svg" />
-            </li>
-        </ul>
-      </aside>
-
-      <main class="main">
-	  
-	    <div class="card-columns">
-		  
-		  <div class="card-left">
-			<div class="card">
-          <div class=drivesjovt><img src="progbarfull.svg"><h2>Ha' det sjovt</h2><p>Vi har det sjovt, men arbejder hårdt og når vores mål.</p> </div>
-          <div class="skemaspgsjovt">
-              <p>Jeg gør noget godt for andre uden for House of Code.</p>
-              <label class="checkboxcontainersjovt">
-                      <input type="checkbox">
-                      <span class="checkmarksjovt"></span>
-                    </label>
-              <input type="text" name="question" value="Indtast kommentar her" class="textsjovt"><br>
-              <p>Jeg møder mine kolleger individuelt for at opnå bedst muligt fællesskab.</p>
-
-              <label class="checkboxcontainersjovt">
-                      <input type="checkbox">
-                      <span class="checkmarksjovt"></span>
-                    </label>
-              <input type="text" name="question" value="Indtast kommentar her" class="textsjovt"><br>
-              <p>Jeg skaber nye muligheder for at vi kan have det sjovt sammen.</p>
-
-              <label class="checkboxcontainersjovt">
-                      <input type="checkbox">
-                      <span class="checkmarksjovt"></span>
-                    </label>
-              <input type="text" name="question" value="Indtast kommentar her" class="textsjovt"><br>
-              <p>Jeg når altid mine opgaver for ugen.</p>
-
-              <label class="checkboxcontainersjovt">
-                      <input type="checkbox">
-                      <span class="checkmarksjovt"></span>
-                    </label>
-              <input type="text" name="question" value="Indtast kommentar her" class="textsjovt"><br>
-              <p>Jeg bliver på arbejde til mine opgaver for dagen er udført.</p>
-
-              <label class="checkboxcontainersjovt">
-                      <input type="checkbox">
-                      <span class="checkmarksjovt"></span>
-                    </label>
-              <input type="text" name="question" value="Indtast kommentar her" class="textsjovt"><br>
-              <button onclick="goBack()" class="back">Tilbage</button> 
-              <a href="skemakommende.html" class="next">Næste</a>
-          </div>
+        
       </div>
-		  </div>
-		  
-		  <div class="card-right">
-          <div class="cardsmall"><img class="cardimg" src="forrige-01.svg" alt="Forrige resultat" /></div>
-			<div class="cardsmall"><img class="cardimg" src="historik-01.svg" alt="Forrige resultat" /></div>
-            <div class="cardsmall"><img class="cardimg" src="mode.svg" alt="Forrige resultat" /></div>
-            <div class="cardsmall"><img class="cardimg" src="klips.svg" alt="Forrige resultat" /></div>
-		  </div>
-		  
-		</div>
-	  
-      </main>
+    </div>
+        </main>
+
     </div>
   </body>
 </html>
