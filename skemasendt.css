@@ -18,19 +18,25 @@
       padding-bottom:10px;
   }
       .drivegoals{
-          background-color:#515E6D;
-          color:white;
+        
           padding-top:3%;
           padding-bottom:3%;
   
       }
+
+      .drivegoals h2{margin-left:10%;}
   
       .drivegoals p, h2{
-          margin-left:3vh;
-          line-height:0px;}
+          font-family:obvia;
+          color:#515E6D;;
+          margin-left:auto;
+          line-height:auto;}
   
       .drivegoals p{font-size:12px;
-      line-height:12px;}
+      line-height:12px;
+    margin-top:5vh;
+margin-left:10%;
+margin-right:10%;}
   
       .drivegoals img { 
       float:right;
@@ -63,7 +69,7 @@
   }
   
   .skemasendt img {
-      width:50%;
+      width:40%;
       margin-top: 40px;
       margin-left:25%;}
   
