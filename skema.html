@@ -111,13 +111,13 @@
                     vil din leder samt en kollega også vurdere dig. </p>
                     <p>#BeAwesome</p>
                   </div>	
-                  <!-- Trigger/Open The Modal -->
+                  <!-- Modal -->
     <button id="startknap">START</button>
     
-    <!-- The Modal -->
+    <!-- selve modalen -->
     <div id="startmodal" class="modal">
     
-      <!-- Modal content -->
+      <!--indholdet -->
       <div class="modal-content">
         <span class="close1">&times;</span>
         <p>Sæt et ✓ud for hvert af de nedenstående sætninger, hvis du mener at  du/medarbejderen udviser den adfærd mindst 2 gange pr. uge. Giv gerne et eksempel på hvad du gør.</p>
@@ -126,26 +126,26 @@
       </div>
     
       <script>
-        // Get the modal
+        // selve modal
         var modal = document.getElementById('startmodal');
         
-        // Get the button that opens the modal
+        // knappen, der åbner modal
         var btn = document.getElementById("startknap");
         
-        // Get the <span> element that closes the modal
+        // span elementet, der lukker modal
         var span = document.getElementsByClassName("close1")[0];
         
-        // When the user clicks the button, open the modal 
+        // Når brugeren klikker på knappen, åbner modal'en
         btn.onclick = function() {
           modal.style.display = "block";
         }
         
-        // When the user clicks on <span> (x), close the modal
+        //Når brugeren klikker på x, lukker modal
         span.onclick = function() {
           modal.style.display = "none";
         }
         
-        // When the user clicks anywhere outside of the modal, close it
+        // Når der bliver klikket andre steder end modalet, lukker den
         window.onclick = function(event) {
           if (event.target == modal) {
             modal.style.display = "none";
