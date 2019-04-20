@@ -1,6 +1,4 @@
 #parahist {
-  background-color:;
-  
   text-align: center;
   font-size: x-large;
   box-sizing: border-box;
@@ -14,7 +12,8 @@
 }
 
  .histbox{
-  border: 1px solid #484848;
+  border: 0.5px solid rgba(0,0,0,0.3); 
+  
 background-color: #f1eeeb;
 }
 
