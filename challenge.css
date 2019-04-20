@@ -32,7 +32,7 @@ h4{
 h5{
     background-position: bottom;
     background-repeat: no-repeat;
-    text-align: left; 
+    text-align: center; 
     color: white; 
     font-size: 35px;
     margin:5;
@@ -45,4 +45,161 @@ bottom: 68%;
 width: 4%;
 height: auto;
 position: absolute;
+}
+
+/*style for challenge siden*/
+
+.overskrift{
+  width: 100%;
+  height: auto;
+  padding: 2px 20px;
+  margin: -47px 0px;
+  background-color;
+}
+
+.overskrift img {
+  width: 100%; 
+  height: auto;
+}
+
+.cl-overskrift2{
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  font-family: poppins;
+  margin: 2px -6px;
+  padding: 8px 18px;
+  
+}
+
+
+.baggrundsfarve2 {
+width: 90%;
+height: 10vh;
+padding: auto;
+background-color: #6696AC; 
+display: inline-block;;
+margin: 60px 10px; 
+padding: 5px 10px;
+margin-top: 5px;
+
+}
+
+
+
+.sas h5{
+  background-position: bottom;
+  background-repeat: no-repeat;
+  text-align: left; 
+  color: black; 
+  font-size: 35px;
+  margin:5%;
+
+}
+
+.valgboks{
+  width: 103%;
+  height: 350px;
+  margin: -70px -49px;
+  padding: 20px 30px;
+}
+
+.valgboks .klikbokser{
+  height: 12%;
+  text-align: left;
+  padding: 5%;
+  margin-top: -2%;
+
+}
+
+
+
+.valgboks .klikbokser button{
+  width: 25%;
+  height: 100%;
+  float: left;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.valgboks .klikbokser h6  {
+  font-family: obvia; 
+  font-size: 25px; 
+
+}
+.valgboks .klikbokser button:hover{
+  background-color: #d7d4d4 ; 
+}
+
+
+.valgboks .panel {
+  margin-left: 5%;
+  margin-top: -5%;
+  height: 85%;
+  width: 90%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding-top: 105px;
+  box-sizing: border-box;
+  display: none;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.panelkasser {
+  width: 100%;
+  height: 112%;
+  background-color: white;
+  position: center;
+  margin-top: -10%;
+  text-align: left;
+}
+
+
+
+.valgboks .panel img {
+  width: 100%; 
+  height: 100%;
+  padding: 5%; 
+}
+
+.deltagknap {
+  float: left;
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px 54px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: #515f6d; 
+  border: 2px solid #515f6d;
+ 
+}
+
+.deltagknap:hover {
+  background-color: #B9C794;
+}
+
+.cl-brodtekst{
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: bolder; 
+}
+.panel .panelkasser .reglertekst{
+font-family: poppins;
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+    padding: 10px;
+    margin: 15px;
+
 }
