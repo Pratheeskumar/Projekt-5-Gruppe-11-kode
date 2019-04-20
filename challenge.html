@@ -15,14 +15,13 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>CSS Grid Template 1</title>
     <script src="challenge.js" defer></script>
   </head>
   <body>
     <div class="grid-container">
       <header class="header">
-        
         <div class="header__search">
           <div class="tekst">
             <img src="profil-01.svg" />
@@ -33,20 +32,19 @@
           </div>
         </div>
         <div role="navigation">
-            <div id="menuToggle">
-              <input type="checkbox" />
-            
-              <span></span>
-              <span></span>
-              <span></span>
-            
-              <ul id="menu">
-                <a href="#"><li>Igangværende delmål</li></a>
-                <a href="#"><li>Fuldførte delmål</li></a>
-    
-              </ul>
-            </div>
+          <div id="menuToggle">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+              <a href="#"><li>Igangværende delmål</li></a>
+              <a href="#"><li>Fuldførte delmål</li></a>
+            </ul>
           </div>
+        </div>
         <div class="header__avatar">
           <ul>
             <li>
@@ -64,7 +62,7 @@
           </ul>
         </div>
       </header>
-      
+
       <aside class="sidenav">
         <ul class="sidenav__list" style="text-align: center;">
           <li
@@ -76,65 +74,102 @@
             <img src="lob.svg" /> <img src="fremmode.svg" />
           </li>
           <li class="sidenav__list-item">
-              <img src="skridt.sv.svg" /> <img src="mus.svg" />
-            </li>
+            <img src="skridt.sv.svg" /> <img src="mus.svg" />
+          </li>
           <li class="sidenav__list-item">Fuldførte</li>
           <li class="sidenav__list-item">
-              <img src="delmaal1.svg" /> <img src="delmaal2.svg" />
-            </li>
+            <img src="delmaal1.svg" /> <img src="delmaal2.svg" />
+          </li>
           <li class="sidenav__list-item">
-              <img src="delmaal3.svg" /> <img src="delmaal4.svg" />
-            </li>
+            <img src="delmaal3.svg" /> <img src="delmaal4.svg" />
+          </li>
         </ul>
       </aside>
 
       <main class="main">
-	  
-	    <div class="card-columns">
-		  
-		  <div class="card-left">
-        
-			<div class="card"><div class="card"><div class="overskrift"><img src="monthlychallengebanner.svg" alt=""></div>
-        
-      </div>
-   
+        <div class="card-columns">
+          <div class="card-left">
+            <div class="card">
+              <div class="card">
+                <div class="overskrift">
+                  <img src="monthlychallengebanner.svg" alt="" />
+                </div>
+              </div>
 
-  <div class="baggrundsfarve2">
-      
-      <h5 class="cl-overskrift2"> #Ninjaturtle </h5> 
-</div>
+              <div class="baggrundsfarve2">
+                <h5 class="cl-overskrift2">#Ninjaturtle</h5>
+              </div>
 
-  <div class="valgboks">
-      <div class="klikbokser">
-        <button onclick="showPanel(0,'#D36D75')"><h7 class="cl-brodtekst">Regler</h7></button>
-        <button onclick="showPanel(1,'#6696AC')"><h7 class="cl-brodtekst">Resultater</h7></button>
-        <button onclick="showPanel(2,'#AA81AC')"><h7 class="cl-brodtekst">Indtast</h7></button>
-      </div>
-      <div class="panel"><div class="panelkasser"><p class="reglertekst">
-          Hver mandag udfordrer vi dig til at stå i planke. 
-          Deltagerne mødes i fælles lokale, hvor der 
-          bliver taget tid, planke konkurrencen bliver 
-          ved indtil vi har en vinder, der holder længst.
-      </p></div></div>
-      <div class="panel"><div class="panelkasser" style="background-color: #6696AC; border: 1px solid #FFF;   background-image: url(blå.svg);
+              <div class="valgboks">
+                <div class="klikbokser">
+                  <button onclick="showPanel(0,'#D36D75')">
+                    <h7 class="cl-brodtekst">Regler</h7>
+                  </button>
+                  <button onclick="showPanel(1,'#6696AC')">
+                    <h7 class="cl-brodtekst">Resultater</h7>
+                  </button>
+                  <button onclick="showPanel(2,'#AA81AC')">
+                    <h7 class="cl-brodtekst">Indtast</h7>
+                  </button>
+                </div>
+                <div class="panel">
+                  <div class="panelkasser">
+                    <p class="reglertekst">
+                      Hver mandag udfordrer vi dig til at stå i planke.
+                      Deltagerne mødes i fælles lokale, hvor der bliver taget
+                      tid, planke konkurrencen bliver ved indtil vi har en
+                      vinder, der holder længst.
+                    </p>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div
+                    class="panelkasser"
+                    style="background-color: #6696AC; border: 1px solid #FFF;   background-image: url(blå.svg);
         background-size: contain;
-        background-repeat: no-repeat;"></div></div>
-      <div class="panel"><div class="panelkasser"style="background-color: #AA81AC; border: 1px solid #FFF;   background-image: url(red.svg);
+        background-repeat: no-repeat;"
+                  ></div>
+                </div>
+                <div class="panel">
+                  <div
+                    class="panelkasser"
+                    style="background-color: #AA81AC; border: 1px solid #FFF;   background-image: url(red.svg);
         background-size: contain;
-        background-repeat: no-repeat;"></div></div>
-    </div></div>
-    <button class="deltagknap"><h9 class="deltagtekst"></h9>DELTAG</button>
-		  </div>
-		  
-		  <div class="card-right">
-        <div class="cardsmall"><a href="total_score_no_skema.html"><img class="cardimg" src="forrige-01.svg" alt="Forrige resultat" /></a></div>
-        <div class="cardsmall"><a href="historik.html"><img class="cardimg" src="historik-01.svg" alt="Forrige resultat" /></a></div>
-                  <div class="cardsmall"><img class="cardimg" src="mode.svg" alt="Forrige resultat" /></div>
-            <div class="cardsmall"><img class="cardimg" src="klips.svg" alt="Forrige resultat" /></div>
-		  </div>
-		  
-		</div>
-	  
+        background-repeat: no-repeat;"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <button class="deltagknap">
+              <h9 class="deltagtekst"></h9>DELTAG
+            </button>
+          </div>
+
+          <div class="card-right">
+            <div class="cardsmall">
+              <a href="total_score_no_skema.html"
+                ><img
+                  class="cardimg"
+                  src="forrige-01.svg"
+                  alt="Forrige resultat"
+              /></a>
+            </div>
+            <div class="cardsmall">
+              <a href="historik.html"
+                ><img
+                  class="cardimg"
+                  src="historik-01.svg"
+                  alt="Forrige resultat"
+              /></a>
+            </div>
+            <div class="cardsmall">
+              <img class="cardimg" src="mode.svg" alt="Forrige resultat" />
+            </div>
+            <div class="cardsmall">
+              <img class="cardimg" src="klips.svg" alt="Forrige resultat" />
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   </body>
