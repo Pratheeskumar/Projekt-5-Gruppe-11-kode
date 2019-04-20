@@ -1,1 +1,50 @@
+#parahist {
+  background-color:
+  
+  text-align: center;
+  font-size: x-large;
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
 
+  margin: auto;
+  color: #484848;
+  width: 100%;
+  height: 100%;
+}
+
+ .histbox{
+  border: 1px solid #484848;
+
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.pleft {
+  border: 1 px solid #484848;
+  float: left;
+  height: auto;
+  width: 20%;
+  background-color: #f1eeeb;
+  text-align: center;
+
+  font-size: x-large;
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  color: #484848;
+}
+.p-right {
+  border: 1 px solid #484848;
+  height: 100%;
+  width: 80%;
+  background: #515f6d;
+  text-align: center;
+
+  font-size: x-large;
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  color: white;
+}
+.pinside {font-size: small; text-align: right;display: inline-block;}
