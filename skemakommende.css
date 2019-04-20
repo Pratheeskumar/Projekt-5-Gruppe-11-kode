@@ -1,0 +1,92 @@
+
+.next, .back{
+    text-decoration: none;
+    background-color:white;
+    border: 3px solid #515e6d;
+    color: #515e6d;
+    border-radius: 1px;
+    font-size: 15px;
+    font-family:'Source Sans Pro';
+    padding: 7px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top:10%;}
+
+    .next{float:right;
+    padding-left:25px;
+    padding-right:25px;}
+
+    .drivegreen p, h2{
+        margin-left:3vh;
+        line-height:0px;}
+
+    .drivekommende img { 
+    float:right;
+    margin-right:3vh;
+    width:8vh;
+    height:8vh;
+    }
+
+    .drivekommende{
+          background-color:#515e6d;
+          color:white;
+          padding-top:3%;
+          padding-bottom:3%;
+  text-align: left;
+      }
+  
+      .drivekommende p, h2{
+          margin-left:3vh;
+          line-height:0px;}
+  
+          .drivekommende p{font-size:12px;
+      line-height:12px;}
+
+    .kommende{
+
+        background-color:#EBECEE;
+        color:#838C97;
+        border:1.5px solid #515E6D;
+        width:30%;
+        height:4vh;
+    }
+
+    .kommenderight{
+        background-color:#EBECEE;
+        color:#838C97;
+        border:1.5px solid #515E6D;
+        width:30%;
+        height:4vh;
+    }
+
+    .knapperne {
+    width: 95%;
+    height: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+  }
+
+  .skemaspgleft {
+    float:left;
+    width: 50%;
+    display: block;
+
+  }
+
+  .skemaspgright {
+    width: 50%;
+    display: block;
+    float: right;
+  }
+
+  .skemaernekommende {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .skemaernekommende input {
+    width: 200px;
+    height: 150px;
+    text-align: center;
+  }
