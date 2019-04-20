@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.html {
+    scroll-behavior: smooth;
+}
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-image: url("back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.navigation {
+    position: fixed;
+    width: 30%;
+    text-align: center;
+}
+
+.navigation img {
+    width: 70%;
+    height: auto;
+    margin-top: 8vh;
+}
+
+.Farver {
+    width: 100%;
+    float: right;
+    height: auto;
+    background-color: rgba(241, 238, 235, 0.76);
+}
+
+ul {
+    margin-top: 10vh;
+    list-style: none;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.nav1 {
+    text-decoration: none;
+    color: #000;
+    font-size: 2.3vw;
+    margin-left: 3.5vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
+
+li {
+    font-size: 2.3vw;
+    color: rgba(0, 0, 0, 0.507);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.nav3 {    text-decoration: none;
+    color: rgba(0, 0, 0, 0.507);
+
+}
+
+.boxes {
+    width: 65%;
+    float:right;
+    height: auto;
+}
+
+.wrapper {
+    width: 40%;
+    height: 345px;    display: inline-block;
+}
+
+.boxwhite {
+    display: block;
+    width:100%;
+    height: 200px;
+    background-color: #FDFDFD;
+    border: 0.5px solid rgba(0, 0, 0, 0.233);
+
+}
+.boxPampas {
+  margin-left: 40px;
+    display: block;
+    width:100%;
+    height: 200px;
+    background-color: #F1EEEB;
+    border: 0.5px solid rgba(0, 0, 0, 0.233);
+}
+
+.boxMahagony {
+    display: block;
+    width:100%;
+    height: 200px;
+    background-color: #C93E49;
+}
+
+.boxgrey {
+    margin-left: 40px;
+    display: block;
+    width:100%;
+    height: 200px;
+    background-color: #515E6D;
+}
+
+.skrift {
+    display: block;
+    width:100%;
+    height:70px;}
+
+.skrift h3 {
+    font-family: "Poppins", sans-serif;
+    padding-top: 10px;
+    font-size: 2.5vw;
+}
+
+.skrift p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
+
+/*LOGO*/
+
+.logobox {
+    display: block;
+    width:80%;
+    height: 200px;
+    background-image: url("hoc-icon-2.png");
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.logoboxR {
+    margin-left: 40px;
+    display: block;
+    width:80%;
+    height: 200px;
+    background-image: url("hoc-icon-color.png");
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.wrapper1 {
+    width: 48%;
+    height: 345px;   
+    text-align: center;
+    display: inline-block;
+}
+
+
+.skrift1 {
+    display: block;
+    width:50%;
+    text-align: center;
+}
