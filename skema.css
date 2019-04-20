@@ -615,7 +615,7 @@ transform: rotate(45deg);
     color:white;
     padding-top:3%;
     padding-bottom:3%;
-
+text-align: left;
 }
 
 .drivegoals p, h2{
