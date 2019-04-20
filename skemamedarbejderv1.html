@@ -9,22 +9,22 @@
       maximum-scale="1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <link rel="stylesheet" href="medarbejder.css"/>
     <link rel="stylesheet" href="skabelon.css" />
-    <link rel="stylesheet" href="skema.css"/>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
     <title>CSS Grid Template 1</title>
     <script src="java.js" defer></script>
-    <script>
-        function goBack() {
-          window.history.back();
-        }
-        </script>    
-    
   </head>
+
+  <script>
+      function goBack() {
+        window.history.back();
+      }
+      </script>
+
   <body>
     <div class="grid-container">
       <header class="header">
@@ -32,7 +32,7 @@
           <div class="tekst">
             <img src="profil-01.svg" />
             <h1>
-              Kristian<br />
+              Charlie<br />
               <span style="font-size: 15px;"> - Udvikler</span>
             </h1>
           </div>
@@ -43,13 +43,13 @@
               <a href="index.html"><img src="logud-01.svg"/></a>
             </li>
             <li>
-              <a href="news.asp"><img src="settings.svg"/></a>
+              <a href="news.asp"><img src="cogwheel.svg"/></a>
             </li>
             <li>
               <a href="news.asp"><img src="bell.svg"/></a>
             </li>
             <li>
-              <a href="challenge.html"><img src="challenge icon.svg"/></a>
+              <a href="challenge.html"><img src="challengeicon.svg"/></a>
             </li>
           </ul>
         </div>
@@ -83,47 +83,39 @@
 	    <div class="card-columns">
 		  
 		  <div class="card-left">
-			<div class="card">
-          <div class=driveteam><img src="progbarfull.svg"><h2>God karma</h2><p>Vi møder alle med tillid og åbenhed; det gør en forskel.</p> </div>
-          <div class="skemaspgteam">
-              <p>Jeg opsøger miner kolleger for at hjælpe dem.</p>
-              <label class="checkboxcontainerteam">
-                      <input type="checkbox">
-                      <span class="checkmarkteam"></span>
-                    </label>
-              <input type="text" name="question" value="Indtast kommentar her" class="textteam"><br>
-              <p>Jeg bidrager med en god og positiv stemning hos House of Code.</p>
-
-              <label class="checkboxcontainerteam">
-                      <input type="checkbox">
-                      <span class="checkmarkteam"></span>
-                    </label>
-              <input type="text" name="question" value="Indtast kommentar her" class="textteam"><br>
-              <p>Jeg gør noget godt for andre uden for House of Code.</p>
-
-              <label class="checkboxcontainerteam">
-                      <input type="checkbox">
-                      <span class="checkmarkteam"></span>
-                    </label>
-              <input type="text" name="question" value="Indtast kommentar her" class="textteam"><br>
-              <p>Jeg møder mine kolleger individuelt for at opnå bedst muligt fællesskab.</p>
-
-              <label class="checkboxcontainerteam">
-                      <input type="checkbox">
-                      <span class="checkmarkteam"></span>
-                    </label>
-              <input type="text" name="question" value="Indtast kommentar her" class="textteam"><br>
-              <p>Jeg gør en indsats i at arbejde med mig selv.</p>
-
-              <label class="checkboxcontainerteam">
-                      <input type="checkbox">
-                      <span class="checkmarkteam"></span>
-                    </label>
-              <input type="text" name="question" value="Indtast kommentar her" class="textteam"><br>
-              <button onclick="goBack()" class="back">Tilbage</button> 
-              <a href="skemasjovt.html" class="next">Næste</a>
-          </div>
+			<div class="card"><div class="medarbejderfarve"><h2>Vælg kollegaer til feedback</h2><p>Vælg to kollegaer til at give dig feedback på dit skema, der vil blive tilsendt en notifikation når de har givet dig feedback.</p> </div>
+            <div class="valgboks">
+              <div class="gallery">
+                  <img src="grey.svg" alt="valgt" ></a>
+              </div>
+              <div class="gallery">
+                <a href="skemamedarbejder.html">
+                  <img src="ubilled.svg" alt="valgt" ></a>
+              </div>
+              <div class="gallery">
+                  <img src="billed.png" alt="valgt" ></a>
+            </div>
+            </div>
+    <div class="streg"></div>
+    <div class="valgboks">
+      <div class="gallery1">
+        <a href="skemamedarbejderv2.html">
+          <img src="ubilled.svg" alt="Person" ></a>
       </div>
+      <div class="gallery1">
+        <a href="skemamedarbejderv2.html">
+          <img src="ubilled.svg" alt="Person" ></a>
+      </div>
+      <div class="gallery1">
+        <a href="skemamedarbejderv2.html">
+          <img src="ubilled.svg" alt="Person" ></a>
+    </div>
+<div class="knapperne">
+                <button onclick="goBack()" class="back">Tilbage</button> 
+                <a href="total_score_no_skema.html" class="next">Send</a>
+            </div></div></div>
+
+            
 		  </div>
 		  
 		  <div class="card-right">

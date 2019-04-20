@@ -2,7 +2,13 @@
   background-color: #f1eeeb;
   font-family: "Poppins", sans-serif;
   color: #484848;
+  
 }
+
+html {
+  scroll-behavior: smooth;
+}
+a {text-decoration: none; list-style: none; }
 .wrapper{list-style: none;
   text-decoration: none;}
 

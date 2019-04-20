@@ -11,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <link rel="stylesheet" href="skabelon.css" />
+    <link rel="stylesheet" href="skema.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
@@ -18,107 +19,7 @@
     <title>CSS Grid Template 1</title>
     <script src="java.js" defer></script>
 
-    <style>
-
-      #startknap{
-          width:20%;
-          margin-left:auto;
-          margin-right:auto;
-    background-color:white;
-    border: 3px solid #515e6d;
-      color: #515e6d;
-      border-radius: 1px;
-    font-size: 15px;
-    font-family:'Source Sans Pro';
-    padding: 7px;
-    padding-left:20px;
-    padding-right:20px;
-    margin-top:15%;}
-    
-    .Udviklingssamtale{
-        margin-right:5%;
-        margin-left:5%;
-        font-family: Obvia;
-        color:#515E6D;
-        text-align: center;
-    }
-    .Udviklingssamtale h1{font-size:25px;
-    margin-top:9%;}
-    .Udviklingssamtale p{
-        font-size:15px;
-        margin-top:5%;
-    }
-    .Udviklingssamtale h2{font-size:18px;
-    display: inline-block;
-margin-left:1%;
-margin-right:1%;
-}
-    hr{border:0px;
-    height:2px;
-width:80%;
-background-color:#515E6D;
-margin-bottom:5%;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #FDFDFD;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 40%;
-  height:45%;
-}
-
-.modal-content img {
-    width:100%;
-}
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#next{ 
-    float:right;
-    width:20%;
-    background-color:white;
-    border: 3px solid #515e6d;
-      color: #515e6d;
-      border-radius: 1px;
-    font-size: 15px;
-    font-family:'Source Sans Pro';
-    padding-top:5px;
-    padding-bottom:5px;     
-    padding-left:20px;
-    padding-right:20px;
-    margin-top:10%;
-    }
-    </style>
-
+  
 
   </head>
   <body>
@@ -205,7 +106,7 @@ margin-bottom:5%;}
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <span class="close1">&times;</span>
     <p>Sæt et ✓ud for hvert af de nedenstående sætninger, hvis du mener at  du/medarbejderen udviser den adfærd mindst 2 gange pr. uge. Giv gerne et eksempel på hvad du gør.</p>
     <img src="eksempel.PNG">
     <a href="skemadrive.html"> <button id="next">OK</button></a>
@@ -219,7 +120,7 @@ margin-bottom:5%;}
     var btn = document.getElementById("startknap");
     
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementsByClassName("close1")[0];
     
     // When the user clicks the button, open the modal 
     btn.onclick = function() {
