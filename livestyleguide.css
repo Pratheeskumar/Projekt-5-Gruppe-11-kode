@@ -162,3 +162,24 @@ background-repeat: no-repeat;
     width:50%;
     text-align: center;
 }
+
+
+/*Typografi*/
+
+.typobox {
+    display: block;
+    width:80%;
+    height: 200px;
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.typoboxR {margin-left: 40px;
+display: block;
+width:80%;
+height: 200px;
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+}
