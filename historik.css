@@ -1,5 +1,5 @@
 #parahist {
-  background-color:
+  background-color:;
   
   text-align: center;
   font-size: x-large;
@@ -15,16 +15,15 @@
 
  .histbox{
   border: 1px solid #484848;
-
-  padding-top: 3%;
-  padding-bottom: 3%;
+background-color: #f1eeeb;
 }
 
 .pleft {
   border: 1 px solid #484848;
   float: left;
-  height: auto;
+  height: 100%;
   width: 20%;
+
   background-color: #f1eeeb;
   text-align: center;
 
@@ -33,10 +32,14 @@
   display: inline-block;
   max-width: 100%;
   color: #484848;
+    padding-top: 3%;
+  padding-bottom: 3%;
 }
 .p-right {
   border: 1 px solid #484848;
   height: 100%;
+    padding-top: 3%;
+  padding-bottom: 3%;
   width: 80%;
   background: #515f6d;
   text-align: center;
