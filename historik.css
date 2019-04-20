@@ -1,25 +1,28 @@
 #parahist {
-  text-align: center;
-  font-size: x-large;
+  text-align: left;
+  font-size: 30px;
   box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
-
   margin: auto;
+  
   color: #484848;
   width: 100%;
   height: 100%;
+  margin-top: 15px;
+  margin-bottom: 25px;  border-radius: 3px;
+
 }
 
  .histbox{
+  border: 1px solid #484848;
+background-color: #f1eeeb;  border-radius: 3px;
 
-background-color: #f1eeeb;
 }
 
 .pleft {
-  border: 1 px solid #484848;
   float: left;
-  height: 100%;
+  height: 10%;
   width: 20%;
 
   background-color: #f1eeeb;
@@ -30,22 +33,27 @@ background-color: #f1eeeb;
   display: inline-block;
   max-width: 100%;
   color: #484848;
-    padding-top: 3%;
-  padding-bottom: 3%;
+    padding-top: 20px;
+  padding-bottom: 10px;  border-radius: 3px;
+
 }
 .p-right {
-  border: 1 px solid #484848;
+  border-radius: 3px;
+
+  border: 1px solid #484848;
   height: 100%;
-    padding-top: 3%;
-  padding-bottom: 3%;
+    padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
   width: 80%;
   background: #515f6d;
-  text-align: center;
+  text-align: left;
 
-  font-size: x-large;
+  font-size: 26px;
   box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
   color: white;
 }
-.pinside {font-size: small; text-align: right;display: inline-block;}
+.pinside {font-size: medium; text-align: right;display: inline-block;
+float:right; margin-right: 4px;}
