@@ -707,8 +707,11 @@ line-height: 10px;
   margin-top:10vh;text-align:center; }
 
 .intro h2{
+  margin:auto;
   margin-top:20vh;
-  text-align:center;}
+  text-align:center;
+
+}
 
   .buttonskema{
    
