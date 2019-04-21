@@ -11,11 +11,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <link rel="stylesheet" href="skabelon.css" />
-    <link rel="stylesheet" href="skema.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="skema.css"/>
     <title>CSS Grid Template 1</title>
     <script src="java.js" defer></script>
   </head>
@@ -95,68 +95,22 @@
 		  
 		  <div class="card-left">
 			<div class="card">
-          <div class=Udviklingssamtale>
-              <h1>Udviklingssamtale</h1><img src="progbarfull.svg">
-              
-              <hr>
-              <p>Formålet med dette skema er at dokumentere, hvad du skal fokusere på i det kommende år for at bidrage til dit og House of Code’s behov. </p>
-      
-               <p> Vi vil igennem det næste år genbesøge dette dokument i vores samtaler, for at se hvordan det går. </p>
-                <hr>
-                <h2 style=color:#A6BB75>Højt drive</h2> <h2 style=color:#AA81AC>Et stærkt team</h2> <h2 style=color:#D36D75>God Karma</h2> 
-                <h2 style=color:#6696AC >Ha' det sjovt</h2>
-                <p>Det er vigtig for House of Code at vi sammen arbejder med vores værdier.
-                    Derfor bedes du vurdere dig selv i forhold til vores værdier på de næste sider.
-                    
-                    Udover at du vurderer dig selv i forhold til vores værdier,
-                    vil din leder samt en kollega også vurdere dig. </p>
-                    <p>#BeAwesome</p>
-                  </div>	
-                  <!-- Modal -->
-    <button id="startknap">START</button>
-    
-    <!-- selve modalen -->
-    <div id="startmodal" class="modal">
-    
-      <!--indholdet -->
-      <div class="modal-content">
-        <span class="close1">&times;</span>
-        <p>Sæt et ✓ud for hvert af de nedenstående sætninger, hvis du mener at  du/medarbejderen udviser den adfærd mindst 2 gange pr. uge. Giv gerne et eksempel på hvad du gør.</p>
-        <img src="eksempel.PNG">
-        <a href="skemadrive.html"> <button id="next">OK</button></a>
-      </div>
-    
-      <script>
-        // selve modal
-        var modal = document.getElementById('startmodal');
-        
-        // knappen, der åbner modal
-        var btn = document.getElementById("startknap");
-        
-        // span elementet, der lukker modal
-        var span = document.getElementsByClassName("close1")[0];
-        
-        // Når brugeren klikker på knappen, åbner modal'en
-        btn.onclick = function() {
-          modal.style.display = "block";
-        }
-        
-        //Når brugeren klikker på x, lukker modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-        
-        // Når der bliver klikket andre steder end modalet, lukker den
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
-        </script>
-    </div>
-    
-    
-      </div>
+                <div class="intro">
+                    <div class="overskrift">
+                <img src="t1.svg">
+                <h1>VELKOMMEN</h1>
+                <img src="t2.svg">
+                <p>Vi udvikler awesome apps, der skaber værdi</p>
+            </div>
+                <p>Udfyld dine udviklingssamtaler, og få et overblik over dine delmål. 
+                        Igennem det næste år, vil der blive fulgt op på dit skema, for at se hvordan det går. 
+                </p>
+                <h2>#BeAwesome</h2>
+                <div class="buttonskema"><a href="skema.html"> SKEMA</a></div>
+            </div>
+            <div class="introimg"><img src="duhastnicht.svg" class="introimg"></div>
+            
+            </div>
 		  </div>
 		  
 		  <div class="card-right">

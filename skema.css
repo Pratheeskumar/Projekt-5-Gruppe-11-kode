@@ -1,5 +1,6 @@
 
-p{font-family:obvia;}
+p{font-family:obvia;
+}
 
 h1, h2, h2 {font-family:poppins;}
 
@@ -675,3 +676,57 @@ line-height: 10px;
 
 }
 
+
+.overskrift img{
+  margin-top:4%;
+  width:3vh;
+ 
+}
+
+.overskrift h1{ 
+  text-align:center;
+  display:inline-block;
+  position: relative;
+  top:-1.5vh;
+  color:#515E6D;
+  
+}
+.overskrift p{
+  text-align:center;
+  color:#515E6D;
+}
+
+.intro {
+  
+  color:#515E6D;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+.intro p{
+  margin-top:10vh;text-align:center; }
+
+.intro h2{
+  margin:auto;
+  margin-top:20vh;
+  text-align:center;
+
+}
+
+  .buttonskema{
+   
+    margin:auto;
+    width:20%;
+    padding-top:10px;
+    padding-bottom:10px;
+    border:2px solid #515E6D; 
+    margin-top:5vh;
+  }
+
+  .buttonskema a{ text-decoration: none;
+  color:#515E6D;}
+
+  .introimg{
+  height:10vh;
+  float:right;
+  }
