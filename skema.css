@@ -25,6 +25,11 @@ h1, h2, h2 {font-family:poppins;}
     padding-left:25px;
     padding-right:25px;}
 
+    .next:hover, .back:hover {
+      background-color: #515e6d;
+      color: #FFF;
+  }
+
 /*skemafrontpage*/
 #startknap{
     width:20%;
