@@ -18,12 +18,10 @@
       rel="stylesheet"
     />
     <title>Total score</title>
-    
   </head>
   <body>
     <div class="grid-container">
       <header class="header">
-        
         <div class="header__search">
           <div class="tekst">
             <img src="profil-01.svg" />
@@ -34,20 +32,19 @@
           </div>
         </div>
         <div role="navigation">
-            <div id="menuToggle">
-              <input type="checkbox" />
-            
-              <span></span>
-              <span></span>
-              <span></span>
-            
-              <ul id="menu">
-                <a href="#"><li>Igangværende delmål</li></a>
-                <a href="#"><li>Fuldførte delmål</li></a>
-    
-              </ul>
-            </div>
+          <div id="menuToggle">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+              <a href="#"><li>Igangværende delmål</li></a>
+              <a href="#"><li>Fuldførte delmål</li></a>
+            </ul>
           </div>
+        </div>
         <div class="header__avatar">
           <ul>
             <li>
@@ -65,7 +62,7 @@
           </ul>
         </div>
       </header>
-      
+
       <aside class="sidenav">
         <ul class="sidenav__list" style="text-align: center;">
           <li
@@ -77,15 +74,15 @@
             <img src="lob.svg" /> <img src="fremmode.svg" />
           </li>
           <li class="sidenav__list-item">
-              <img src="skridt.sv.svg" /> <img src="mus.svg" />
-            </li>
+            <img src="skridt.sv.svg" /> <img src="mus.svg" />
+          </li>
           <li class="sidenav__list-item">Fuldførte</li>
           <li class="sidenav__list-item">
-              <img src="delmaal1.svg" /> <img src="delmaal2.svg" />
-            </li>
+            <img src="delmaal1.svg" /> <img src="delmaal2.svg" />
+          </li>
           <li class="sidenav__list-item">
-              <img src="delmaal3.svg" /> <img src="delmaal4.svg" />
-            </li>
+            <img src="delmaal3.svg" /> <img src="delmaal4.svg" />
+          </li>
         </ul>
       </aside>
 
@@ -125,6 +122,7 @@
 
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <!-- Event handlers som reagere når man trykker på pil -->
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
               </div>
               <br />
@@ -157,29 +155,35 @@
       </main>
     </div>
     <script>
-      let slideIndex = 1; // String - skal start med det første billede
+      let slideIndex = 1; // String - skal start med det første billede men det skal lige starte med en værdi
+      //Så slideIndex får værdien 1
       showSlides(slideIndex);
 
       // Next/previous controls
-      function plusSlides(n) { //En funktion
-        showSlides((slideIndex += n)); //
+      function plusSlides(n) {
+        //En function
+        showSlides((slideIndex += n)); // i denne funktion kan man styrer next og prev
       }
 
       // Thumbnail image controls
       function currentSlide(n) {
-        showSlides((slideIndex = n));
+        showSlides((slideIndex = n)); // i denne kode sørges der for at thumbnail (billederne) bliver vist i div
+        // og hvor struktureret det er
       }
 
       function showSlides(n) {
         let i;
-        let slides = document.getElementsByClassName("mySlides");
+        let slides = document.getElementsByClassName("mySlides"); //mySlides er identifier for div i html
         if (n > slides.length) {
+          //Kontrolstruktur // if er et statement
           slideIndex = 1; //Første billede skal altid starte først i slide
         }
         if (n < 1) {
-          slideIndex = slides.length;
+          slideIndex = slides.length; //properties
         }
         for (i = 0; i < slides.length; i++) {
+          //++ gøre at i (0) bliver bliver forhøjet med 1 så.
+          //Det gør at at næste side kan vises i slider.
           slides[i].style.display = "none";
         }
         slides[slideIndex - 1].style.display = "block";
