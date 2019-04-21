@@ -325,7 +325,7 @@
                         padding-top:1vh;
                       position: relative;
                         display:inline-block;
-                      cursor: pointer;
+                      
                       -webkit-user-select: none;
                       -moz-user-select: none;
                       -ms-user-select: none;
@@ -386,7 +386,7 @@
                         padding-top:1vh;
                       position: relative;
                         display:inline-block;
-                      cursor: pointer;
+                     
                       -webkit-user-select: none;
                       -moz-user-select: none;
                       -ms-user-select: none;
@@ -395,21 +395,16 @@
                       
         
                       
-                    .popupgoals h2 {float:left;
-            
+                    .popupgoals h2 {
+                      text-align:left;
+                      
                     margin-left:2vh;
-                    border:2px solid #515E6D;
+                   
                     font-size:12px;
-                    padding:2vh;
-                    margin-top:1vh;
+                    
+                  
                     }
                     
-                    
-                    .popupgoals h3 {
-                    margin-left:10vh;
-                    text-align:left;
-                    font-size:12px;
-                    }
                     
                     
                     .previewgoals .popupgoals{
@@ -422,14 +417,19 @@
                       padding: 8px 0;
                       position: absolute;
                       z-index: 1;
-                      bottom: -300%;
+                      bottom: -150%;
                       left: 38%;
                       margin-left: -80px;
                     
                     }
-                    .popupgoals p {font-size:12px;
+                    .popupgoals p {
+                   
+                      text-align:right; 
+                      border:2px solid #EBECEE;
+                      width:60%;
+                      font-size:12px;
                     text-align:left;
-                    margin-left:10vh;}
+                    margin-left:3vh;}
                     
             
         
@@ -467,7 +467,7 @@
                     
                     
                     .popupkom h3 {
-                    margin-left:10vh;
+                    margin-left:2vh;
                     text-align:left;
                     font-size:12px;
                     }
@@ -483,14 +483,20 @@
                       padding: 8px 0;
                       position: absolute;
                       z-index: 1;
-                      bottom: -300%;
+                      bottom: -150%;
                       left: 38%;
                       margin-left: -80px;
                     
                     }
                     .popupkom p {font-size:12px;
+                      border:2px solid #515E6D;
+                      width:85%;
+                      background-color:#EBECEE;
+                      padding-left:2vh;
+                      padding-top:3vh;
+                      padding-bottom:3vh;
                     text-align:left;
-                    margin-left:10vh;}
+                    margin-left:2vh;}
                     
             
         
