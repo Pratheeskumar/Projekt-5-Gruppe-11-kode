@@ -717,9 +717,13 @@ line-height: 10px;
     padding-top:10px;
     padding-bottom:10px;
     border:2px solid #515E6D; 
-    margin-bottom:5vh;  
     margin-top:5vh;
   }
 
   .buttonskema a{ text-decoration: none;
   color:#515E6D;}
+
+  .introimg{
+  height:10vh;
+  float:right;
+  }
