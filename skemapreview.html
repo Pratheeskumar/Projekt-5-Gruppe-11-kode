@@ -11,12 +11,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <link rel="stylesheet" href="skabelon.css" />
+    <link rel="stylesheet" href="skemapreview.css">
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
     <title>CSS Grid Template 1</title>
     <script src="java.js" defer></script>
+<<<<<<< HEAD
     <style>
 
 
@@ -376,7 +378,7 @@
                       padding: 8px 0;
                       position: absolute;
                       z-index: 1;
-                      bottom: -300%;
+                      bottom: -250%;
                       left: 38%;
                       margin-left: -80px;
                     
@@ -437,7 +439,7 @@
                       padding: 8px 0;
                       position: absolute;
                       z-index: 1;
-                      bottom: -300%;
+                      bottom: -250%;
                       left: 38%;
                       margin-left: -80px;
                     
@@ -482,7 +484,7 @@
                     
                     
                     .popupkom h3 {
-                    margin-left:10vh;
+                    margin-left:3vh;
                     text-align:left;
                     font-size:12px;
                     }
@@ -498,14 +500,24 @@
                       padding: 8px 0;
                       position: absolute;
                       z-index: 1;
-                      bottom: -300%;
+                      bottom: -250%;
                       left: 38%;
                       margin-left: -80px;
                     
                     }
                     .popupkom p {font-size:12px;
                     text-align:left;
-                    margin-left:10vh;}
+                    margin-left:3vh;
+                    border:1px solid black;
+                    width: 43vh;  
+                    margin:auto;
+                    padding-left:1vh;
+                    padding-top:2vh;
+                    padding-bottom:2vh;
+                    border-radius:2px;
+                    background-color:#EBECEE;
+                    color:#515E6D;
+                  }
                     
             
         
@@ -530,6 +542,8 @@
                       cursor: pointer;
                     }
                     </style>
+=======
+>>>>>>> 432e9c5533d8bb59045268a3fd3e1e2c11f619c5
   </head>
   <body>
     <div class="grid-container">
@@ -695,7 +709,7 @@
                                                                                       
                                                                                               </div>
                       <div class="thirdpreview">
-                              <div class="previewplan" onclick="planFunction()"><h2>Højt drive <br><i class="down"></i></h2>
+                              <div class="previewplan" onclick="planFunction()"><h2>Udviklingsplan<br><i class="down"></i></h2>
                                   <span class="popupplan" id="myPopupplan"><h2>15</h2>
                                  <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
                                                             <p>Det går skide godt</p>
@@ -717,53 +731,42 @@
                                                             </span>
                                 </div>
 
-                                <div class="previewgoals" onclick="goalsFunction()"><h2>Højt drive <br><i class="down"></i></h2>
-                                  <span class="popupgoals" id="myPopupgoals"><h2>15</h2>
+                                <div class="previewgoals" onclick="goalsFunction()"><h2>Dine mål<br><i class="down"></i></h2>
+                                  <span class="popupgoals" id="myPopupgoals"><h2>1</h2>
                                  <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
                                                             <p>Det går skide godt</p>
-                                                            <h2>15</h2>
-                                 <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
-                                                            <p>Det går skide godt</p>
-                                                            
-                                                            <h2>15</h2>
+                                                            <h2>2</h2>
                                  <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
                                                             <p>Det går skide godt</p>
                                                             
-                                                            <h2>15</h2>
+                                                            <h2>3</h2>
                                  <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
                                                             <p>Det går skide godt</p>
-                                                            <h2>15</h2>
-                                 <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
-                                                            <p>Det går skide godt</p>
+                                                            
+                                                          
                                                             </span>
                                 </div>
 
-                                <div class="previewkom" onclick="komFunction()"><h2>Højt drive <br><i class="down"></i></h2>
-                                  <span class="popupkom" id="myPopupkom"><h2>15</h2>
-                                 <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
-                                                            <p>Det går skide godt</p>
-                                                            <h2>15</h2>
-                                 <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                <div class="previewkom" onclick="komFunction()"><h2>Kommende år<br><i class="down"></i></h2>
+                                  <span class="popupkom" id="myPopupkom">
+                                 <h3>Faglige stærke sider</h3>
                                                             <p>Det går skide godt</p>
                                                             
-                                                            <h2>15</h2>
-                                 <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                 <h3>Faglige udviklingsområder</h3>
                                                             <p>Det går skide godt</p>
                                                             
-                                                            <h2>15</h2>
-                                 <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                            
+                                 <h3>Personlige stærke sider</h3>
                                                             <p>Det går skide godt</p>
-                                                            <h2>15</h2>
-                                 <h3>Jeg arbejder med mit eget fagområde uden for arbejdstiden</h3>
+                                                            
+                                                           
+                                 <h3>Personlige udviklingsområder</h3>
                                                             <p>Det går skide godt</p>
+                                 
                                                             </span>
                                 </div>
-                      </div>
 
-                      <div class="knapperne">               
-                      <button onclick="goBack()" class="back">Tilbage</button> 
-                      <a href="skemamedarbejderv2.html" class="next">Ok</a></div>                                 
-            </div>
+                                                                 
             
 
 
@@ -816,7 +819,11 @@ function funFunction() {
             </script>     
       </div>
 		  </div>
-		  
+		  <div class="knapperne">
+          <button onclick="goBack()" class="back">Tilbage</button> 
+          <a href="skemasendt.html" class="next">Næste</a>
+                    </div></div>                      </div>
+
 		  <div class="card-right">
           <div class="cardsmall"><a href="total_score_no_skema.html"><img class="cardimg" src="forrige-01.svg" alt="Forrige resultat" /></a></div>
 			<div class="cardsmall"><a href="historik.html"><img class="cardimg" src="historik-01.svg" alt="Forrige resultat" /></a></div>

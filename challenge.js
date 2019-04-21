@@ -1,6 +1,6 @@
 // Challenge side tab-skift 
-var tabButtons=document.querySelectorAll(".valgboks .klikbokser button") 
-var tabPanels=document.querySelectorAll(".valgboks .panel") 
+let tabButtons=document.querySelectorAll(".valgboks .klikbokser button") 
+let tabPanels=document.querySelectorAll(".valgboks .panel") 
 
 function showPanel (panelIndex,colorCode) {
   tabButtons.forEach (function(node){

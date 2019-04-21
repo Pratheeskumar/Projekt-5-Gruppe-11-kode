@@ -30,7 +30,7 @@ background-color: #f1eeeb;  border-radius: 3px;
 
   font-size: x-large;
   box-sizing: border-box;
-  display: inline-block;
+  
   max-width: 100%;
   color: #484848;
     padding-top: 20px;
@@ -55,5 +55,5 @@ background-color: #f1eeeb;  border-radius: 3px;
   max-width: 100%;
   color: white;
 }
-.pinside {font-size: medium; text-align: right;display: inline-block;
+.pinside {font-size: medium; text-align: right;
 float:right; margin-right: 4px;}
