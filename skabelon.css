@@ -186,14 +186,14 @@ body {
 .card-columns .card-left {
 	float: left;
 	box-sizing: border-box;
-	display: inline-block;
+	
 	padding: 20px;
 	width: 100%;
 }
 .card-columns .card-right {
 	float: left;
 	box-sizing: border-box;
-	display: inline-block;
+	
 	padding: 20px;
 	width: 100%;
 }
