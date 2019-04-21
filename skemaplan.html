@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
   <link rel="stylesheet" href="skabelon.css">
+  <link rel="stylesheet" href="skema.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <title>CSS Grid Template 1</title>
   <script>
@@ -14,23 +15,6 @@
     }
     </script>
 <style>
-.next, .back{
-    float:left;
-    background-color:white;
-    border: 3px solid #515e6d;
-    color: #515e6d;
-    border-radius: 1px;
-    font-size: 15px;
-    font-family:'Source Sans Pro';
-    padding: 7px;
-    padding-left:20px;
-    padding-right:20px;
-    }
-
-    .next{float:right;
-    padding-left:25px;
-    padding-right:25px;}
-
     .drivegoals{
         background-color:#515E6D;
         color:white;
@@ -54,103 +38,164 @@ height:70px;
     }
 
 .goalsinline{display:inline-block;
-    float:right;
-    
+  margin-left: auto;
+  margin-right: auto;
     margin-bottom:
 }
 .textplan{display:inline-block;
-    float:left;
+  margin-left: auto;
+  margin-right: auto;
 
 }
     .goalstextplan{
-        width:8vh;
-        height:7vh;
+        width:15vh;
+        height:10vh;
         margin-left:6px;
         margin-right:15px;
         background-color:#EBECEE;
-        border:1.5px solid #A6BB75;}
+        border:1.5px solid #A6BB75;
+      }
 
-        .lortediv{height:100%;
-        }
+        .goalstextplan1{
+        width:30vh;
+        height:10vh;
+        margin-left:50px;
+        margin-right:15px;
+        vertical-align: center;
+        text-align: left;
+      float:left;}
+
+      .goalstextplan1 p {
+        font-size: 2vh
+      }
+
+      @media only screen and (max-width: 1100px){
+.goalstextplan1 {
+  width: 100%;
+  margin-left: 10px;
+}}
 
 
     </style>
 </head>
- <body>
+<body>
   <div class="grid-container">
-   
-  <header class="header">
-    <div class="header__search"><div class="tekst"><img src="profil.png"><h1>Charlie<br> <span style="font-size: 15px;"> - Udvikler</span></h1></div></div>
-    <div class="header__avatar">  
-                  <ul>
-                      <li><a href="contact.asp"><img src="logud.png"></a></li>
-                      <li><a href="news.asp"><img src="install ikon.png"></a></li>
-        <li><a href="news.asp"><img src="bell ikon.png"></a></li>
-        <li><a href="default.asp"><img src="challenge icon.png"></a></li>
-
-
-      </ul>     </div>
-  </header>
-
-  <aside class="sidenav">
-    <ul class="sidenav__list" style="text-align: center;">
-      <li class="sidenav__list-item" style="background-image: url(houseofcodelogo.PNG); height: 70px; background-size: contain; background-repeat: no-repeat; background-position: center; background-color:#f1f1f1; "></li>
-      <li class="sidenav__list-item">Igangværende</li>
-      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
-      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
-      <li class="sidenav__list-item">Fuldførte</li>
-      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
-      <li class="sidenav__list-item"><img src="Løb.png"> <img src="Løb.png"></li>
-    </ul>
-  </aside>
-
-  <main class="main">
-
-
-
-
-    <div class="main-cards">
-      <div class="card"><div class=drivegoals><img src="progbarfull.svg"><h2>Udviklingsplan </h2><p>Det anbefales at fastsætte 2 - 3 mål, du skal arbejde med i det kommende år.</p> </div>
-            <div class="skemaplan">
-                <div class="lortediv">
-                <div class=textplan>
-                    <p>Hvad vil du udvikle?</p>
-                    <p> Hvordan vil du gøre det?</p>
-                    <p> Hvilke ressourcer får du brug for? </p>
-                    <p> Hvordan vil du måle fremgang<br>/resultater?</p>
-                    <p> Hvornår vil du gøre det?</p>
-                </div>
-                    
-                    <div class="goalsinline">
-                    <label class="goalsplan">
-                        
-                <input type="text" class="goalstextplan" name="question">  <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question"><br></label>
-                        <br>
-                <label class="goalsplan">
-                <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question"><br></label>
-                <br>
-               <label class="goalsplan">
-                <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question"><br></label>
-                    <br>
-                <label class="goalsplan">
-                    <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question"><br></label>
-                    <br>
-                    <label class="goalsplan">
-                        <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question"><br></label>
-                    </div>
-                </div>
-                    
-                <button onclick="goBack()" class="back">Tilbage</button> 
-                <button type="button" class="next">Næste</button></div>
-            
+    <header class="header">
+      
+      <div class="header__search">
+        <div class="tekst">
+          <img src="profil-01.svg" />
+          <h1>
+            Charlie<br />
+            <span style="font-size: 15px;"> - Udvikler</span>
+          </h1>
         </div>
-      <div class="card" style="background-image: url(forrige-01.png); background-size: contain; background-repeat: no-repeat;">
       </div>
-      <div class="card">Historik</div>
-      <div class="card">Næste møde</div>
-      <div class="card">Resterende Klips</div>
+      <div role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+          
+            <span></span>
+            <span></span>
+            <span></span>
+          
+            <ul id="menu">
+              <a href="#"><li>Igangværende delmål</li></a>
+              <a href="#"><li>Fuldførte delmål</li></a>
+  
+            </ul>
+          </div>
+        </div>
+      <div class="header__avatar">
+        <ul>
+          <li>
+            <a href="index.html"><img src="logud-01.svg"/></a>
+          </li>
+          <li>
+            <a href="news.asp"><img src="cogwheel.svg"/></a>
+          </li>
+          <li>
+            <a href="news.asp"><img src="bell.svg"/></a>
+          </li>
+          <li>
+            <a href="challenge.html"><img src="challengeicon.svg"/></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    
+    <aside class="sidenav">
+      <ul class="sidenav__list" style="text-align: center;">
+        <li
+          class="sidenav__list-item"
+          style="background-image: url(houseofcodelogo.svg); height: 70px; background-size: contain; background-repeat: no-repeat; background-position: center; background-color:#f1f1f1; "
+        ></li>
+        <li class="sidenav__list-item">Igangværende</li>
+        <li class="sidenav__list-item">
+          <img src="lob.svg" /> <img src="fremmode.svg" />
+        </li>
+        <li class="sidenav__list-item">
+            <img src="skridt.sv.svg" /> <img src="mus.svg" />
+          </li>
+        <li class="sidenav__list-item">Fuldførte</li>
+        <li class="sidenav__list-item">
+            <img src="delmaal1.svg" /> <img src="delmaal2.svg" />
+          </li>
+        <li class="sidenav__list-item">
+            <img src="delmaal3.svg" /> <img src="delmaal4.svg" />
+          </li>
+      </ul>
+    </aside>
 
+  
+    <main class="main">
+  
+    <div class="card-columns">
+    
+    <div class="card-left">
+    <div class="card">
+      <div class=drivegoals><img src="progbarfull.svg"><h2>Udviklingsplan </h2><p>Det anbefales at fastsætte 2 - 3 mål, du skal arbejde med i det kommende år.</p> </div>
+      <div class="skemaplan">
+
+              
+              <div class="goalsinline"  style="margin-top: 50px; width: 100%; display: inline-block;   margin-left: auto;
+              margin-right: auto;">
+              <label class="goalsplan">
+             <div class="goalstextplan1"><p>Hvad vil du udvikle?</p></div>     
+          <input type="text" class="goalstextplan" name="question">  <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question"><br></label>
+                  <br>
+          <label class="goalsplan">
+              <div class="goalstextplan1"><p>Hvordan vil du gøre det?</p></div>     
+          <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question"><br></label>
+          <br>
+         <label class="goalsplan">
+            <div class="goalstextplan1"><p>Hvilke ressourcer får du brug for? </p></div>     
+          <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question"><br></label>
+              <br>
+          <label class="goalsplan">
+              <div class="goalstextplan1"><p>Hvordan vil du måle fremgang/resultater?</p></div>     
+              <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question"><br></label>
+              <br>
+              <label class="goalsplan">
+                  <div class="goalstextplan1"><p>Hvornår vil du gøre det?</p></div>     
+                  <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question">   <input type="text" class="goalstextplan" name="question"><br></label>
+              </div></div>
+
+
+<div class="knapperne">
+                  <a href="skemagoals.html" class="back">Tilbage</a> 
+                  <a href="skemapreview.html" class="next">Næste</a>
+              </div>
+</div>      </div>
+    <div class="card-right">
+        <div class="cardsmall"><img class="cardimg" src="forrige-01.svg" alt="Forrige resultat" /></div>
+    <div class="cardsmall"><img class="cardimg" src="historik-01.svg" alt="Forrige resultat" /></div>
+          <div class="cardsmall"><img class="cardimg" src="mode.svg" alt="Forrige resultat" /></div>
+          <div class="cardsmall"><img class="cardimg" src="klips.svg" alt="Forrige resultat" /></div>
     </div>
-  </main>
+    
+  </div>
+</div>
+    </main>
 
 </div>
