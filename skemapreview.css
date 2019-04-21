@@ -30,6 +30,11 @@
     padding-bottom: 50px;
   }
 
+  .next:hover, .back:hover {
+      background-color: #515e6d;
+      color: #FFF;
+  }
+
           
                 .overskriftpreview{
                     margin-top:5%;
