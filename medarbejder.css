@@ -11,7 +11,10 @@
       padding-left:20px;
       padding-right:20px;
       margin-top:10%;}
-  
+      .next:hover, .back:hover {
+      background-color: #515e6d;
+      color: #FFF;
+  }
 
       .back {
         bottom: 0;
