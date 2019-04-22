@@ -22,7 +22,6 @@
   <body>
     <div class="grid-container">
       <header class="header">
-        
         <div class="header__search">
           <div class="tekst">
             <img src="profil-01.svg" />
@@ -33,20 +32,19 @@
           </div>
         </div>
         <div role="navigation">
-            <div id="menuToggle">
-              <input type="checkbox" />
-            
-              <span></span>
-              <span></span>
-              <span></span>
-            
-              <ul id="menu">
-                <a href="#"><li>Igangværende delmål</li></a>
-                <a href="#"><li>Fuldførte delmål</li></a>
-    
-              </ul>
-            </div>
+          <div id="menuToggle">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+              <a href="#"><li>Igangværende delmål</li></a>
+              <a href="#"><li>Fuldførte delmål</li></a>
+            </ul>
           </div>
+        </div>
         <div class="header__avatar">
           <ul>
             <li>
@@ -64,7 +62,7 @@
           </ul>
         </div>
       </header>
-      
+
       <aside class="sidenav">
         <ul class="sidenav__list" style="text-align: center;">
           <li
@@ -76,15 +74,15 @@
             <img src="lob.svg" /> <img src="fremmode.svg" />
           </li>
           <li class="sidenav__list-item">
-              <img src="skridt.sv.svg" /> <img src="mus.svg" />
-            </li>
+            <img src="skridt.sv.svg" /> <img id="mus" src="mus.svg" />
+          </li>
           <li class="sidenav__list-item">Fuldførte</li>
           <li class="sidenav__list-item">
-              <img src="delmaal1.svg" /> <img src="delmaal2.svg" />
-            </li>
+            <img src="delmaal1.svg" /> <img src="delmaal2.svg" />
+          </li>
           <li class="sidenav__list-item">
-              <img src="delmaal3.svg" /> <img src="delmaal4.svg" />
-            </li>
+            <img src="delmaal3.svg" /> <img src="delmaal4.svg" />
+          </li>
         </ul>
       </aside>
 
@@ -135,18 +133,20 @@
 
           <div class="card-right">
             <div class="cardsmall">
-              <img
-                class="cardimg"
-                src="forrige-01.svg"
-                alt="Forrige resultat"
-              />
+              <a href="total_score_no_skema.html"
+                ><img
+                  class="cardimg"
+                  src="forrige-01.svg"
+                  alt="Forrige resultat"
+              /></a>
             </div>
             <div class="cardsmall">
-              <img
-                class="cardimg"
-                src="historik-01.svg"
-                alt="Forrige resultat"
-              />
+              <a href="historik.html"
+                ><img
+                  class="cardimg"
+                  src="historik-01.svg"
+                  alt="Forrige resultat"
+              /></a>
             </div>
             <div class="cardsmall">
               <img class="cardimg" src="mode.svg" alt="Forrige resultat" />
