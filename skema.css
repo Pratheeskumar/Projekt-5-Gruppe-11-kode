@@ -45,7 +45,13 @@ font-family:'Source Sans Pro';
 padding: 7px;
 padding-left:20px;
 padding-right:20px;
-margin-top:15%;}
+margin-top:15%;
+margin-bottom:30px;}
+
+#startknap:hover {
+  background-color: #515e6d;
+  color: #FFF;
+}
 
 .Udviklingssamtale{
   margin-right:5%;
@@ -725,6 +731,16 @@ line-height: 10px;
 
   .buttonskema a{ text-decoration: none;
   color:#515E6D;}
+
+  .buttonskema:hover {
+    background-color: #515e6d;
+    
+}
+
+  .buttonskema a:hover {
+    background-color: #515e6d;
+    color: #FFF;
+}
 
   .introimg{
   height:10vh;
