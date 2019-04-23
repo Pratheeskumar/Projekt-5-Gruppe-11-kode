@@ -67,10 +67,10 @@
       
       <aside class="sidenav">
         <ul class="sidenav__list" style="text-align: center;">
-          <li
+          <a href="intro.html"><li
             class="sidenav__list-item"
             style="background-image: url(houseofcodelogo.svg); height: 70px; background-size: contain; background-repeat: no-repeat; background-position: center; background-color:#f1f1f1; "
-          ></li>
+          ></li></a>
           <li class="sidenav__list-item">Igangværende</li>
           <li class="sidenav__list-item">
             <img src="lob.svg" /> <img src="fremmode.svg" />
@@ -129,15 +129,15 @@
         <a href="skemadrive.html" class="next">OK</a></div>
       </div>
     
-      <script>
+      <script defer>
         // selve modal
-        var modal = document.getElementById('startmodal');
+        let modal = document.getElementById('startmodal');
         
         // knappen, der åbner modal
-        var btn = document.getElementById("startknap");
+        let btn = document.getElementById("startknap");
         
         // span elementet, der lukker modal
-        var span = document.getElementsByClassName("close1")[0];
+        let span = document.getElementsByClassName("close1")[0];
         
         // Når brugeren klikker på knappen, åbner modal'en
         btn.onclick = function() {
