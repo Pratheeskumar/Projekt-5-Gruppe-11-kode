@@ -22,10 +22,9 @@
   <body>
     <div class="grid-container">
       <header class="header">
-        
         <div class="header__search">
-          <div class="tekst"><a href="settings.html">
-            <img src="profil-01.svg" /></a>
+          <div class="tekst">
+            <a href="settings.html"> <img src="profil-01.svg"/></a>
             <h1>
               Charlie<br />
               <span style="font-size: 15px;"> - Udvikler</span>
@@ -33,144 +32,180 @@
           </div>
         </div>
         <div role="navigation">
-            <div id="menuToggle">
-              <input type="checkbox" />
-            
-              <span></span>
-              <span></span>
-              <span></span>
-            
-              <ul id="menu">
-                <a href="#"><li>Igangværende delmål</li></a>
-                <a href="#"><li>Fuldførte delmål</li></a>
-    
-              </ul>
-            </div>
+          <div id="menuToggle">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+              <a href="#"><li>Igangværende delmål</li></a>
+              <a href="#"><li>Fuldførte delmål</li></a>
+            </ul>
           </div>
+        </div>
         <div class="header__avatar">
           <ul>
             <li>
-              <a href="index.html"><img src="logud-01.svg"/></a>
+              <a href="index.html"><img src="logud-01.svg" alt="logud"/></a>
             </li>
             <li>
-              <a href="settings.html"><img src="cogwheel.svg"/></a>
+              <a href="settings.html"
+                ><img src="cogwheel.svg" alt="settings"
+              /></a>
             </li>
             <li>
-              <a href="news.asp"><img src="bell.svg"/></a>
+              <a href="news.asp"><img src="bell.svg" alt="notifications"/></a>
             </li>
             <li>
-              <a href="challenge.html"><img src="challengeicon.svg"/></a>
+              <a href="challenge.html"
+                ><img src="challengeicon.svg" alt="challenges"
+              /></a>
             </li>
           </ul>
         </div>
       </header>
-      
+
       <aside class="sidenav">
         <ul class="sidenav__list" style="text-align: center;">
-          <a href="intro.html"><li
-            class="sidenav__list-item"
-            style="background-image: url(houseofcodelogo.svg); height: 70px; background-size: contain; background-repeat: no-repeat; background-position: center; background-color:#f1f1f1; "
-          ></li></a>
+          <a href="intro.html"
+            ><li
+              class="sidenav__list-item"
+              style="background-image: url(houseofcodelogo.svg); height: 70px; background-size: contain; background-repeat: no-repeat; background-position: center; background-color:#f1f1f1; "
+            ></li
+          ></a>
           <li class="sidenav__list-item">Igangværende</li>
           <li class="sidenav__list-item">
-            <img src="lob.svg" /> <img src="fremmode.svg" />
+            <img src="lob.svg" alt="trofæ" />
+            <img src="fremmode.svg" alt="trofæ" />
           </li>
           <li class="sidenav__list-item">
-              <img src="skridt.sv.svg" /> <img id="mus" src="mus.svg" />
-            </li>
+            <img src="skridt.sv.svg" alt="trofæ" />
+            <img id="mus" src="mus.svg" alt="trofæ" />
+          </li>
           <li class="sidenav__list-item">Fuldførte</li>
           <li class="sidenav__list-item">
-              <img src="delmaal1.svg" /> <img src="delmaal2.svg" />
-            </li>
+            <img src="delmaal1.svg" alt="trofæ" />
+            <img src="delmaal2.svg" alt="trofæ" />
+          </li>
           <li class="sidenav__list-item">
-              <img src="delmaal3.svg" /> <img src="delmaal4.svg" />
-            </li>
+            <img src="delmaal3.svg" alt="trofæ" />
+            <img src="delmaal4.svg" alt="trofæ" />
+          </li>
         </ul>
       </aside>
 
-    
       <main class="main">
-	  
-	    <div class="card-columns">
-		  
-		  <div class="card-left">
-			<div class="card">
-          <div class=Udviklingssamtale>
-              <h1>Udviklingssamtale</h1><img src="progbarfull.svg">
-              
-              <hr>
-              <p>Formålet med dette skema er at dokumentere, hvad du skal fokusere på i det kommende år for at bidrage til dit og House of Code’s behov. </p>
-      
-               <p> Vi vil igennem det næste år genbesøge dette dokument i vores samtaler, for at se hvordan det går. </p>
-                <hr>
-                <h2 style=color:#A6BB75>Højt drive</h2> <h2 style=color:#AA81AC>Et stærkt team</h2> <h2 style=color:#D36D75>God Karma</h2> 
-                <h2 style=color:#6696AC >Ha' det sjovt</h2>
-                <p>Det er vigtig for House of Code at vi sammen arbejder med vores værdier.
-                    Derfor bedes du vurdere dig selv i forhold til vores værdier på de næste sider.
-                    
-                    Udover at du vurderer dig selv i forhold til vores værdier,
-                    vil din leder samt en kollega også vurdere dig. </p>
-                    <p>#BeAwesome</p>
-                  </div>	
-                  <!-- Modal -->
-    <button id="startknap">START</button>
-    
-    <!-- selve modalen -->
-    <div id="startmodal" class="modal">
-    
-      <!--indholdet -->
-      <div class="modal-content">
-        <span class="close1">&times;</span>
+        <div class="card-columns">
+          <div class="card-left">
+            <div class="card">
+              <div class="Udviklingssamtale">
+                <h1>Udviklingssamtale</h1>
+                <img src="progbarfull.svg" alt="progression" />
 
-        <p>Sæt et ✓ud for hvert af de nedenstående sætninger, hvis du mener at  du/medarbejderen udviser den adfærd mindst 2 gange pr. uge. Giv gerne et eksempel på hvad du gør.</p>
-        <img src="eksempel.PNG">
+                <hr />
+                <p>
+                  Formålet med dette skema er at dokumentere, hvad du skal
+                  fokusere på i det kommende år for at bidrage til dit og House
+                  of Code’s behov.
+                </p>
 
-        <div class="knap">
-        <a href="skemadrive.html" class="next">OK</a></div>
-      </div>
-    
-      <script defer>
-        // selve modal
-        let modal = document.getElementById('startmodal');
-        
-        // knappen, der åbner modal
-        let btn = document.getElementById("startknap");
-        
-        // span elementet, der lukker modal
-        let span = document.getElementsByClassName("close1")[0];
-        
-        // Når brugeren klikker på knappen, åbner modal'en
-        btn.onclick = function() {
-          modal.style.display = "block";
-        }
-        
-        //Når brugeren klikker på x, lukker modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-        
-        // Når der bliver klikket andre steder end modalet, lukker den
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
-        </script>
-    </div>
-    
-    
-      </div>
-		  </div>
-		  
-		  <div class="card-right">
-          <div class="cardsmall"><a href="total_score_no_skema.html"><img class="cardimg" src="forrige-01.svg" alt="Forrige resultat" /></a></div>
-			<div class="cardsmall"><a href="historik.html"><img class="cardimg" src="historik-01.svg" alt="Forrige resultat" /></a></div>
-            <div class="cardsmall"><img class="cardimg" src="mode.svg" alt="Forrige resultat" /></div>
-            <div class="cardsmall"><img class="cardimg" src="klips.svg" alt="Forrige resultat" /></div>
-		  </div>
-		  
-		</div>
-	  
+                <p>
+                  Vi vil igennem det næste år genbesøge dette dokument i vores
+                  samtaler, for at se hvordan det går.
+                </p>
+                <hr />
+                <h2 style="color:#A6BB75">Højt drive</h2>
+                <h2 style="color:#AA81AC">Et stærkt team</h2>
+                <h2 style="color:#D36D75">God Karma</h2>
+                <h2 style="color:#6696AC">Ha' det sjovt</h2>
+                <p>
+                  Det er vigtig for House of Code at vi sammen arbejder med
+                  vores værdier. Derfor bedes du vurdere dig selv i forhold til
+                  vores værdier på de næste sider. Udover at du vurderer dig
+                  selv i forhold til vores værdier, vil din leder samt en
+                  kollega også vurdere dig.
+                </p>
+                <p>#BeAwesome</p>
+              </div>
+              <!-- Modal -->
+              <button id="startknap">START</button>
+
+              <!-- selve modalen -->
+              <div id="startmodal" class="modal">
+                <!--indholdet -->
+                <div class="modal-content">
+                  <span class="close1">&times;</span>
+
+                  <p>
+                    Sæt et ✓ud for hvert af de nedenstående sætninger, hvis du
+                    mener at du/medarbejderen udviser den adfærd mindst 2 gange
+                    pr. uge. Giv gerne et eksempel på hvad du gør.
+                  </p>
+                  <img src="eksempel.PNG" alt="eksempel"/>
+
+                  <div class="knap">
+                    <a href="skemadrive.html" class="next">OK</a>
+                  </div>
+                </div>
+
+                <script defer>
+                  // selve modal
+                  let modal = document.getElementById("startmodal");
+
+                  // knappen, der åbner modal
+                  let btn = document.getElementById("startknap");
+
+                  // span elementet, der lukker modal
+                  let span = document.getElementsByClassName("close1")[0];
+
+                  // Når brugeren klikker på knappen, åbner modal'en
+                  btn.onclick = function() {
+                    modal.style.display = "block";
+                  };
+
+                  //Når brugeren klikker på x, lukker modal
+                  span.onclick = function() {
+                    modal.style.display = "none";
+                  };
+
+                  // Når der bliver klikket andre steder end modalet, lukker den
+                  window.onclick = function(event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  };
+                </script>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-right">
+            <div class="cardsmall">
+              <a href="total_score_no_skema.html"
+                ><img
+                  class="cardimg"
+                  src="forrige-01.svg"
+                  alt="Forrige resultat"
+              /></a>
+            </div>
+            <div class="cardsmall">
+              <a href="historik.html"
+                ><img
+                  class="cardimg"
+                  src="historik-01.svg"
+                  alt="Forrige resultat"
+              /></a>
+            </div>
+            <div class="cardsmall">
+              <img class="cardimg" src="mode.svg" alt="Forrige resultat" />
+            </div>
+            <div class="cardsmall">
+              <img class="cardimg" src="klips.svg" alt="Forrige resultat" />
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   </body>

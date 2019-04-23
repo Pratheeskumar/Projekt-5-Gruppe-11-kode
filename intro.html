@@ -14,17 +14,16 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="skema.css"/>
+    <link rel="stylesheet" href="skema.css" />
     <title>CSS Grid Template 1</title>
     <script src="java.js" defer></script>
   </head>
   <body>
     <div class="grid-container">
       <header class="header">
-        
         <div class="header__search">
-          <div class="tekst"><a href="settings.html">
-            <img src="profil-01.svg" alt="profil" /></a>
+          <div class="tekst">
+            <a href="settings.html"> <img src="profil-01.svg" alt="profil"/></a>
             <h1>
               Charlie<br />
               <span style="font-size: 15px;"> - Udvikler</span>
@@ -32,95 +31,120 @@
           </div>
         </div>
         <div role="navigation">
-            <div id="menuToggle">
-              <input type="checkbox" />
-            
-              <span></span>
-              <span></span>
-              <span></span>
-            
-              <ul id="menu">
-                <a href="#"><li>Igangværende delmål</li></a>
-                <a href="#"><li>Fuldførte delmål</li></a>
-    
-              </ul>
-            </div>
+          <div id="menuToggle">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+              <a href="#"><li>Igangværende delmål</li></a>
+              <a href="#"><li>Fuldførte delmål</li></a>
+            </ul>
           </div>
+        </div>
         <div class="header__avatar">
           <ul>
             <li>
-              <a href="index.html"><img src="logud-01.svg"/></a>
+              <a href="index.html"><img src="logud-01.svg" alt="logud"/></a>
             </li>
             <li>
-              <a href="settings.html"><img src="cogwheel.svg"/></a>
+              <a href="settings.html"
+                ><img src="cogwheel.svg" alt="settings"
+              /></a>
             </li>
             <li>
-              <a href="news.asp"><img src="bell.svg"/></a>
+              <a href="news.asp"><img src="bell.svg" alt="notifications"/></a>
             </li>
             <li>
-              <a href="challenge.html"><img src="challengeicon.svg"/></a>
+              <a href="challenge.html"
+                ><img src="challengeicon.svg" alt="challenges"
+              /></a>
             </li>
           </ul>
         </div>
       </header>
-      
+
       <aside class="sidenav">
         <ul class="sidenav__list" style="text-align: center;">
-          <a href="intro.html"><li
-            class="sidenav__list-item"
-            style="background-image: url(houseofcodelogo.svg); height: 70px; background-size: contain; background-repeat: no-repeat; background-position: center; background-color:#f1f1f1; "
-          ></li></a>
+          <a href="intro.html"
+            ><li
+              class="sidenav__list-item"
+              style="background-image: url(houseofcodelogo.svg); height: 70px; background-size: contain; background-repeat: no-repeat; background-position: center; background-color:#f1f1f1; "
+            ></li
+          ></a>
           <li class="sidenav__list-item">Igangværende</li>
           <li class="sidenav__list-item">
-            <img src="lob.svg" /> <img src="fremmode.svg" />
+            <img src="lob.svg" alt="trofæ" />
+            <img src="fremmode.svg" alt="trofæ" />
           </li>
           <li class="sidenav__list-item">
-              <img src="skridt.sv.svg" /> <img id="mus" src="mus.svg" />
-            </li>
+            <img src="skridt.sv.svg" alt="trofæ" />
+            <img id="mus" src="mus.svg" alt="trofæ" />
+          </li>
           <li class="sidenav__list-item">Fuldførte</li>
           <li class="sidenav__list-item">
-              <img src="delmaal1.svg" /> <img src="delmaal2.svg" />
-            </li>
+            <img src="delmaal1.svg" alt="trofæ" />
+            <img src="delmaal2.svg" alt="trofæ" />
+          </li>
           <li class="sidenav__list-item">
-              <img src="delmaal3.svg" /> <img src="delmaal4.svg" />
-            </li>
+            <img src="delmaal3.svg" alt="trofæ" />
+            <img src="delmaal4.svg" alt="trofæ" />
+          </li>
         </ul>
       </aside>
 
-    
       <main class="main">
-	  
-	    <div class="card-columns">
-		  
-		  <div class="card-left">
-			<div class="card">
-                <div class="intro">
-                    <div class="overskrift">
-                <img src="t1.svg">
-                <h1>VELKOMMEN</h1>
-                <img src="t2.svg">
-                <p>Vi udvikler awesome apps, der skaber værdi</p>
-            </div>
-                <p>Udfyld dine udviklingssamtaler, og få et overblik over dine delmål. 
-                        Igennem det næste år, vil der blive fulgt op på dit skema, for at se hvordan det går. 
+        <div class="card-columns">
+          <div class="card-left">
+            <div class="card">
+              <div class="intro">
+                <div class="overskrift">
+                  <img src="t1.svg" alt="tekst1" />
+                  <h1>VELKOMMEN</h1>
+                  <img src="t2.svg" alt="tekst2" />
+                  <p>Vi udvikler awesome apps, der skaber værdi</p>
+                </div>
+                <p>
+                  Udfyld dine udviklingssamtaler, og få et overblik over dine
+                  delmål. Igennem det næste år, vil der blive fulgt op på dit
+                  skema, for at se hvordan det går.
                 </p>
                 <h2>#BeAwesome</h2>
                 <div class="buttonskema"><a href="skema.html"> SKEMA</a></div>
+              </div>
+              <div class="introimg">
+                <img src="duhastnicht.svg" alt="colors" class="introimg" />
+              </div>
             </div>
-            <div class="introimg"><img src="duhastnicht.svg" class="introimg"></div>
-            
+          </div>
+
+          <div class="card-right">
+            <div class="cardsmall">
+              <a href="total_score_no_skema.html"
+                ><img
+                  class="cardimg"
+                  src="forrige-01.svg"
+                  alt="Forrige resultat"
+              /></a>
             </div>
-		  </div>
-		  
-		  <div class="card-right">
-          <div class="cardsmall"><a href="total_score_no_skema.html"><img class="cardimg" src="forrige-01.svg" alt="Forrige resultat" /></a></div>
-			<div class="cardsmall"><a href="historik.html"><img class="cardimg" src="historik-01.svg" alt="Forrige resultat" /></a></div>
-            <div class="cardsmall"><img class="cardimg" src="mode.svg" alt="Forrige resultat" /></div>
-            <div class="cardsmall"><img class="cardimg" src="klips.svg" alt="Forrige resultat" /></div>
-		  </div>
-		  
-		</div>
-	  
+            <div class="cardsmall">
+              <a href="historik.html"
+                ><img
+                  class="cardimg"
+                  src="historik-01.svg"
+                  alt="Forrige resultat"
+              /></a>
+            </div>
+            <div class="cardsmall">
+              <img class="cardimg" src="mode.svg" alt="Forrige resultat" />
+            </div>
+            <div class="cardsmall">
+              <img class="cardimg" src="klips.svg" alt="Forrige resultat" />
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   </body>
